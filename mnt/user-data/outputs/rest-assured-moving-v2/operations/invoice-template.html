@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Invoice — Rest Assured Moving LLC</title>
+<style>
+  @page { size: letter; margin: 0.6in; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11pt; line-height: 1.5; color: #1C2533; background: #fff;
+    max-width: 8in; margin: 0 auto; padding: 0.5in;
+  }
+  .doc-header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 1.25rem; border-bottom: 4px solid #0F2547; margin-bottom: 1.5rem; }
+  .brand-block h1 { font-family: Georgia, serif; font-size: 20pt; color: #0F2547; margin: 0 0 3px; font-weight: 700; }
+  .brand-block .sub { font-family: 'Courier New', monospace; font-size: 8pt; letter-spacing: 0.08em; color: #1F7A5C; text-transform: uppercase; }
+  .brand-block .contact { font-size: 9pt; color: #4A5568; margin-top: 6px; }
+  .doc-type-block { text-align: right; }
+  .doc-type { font-family: Georgia, serif; font-size: 28pt; color: #0F2547; font-weight: 700; margin: 0 0 6px; }
+  .doc-meta { font-family: 'Courier New', monospace; font-size: 9pt; color: #4A5568; line-height: 1.8; }
+  .doc-meta strong { color: #0F2547; }
+  .status-badge {
+    display: inline-block; padding: 3px 14px; border-radius: 999px;
+    font-family: 'Courier New', monospace; font-size: 9pt; letter-spacing: 0.06em; text-transform: uppercase;
+    font-weight: 700; margin-top: 6px;
+  }
+  .status-due { border: 1.5px solid #DC2626; color: #DC2626; }
+  .status-paid { border: 1.5px solid #1F7A5C; color: #1F7A5C; }
+
+  .parties { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+  .party-box { background: #EFF2F0; border-radius: 4px; padding: 0.75rem 1rem; }
+  .party-box h4 { font-family: 'Courier New', monospace; font-size: 8pt; letter-spacing: 0.08em; text-transform: uppercase; color: #1F7A5C; margin: 0 0 6px; }
+  .party-box p { margin: 0; font-size: 10pt; line-height: 1.6; }
+
+  .line-table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+  .line-table th { background: #0F2547; color: #fff; font-family: 'Courier New', monospace; font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 10px; text-align: left; }
+  .line-table th.r { text-align: right; }
+  .line-table td { padding: 9px 10px; font-size: 10pt; border-bottom: 1px solid #E2E6E3; vertical-align: top; }
+  .line-table td.r { text-align: right; white-space: nowrap; font-family: 'Courier New', monospace; }
+  .line-table .desc-note { font-size: 8.5pt; color: #718096; margin-top: 2px; }
+  .line-table tbody tr:last-child td { border-bottom: 2px solid #D4D8D4; }
+
+  .totals { margin-left: auto; width: 48%; }
+  .total-row { display: flex; justify-content: space-between; padding: 5px 10px; font-size: 10pt; }
+  .total-row.subtotal { border-top: 1px solid #D4D8D4; }
+  .total-row.grand { background: #0F2547; color: #fff; border-radius: 4px; margin-top: 4px; font-family: Georgia, serif; font-size: 13pt; font-weight: 700; padding: 8px 10px; }
+  .total-row.grand .mono { font-family: 'Courier New', monospace; font-size: 11pt; }
+
+  .section-divider { border: none; border-top: 1px dashed #D4D8D4; margin: 1.25rem 0; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1rem; }
+  .info-box { background: #EFF2F0; border-radius: 4px; padding: 0.75rem 1rem; }
+  .info-box h4 { font-family: 'Courier New', monospace; font-size: 8pt; letter-spacing: 0.08em; text-transform: uppercase; color: #0F2547; margin: 0 0 6px; }
+  .info-box p { margin: 0; font-size: 9.5pt; line-height: 1.6; color: #4A5568; }
+
+  .thank-you { font-family: Georgia, serif; font-size: 14pt; color: #0F2547; text-align: center; margin: 1.25rem 0 0.5rem; }
+  .disclaimer { font-size: 8pt; color: #718096; border-top: 1px solid #E2E6E3; padding-top: 0.75rem; margin-top: 1rem; font-style: italic; }
+  .footer-contact { text-align: center; font-family: 'Courier New', monospace; font-size: 8pt; color: #9AAABB; margin-top: 1rem; }
+  @media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+
+<!-- Document Header -->
+<div class="doc-header">
+  <div class="brand-block">
+    <h1>Rest Assured Moving LLC</h1>
+    <p class="sub">Moving Labor Co. · Salem, Oregon</p>
+    <p class="contact">
+      (971) 302-0120<br>
+      Shawn@restassuredmoving.net<br>
+      [WEBSITE URL]<br>
+      Mon–Sat, 7am–7pm
+    </p>
+  </div>
+  <div class="doc-type-block">
+    <p class="doc-type">Invoice</p>
+    <div class="doc-meta">
+      <strong>Invoice #:</strong> [INV-XXXX]<br>
+      <strong>Job Ref:</strong> RAM-[XXXX]<br>
+      <strong>Invoice date:</strong> [MM/DD/YYYY]<br>
+      <strong>Due date:</strong> [Due on receipt / MM/DD/YYYY]<br>
+    </div>
+    <!-- Change class to status-paid when paid -->
+    <span class="status-badge status-due">Payment Due</span>
+  </div>
+</div>
+
+<!-- Parties -->
+<div class="parties">
+  <div class="party-box">
+    <h4>Billed To</h4>
+    <p>
+      <strong>[CUSTOMER FULL NAME]</strong><br>
+      [BILLING ADDRESS]<br>
+      [CITY, OR ZIP]<br>
+      [PHONE] · [EMAIL]
+    </p>
+  </div>
+  <div class="party-box">
+    <h4>Job Performed</h4>
+    <p>
+      <strong>Date of service:</strong> [MM/DD/YYYY]<br>
+      <strong>Location:</strong> [SERVICE ADDRESS]<br>
+      <strong>Crew size:</strong> [#] movers<br>
+      <strong>Start time:</strong> [TIME]<br>
+      <strong>End time:</strong> [TIME]
+    </p>
+  </div>
+</div>
+
+<!-- Line Items — actual hours worked -->
+<table class="line-table">
+  <thead>
+    <tr>
+      <th style="width:46%;">Service Performed</th>
+      <th class="r" style="width:14%;">Hours</th>
+      <th class="r" style="width:16%;">Rate/Hr</th>
+      <th class="r" style="width:24%;">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Loading Services
+        <p class="desc-note">Truck/container loaded; all furniture wrapped; final walkthrough completed.</p>
+      </td>
+      <td class="r">[#.#]</td>
+      <td class="r">$95</td>
+      <td class="r">$25</td>
+    </tr>
+    <tr>
+      <td>
+        Unloading Services
+        <p class="desc-note">Unloaded at [ADDRESS]; room-by-room placement completed.</p>
+      </td>
+      <td class="r">[#.#]</td>
+      <td class="r">$95</td>
+      <td class="r">$25</td>
+    </tr>
+    <tr>
+      <td>
+        Furniture Assembly / Disassembly
+        <p class="desc-note">[List specific pieces, e.g., queen bed frame, 2× bookshelves]</p>
+      </td>
+      <td class="r">[#.#]</td>
+      <td class="r">$95</td>
+      <td class="r">$25</td>
+    </tr>
+    <tr>
+      <td>
+        Packing Materials (supplied by RAM)
+        <p class="desc-note">[List: X boxes, X rolls packing paper, X rolls tape, etc.]</p>
+      </td>
+      <td class="r">—</td>
+      <td class="r">—</td>
+      <td class="r">$25</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Totals -->
+<div class="totals">
+  <div class="total-row subtotal">
+    <span>Subtotal</span>
+    <span>$[SUBTOTAL]</span>
+  </div>
+  <div class="total-row">
+    <span>Fuel / Mileage / Travel</span>
+    <span>$0.00</span>
+  </div>
+  <div class="total-row">
+    <span>Tax (if applicable)</span>
+    <span>$[TAX or 0.00]</span>
+  </div>
+  <div class="total-row grand">
+    <span>Total Due</span>
+    <span class="mono">$[TOTAL]</span>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- Payment + Notes -->
+<div class="two-col">
+  <div class="info-box">
+    <h4>Payment Methods Accepted</h4>
+    <p>[Cash / Check (payable to Rest Assured Moving LLC) / Credit/Debit Card / Venmo @[HANDLE] / Zelle [PHONE OR EMAIL] / Other]</p>
+  </div>
+  <div class="info-box">
+    <h4>Notes</h4>
+    <p>[Any job-specific notes — e.g., "Thank you for booking both loading and unloading. We appreciate your referral of your neighbor." Leave blank if none.]</p>
+  </div>
+</div>
+
+<!-- Thank you -->
+<p class="thank-you">Thank you for trusting Rest Assured Moving LLC with your move.</p>
+<p style="text-align:center;font-size:9.5pt;color:#718096;margin:0 0 1rem;">Questions about this invoice? Contact us at (971) 302-0120 or Shawn@restassuredmoving.net.</p>
+
+<!-- Disclaimer -->
+<p class="disclaimer">
+  Rest Assured Moving LLC provides moving labor services only — loading, unloading, packing, unpacking, and furniture assembly/disassembly. We do not provide transportation, truck rental, or freight hauling between locations. This invoice reflects labor time and materials only. Payment is due upon receipt unless otherwise agreed in writing.
+</p>
+
+<p class="footer-contact">
+  Rest Assured Moving LLC · (971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL] · Salem, Oregon
+</p>
+
+</body>
+</html>

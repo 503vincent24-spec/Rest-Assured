@@ -1,0 +1,178 @@
+REST ASSURED MOVING LLC — CUSTOMER EMAIL TEMPLATES
+====================================================
+Brand voice: warm, clear, no fluff. Every template reinforces that this is a
+moving labor service (loading/unloading/packing/unpacking/furniture assembly) —
+never implies we provide the truck or transportation.
+Placeholders are in [BRACKETS] — replace before sending.
+
+
+--------------------------------------------------------------------------------
+1. QUOTE RESPONSE TEMPLATE
+--------------------------------------------------------------------------------
+Subject: Your Rest Assured Moving quote — [MOVE DATE]
+
+Hi [CUSTOMER NAME],
+
+Thank you for contacting Rest Assured Moving LLC! Here's what we'd recommend
+for your move on [MOVE DATE]:
+
+  Service(s): [LOADING / UNLOADING / PACKING / UNPACKING / FURNITURE ASSEMBLY]
+  Crew size: [#] movers
+  Estimated time: [#] hours
+  Hourly rate: $95/hour
+  Estimated total: $[LOW]–$[HIGH]
+
+This is a flat hourly rate with no fuel charges, mileage fees, or hidden
+add-ons. Your final invoice reflects only the hours actually worked.
+
+A quick reminder of how our service works: Rest Assured Moving provides the
+crew — you provide the truck, trailer, POD, or moving container. If you
+haven't reserved one yet and would like a recommendation, just ask; we're
+happy to point you toward a few reliable local options.
+
+To lock in [MOVE DATE], reply to this email or call us at (971) 302-0120 and
+we'll get you on the schedule.
+
+Looking forward to making your move easier,
+[YOUR NAME]
+Rest Assured Moving LLC
+(971) 302-0120 · quotes@restassuredmovingllc.com
+
+
+--------------------------------------------------------------------------------
+2. BOOKING CONFIRMATION
+--------------------------------------------------------------------------------
+Subject: Confirmed: Your move with Rest Assured Moving on [MOVE DATE]
+
+Hi [CUSTOMER NAME],
+
+You're all set! Here are your booking details:
+
+  Date: [MOVE DATE]
+  Arrival window: [TIME WINDOW]
+  Service(s): [SERVICE LIST]
+  Crew size: [#] movers
+  Pickup address: [ADDRESS 1]
+  Drop-off address: [ADDRESS 2]
+  Estimated duration: [#] hours
+  Rate: $95/hour
+
+A few things to have ready before our crew arrives:
+  - Truck, trailer, or POD parked and accessible at the pickup address
+  - A clear path through hallways and doorways
+  - Any items needing special care flagged for the crew (piano, safe, etc.)
+  - Boxes sealed and labeled by room, if you packed them yourself
+
+If anything changes — your move date, the address, or what you need done —
+just reply to this email or call (971) 302-0120 as soon as you can so we can
+adjust the crew accordingly.
+
+Rest assured, it's handled.
+
+[YOUR NAME]
+Rest Assured Moving LLC
+
+
+--------------------------------------------------------------------------------
+3. DAY-BEFORE REMINDER
+--------------------------------------------------------------------------------
+Subject: Tomorrow's the day — quick reminders for your move
+
+Hi [CUSTOMER NAME],
+
+Just a friendly reminder that our crew will be at [ADDRESS] tomorrow,
+[MOVE DATE], arriving between [TIME WINDOW].
+
+Quick checklist for tonight:
+  - Confirm your truck/POD/container is reserved and will be on-site
+  - Clear walkways, stairs, and doorways of rugs, plants, or clutter
+  - Set aside anything that should NOT be loaded (valuables, first-night bag)
+  - Have payment method ready for the final invoice
+  - Save our number in case you need to reach us: (971) 302-0120
+
+We'll text or call when the crew is about 30 minutes out. See you tomorrow!
+
+[YOUR NAME]
+Rest Assured Moving LLC
+
+
+--------------------------------------------------------------------------------
+4. POST-MOVE FOLLOW-UP / REVIEW REQUEST
+--------------------------------------------------------------------------------
+Subject: How did moving day go?
+
+Hi [CUSTOMER NAME],
+
+Thanks again for trusting Rest Assured Moving with your move on [MOVE DATE].
+We hope everything arrived safely and your new place is starting to feel like
+home.
+
+If anything wasn't handled the way it should have been, please reply directly
+to this email — we want to know and we'll make it right.
+
+If our crew took good care of you, a quick review would mean a lot and helps
+other Salem-area folks find us:
+  [REVIEW LINK]
+
+Thanks again for the opportunity to help with your move.
+
+[YOUR NAME]
+Rest Assured Moving LLC
+(971) 302-0120 · quotes@restassuredmovingllc.com
+
+
+--------------------------------------------------------------------------------
+5. RESCHEDULE / CANCELLATION ACKNOWLEDGMENT
+--------------------------------------------------------------------------------
+Subject: Updated booking — [NEW DATE OR "Cancellation confirmed"]
+
+Hi [CUSTOMER NAME],
+
+No problem at all — here's the update to your booking:
+
+  [Option A — Reschedule]
+  New date: [NEW MOVE DATE]
+  New arrival window: [TIME WINDOW]
+  Everything else (services, crew size, addresses) stays the same.
+
+  [Option B — Cancellation]
+  Your booking for [ORIGINAL MOVE DATE] has been canceled. No charges have
+  been or will be applied.
+
+If your plans change again, just let us know — we'll do our best to
+accommodate.
+
+[YOUR NAME]
+Rest Assured Moving LLC
+(971) 302-0120 · quotes@restassuredmovingllc.com
+
+
+--------------------------------------------------------------------------------
+6. NO-RESPONSE QUOTE FOLLOW-UP
+--------------------------------------------------------------------------------
+Subject: Still need help with your move?
+
+Hi [CUSTOMER NAME],
+
+Just following up on the quote we sent over for your move on [MOVE DATE] —
+wanted to make sure it didn't get buried in your inbox during a busy week.
+
+If you'd still like to book, dates fill up quickly, especially around
+weekends and the end of the month. Reply here or call (971) 302-0120 and
+we'll get you locked in.
+
+If your plans have changed, no worries at all — just let us know so we can
+close this out on our end.
+
+[YOUR NAME]
+Rest Assured Moving LLC
+
+
+--------------------------------------------------------------------------------
+STYLE NOTES FOR FUTURE TEMPLATES
+--------------------------------------------------------------------------------
+- Always refer to the truck/POD/container as something the CUSTOMER arranges.
+  Never write copy implying Rest Assured Moving transports anything.
+- Use "crew" or "movers," not "drivers."
+- Keep hourly pricing language consistent: "flat hourly rate," "no hidden fees."
+- Sign-off variety is fine, but always include phone + email in the final line.

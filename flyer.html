@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flyer — Rest Assured Moving LLC</title>
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    margin: 0; width: 8.5in; height: 11in; background: #FAFAF8; color: #222B36;
+  }
+  .sheet { padding: 0.6in 0.65in; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; }
+
+  .top-bar { height: 10px; background: #1F7A5C; margin: -0.6in -0.65in 0.4in; }
+
+  .brand-row { display: flex; align-items: center; gap: 0.4in; margin-bottom: 0.35in; }
+  .brand-row h1 { font-family: Georgia, serif; font-size: 22pt; color: #0F2547; margin: 0; }
+  .brand-row small { display: block; font-family: 'Courier New', monospace; font-size: 9pt; letter-spacing: 0.08em; color: #1F7A5C; }
+
+  .headline { font-family: Georgia, serif; font-size: 34pt; color: #0F2547; line-height: 1.1; margin: 0 0 0.15in; }
+  .sub { font-size: 14pt; color: #4B5563; max-width: 6in; margin-bottom: 0.4in; }
+
+  .services { display: grid; grid-template-columns: 1fr 1fr; gap: 0.18in 0.4in; margin-bottom: 0.45in; }
+  .service-item { display: flex; align-items: flex-start; gap: 0.12in; font-size: 13pt; }
+  .check { flex: none; width: 18px; height: 18px; border-radius: 3px; background: #1F7A5C; position: relative; margin-top: 3px; }
+  .check::after { content: ""; position: absolute; left: 5px; top: 2px; width: 6px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(40deg); }
+
+  .panel-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3in; margin-bottom: 0.45in; }
+  .panel { background: #EFF2F0; border-left: 5px solid #1F7A5C; padding: 0.2in 0.25in; font-size: 12pt; }
+  .panel h4 { margin: 0 0 0.08in; font-family: 'Courier New', monospace; font-size: 10pt; letter-spacing: 0.06em; text-transform: uppercase; color: #11533D; }
+
+  .cta-band { background: #0F2547; color: #fff; border-radius: 6px; padding: 0.35in 0.4in; text-align: center; margin-bottom: 0.4in; }
+  .cta-band .stamp { display: inline-block; border: 1.5px solid #2E9874; color: #2E9874; border-radius: 999px; padding: 0.05in 0.2in; font-family: 'Courier New', monospace; font-size: 9pt; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.12in; }
+  .cta-band h2 { font-family: Georgia, serif; font-size: 22pt; margin: 0 0 0.08in; color: #fff; }
+  .cta-band p { margin: 0; font-size: 13pt; color: #C9D2DD; }
+
+  .contact-strip { display: flex; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 11pt; color: #0F2547; border-top: 1px dashed #D8DCD8; padding-top: 0.2in; margin-top: auto; }
+
+  .service-area { font-size: 10.5pt; color: #4B5563; text-align: center; margin-top: 0.15in; }
+
+  .disclaimer { font-size: 8.5pt; color: #6B7280; text-align: center; margin-top: 0.15in; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="top-bar"></div>
+
+    <div class="brand-row">
+      <div>
+        <h1>Rest Assured Moving LLC</h1>
+        <small>MOVING LABOR CO. &middot; SALEM, OR</small>
+      </div>
+    </div>
+
+    <h2 class="headline">Heavy lifting,<br>handled with care.</h2>
+    <p class="sub">Loading, unloading, packing, unpacking, and furniture assembly — you bring the truck or container, we bring the crew.</p>
+
+    <div class="services">
+      <div class="service-item"><span class="check"></span> Loading &amp; Unloading</div>
+      <div class="service-item"><span class="check"></span> Packing &amp; Unpacking</div>
+      <div class="service-item"><span class="check"></span> Furniture Assembly</div>
+      <div class="service-item"><span class="check"></span> Furniture Disassembly</div>
+    </div>
+
+    <div class="panel-row">
+      <div class="panel">
+        <h4>Transparent Pricing</h4>
+        Flat hourly rate, quoted up front. No fuel charges, mileage fees, or hidden add-ons.
+      </div>
+      <div class="panel">
+        <h4>Flexible Booking</h4>
+        Book us for loading day, unloading day, or both — plus standalone furniture assembly anytime.
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <span class="stamp">Free, No-Obligation Quotes</span>
+      <h2>Let's check moving day off your list.</h2>
+      <p>Call or scan to request your free quote today.</p>
+    </div>
+
+    <div class="service-area">
+      Proudly serving Salem &middot; Keizer &middot; Woodburn &middot; Albany &middot; McMinnville &middot; Beaverton &middot; Hillsboro &middot; Tigard &middot; Portland Metro
+    </div>
+
+    <div class="contact-strip">
+      <span>(971) 302-0120</span>
+      <span>[WEBSITE URL]</span>
+      <span>Shawn@restassuredmoving.net</span>
+    </div>
+
+    <p class="disclaimer">Rest Assured Moving LLC provides moving labor only. We do not provide transportation, truck rental, or hauling services.</p>
+  </div>
+</body>
+</html>

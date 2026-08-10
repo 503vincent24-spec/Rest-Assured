@@ -1,0 +1,126 @@
+# SEO Content — Rest Assured Moving LLC
+Target market: Salem, Oregon moving labor (loading/unloading/packing/unpacking/furniture assembly).
+Explicitly NOT targeting transportation/hauling keywords — this business does not advertise
+or provide trucking/freight services, per brand guidelines.
+
+================================================================================
+PRIMARY KEYWORDS (from original brief)
+================================================================================
+1. moving labor Salem Oregon
+2. loading and unloading services
+3. packing and unpacking services
+4. furniture assembly Salem
+
+================================================================================
+SUPPORTING / LONG-TAIL KEYWORDS (recommended additions)
+================================================================================
+- moving help Salem OR
+- moving crew for rental truck
+- POD loading and unloading
+- pack and unpack moving boxes
+- furniture disassembly and reassembly
+- local movers Salem Oregon (labor only — use carefully, see note below)
+- moving labor near me
+- hourly moving help Salem
+- furniture assembly service near me
+- help loading U-Haul Salem
+
+NOTE on "movers": Many searchers type "movers Salem Oregon" expecting full-service
+moving companies that include transportation. Since this business is labor-only, pages
+targeting that term should clarify the labor-only model in the first 1–2 sentences of
+on-page copy (already done on index.html, services.html, and about.html) so visitors
+and search engines don't form an incorrect impression of the service.
+
+================================================================================
+PAGE-BY-PAGE METADATA (implemented in /site)
+================================================================================
+
+INDEX.HTML
+Title: Rest Assured Moving LLC | Moving Labor in Salem, Oregon
+Meta description: Rest Assured Moving LLC provides professional moving labor in Salem,
+Oregon — loading, unloading, packing, unpacking, and furniture assembly. You bring the
+truck or container; we bring the crew.
+Primary keyword targets: moving labor Salem Oregon
+H1: Heavy lifting, handled with care — you're covered.
+
+SERVICES.HTML
+Title: Services | Rest Assured Moving LLC — Loading, Packing & Furniture Assembly
+Meta description: Loading and unloading services, packing and unpacking services, and
+furniture assembly in Salem, Oregon. Transparent, itemized moving labor from Rest
+Assured Moving LLC.
+Primary keyword targets: loading and unloading services, packing and unpacking
+services, furniture assembly Salem
+H1: Every job, broken down to the line item.
+Anchored sections: #loading, #packing, #assembly (also usable as deep-link targets
+from Google ad extensions or email campaigns)
+
+ABOUT.HTML
+Title: About Us | Rest Assured Moving LLC — Salem, Oregon
+Meta description: Rest Assured Moving LLC is a locally owned moving labor company in
+Salem, Oregon, specializing in loading, unloading, packing, unpacking, and furniture
+assembly.
+Primary keyword targets: moving labor Salem Oregon, local moving labor professionals
+H1: Built around one promise: rest assured, it's handled.
+
+CONTACT.HTML
+Title: Contact & Free Quote | Rest Assured Moving LLC
+Meta description: Request a free moving labor quote from Rest Assured Moving LLC in
+Salem, Oregon. Loading, unloading, packing, unpacking, and furniture assembly.
+Primary keyword targets: moving labor Salem Oregon, free moving quote Salem
+H1: Let's get your move on the manifest.
+
+BLOG.HTML (landing) + 3 posts
+Title: Moving Tips Blog | Rest Assured Moving LLC — Salem, OR
+Targets long-tail, top-of-funnel search intent:
+  - "how to pack fragile items"          → blog-packing-fragile-items.html
+  - "preparing for moving day" / "moving day checklist" → blog-preparing-for-moving-day.html
+  - "furniture assembly best practices" / "how to reassemble furniture after moving"
+    → blog-furniture-assembly-best-practices.html
+Each post closes with a CTA linking back to contact.html, and naturally reuses one
+primary keyword phrase at least once in body copy (already implemented).
+
+================================================================================
+ON-PAGE KEYWORD PLACEMENT — IMPLEMENTED
+================================================================================
+"moving labor Salem Oregon"        → index H1/hero copy, about.html H1/intro, page titles
+"loading and unloading services"   → services.html H1 area, ledger row #01, meta description
+"packing and unpacking services"   → services.html ledger row #02, meta description, blog post 2
+"furniture assembly Salem"         → services.html ledger row #03 heading, meta description,
+                                      blog post 3 intro line
+
+================================================================================
+STRUCTURED DATA RECOMMENDATION (next step, not yet implemented in HTML)
+================================================================================
+Add LocalBusiness JSON-LD to index.html <head> once real NAP (name/address/phone) and
+hours are finalized — this is what allows Google to show the business in local map
+packs for "moving labor Salem Oregon" type searches. Placeholder schema below; replace
+bracketed values before publishing:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  "name": "Rest Assured Moving LLC",
+  "description": "Moving labor company in Salem, Oregon providing loading, unloading, packing, unpacking, and furniture assembly services.",
+  "areaServed": "Salem, OR",
+  "telephone": "[REAL PHONE NUMBER]",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Salem",
+    "addressRegion": "OR",
+    "addressCountry": "US"
+  },
+  "openingHours": "Mo-Sa 07:00-19:00",
+  "url": "https://www.restassuredmovingllc.com"
+}
+</script>
+
+================================================================================
+CONTENT GAPS / FUTURE TOPICS (for ongoing blog cadence)
+================================================================================
+- "How much does moving labor cost in Salem, Oregon?" (pricing transparency post —
+  strong conversion intent, addresses a top search query)
+- "POD vs. U-Haul vs. moving container: which is right for your Salem move?"
+- "Moving labor vs. full-service movers: what's the difference?" (directly addresses
+  the labor-only positioning and pre-qualifies leads before they call)
+- Seasonal: "Best time of year to move in the Willamette Valley"

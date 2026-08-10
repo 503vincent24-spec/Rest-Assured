@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Promotional Flyer — Rest Assured Moving LLC</title>
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; margin: 0; width: 8.5in; min-height: 11in; background: #FAFAF8; color: #1C2533; }
+  .sheet { padding: .7in .75in .6in; min-height: 11in; display: flex; flex-direction: column; }
+
+  /* Top accent */
+  .top-accent { height: 8px; background: #1F7A5C; margin: -.7in -.75in .55in; }
+
+  /* Brand row */
+  .brand-row { display: flex; align-items: center; gap: .35in; margin-bottom: .4in; }
+  .shield { width: 62px; height: 72px; flex-shrink: 0; }
+  .brand-text h1 { font-family: Georgia, serif; font-size: 22pt; color: #0F2547; margin: 0 0 2px; font-weight: 700; }
+  .brand-text .sub { font-family: 'Courier New', monospace; font-size: 9pt; letter-spacing: .1em; color: #1F7A5C; text-transform: uppercase; }
+
+  /* Headline */
+  .headline { font-family: Georgia, serif; font-size: 36pt; color: #0F2547; line-height: 1.1; margin: 0 0 .15in; font-weight: 700; }
+  .headline em { font-style: normal; color: #1F7A5C; }
+  .sub-headline { font-size: 14pt; color: #4A5568; margin: 0 0 .4in; line-height: 1.5; max-width: 6in; }
+
+  /* Service grid */
+  .services { display: grid; grid-template-columns: 1fr 1fr; gap: .18in .5in; margin-bottom: .45in; }
+  .svc { display: flex; align-items: center; gap: .12in; font-size: 13pt; font-weight: 600; color: #1C2533; }
+  .check { flex-shrink: 0; width: 22px; height: 22px; background: #1F7A5C; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+  .check::after { content: ""; display: block; width: 8px; height: 12px; border: solid #fff; border-width: 0 2.5px 2.5px 0; transform: rotate(40deg) translateY(-1px); }
+
+  /* Trust row */
+  .trust-row { display: flex; gap: .5in; margin-bottom: .45in; flex-wrap: wrap; }
+  .trust-item { font-family: 'Courier New', monospace; font-size: 10pt; color: #4A5568; display: flex; align-items: center; gap: .1in; }
+  .trust-item::before { content: "✓"; color: #1F7A5C; font-weight: 700; font-size: 12pt; }
+
+  /* CTA band */
+  .cta-band { background: #0F2547; border-radius: 6px; padding: .35in .45in; text-align: center; margin-bottom: .4in; }
+  .cta-tag { font-family: 'Courier New', monospace; font-size: 9pt; letter-spacing: .08em; text-transform: uppercase; color: #2E9874; display: block; margin-bottom: .12in; }
+  .cta-band h2 { font-family: Georgia, serif; font-size: 22pt; color: #fff; margin: 0 0 .1in; font-weight: 700; }
+  .cta-band p { font-size: 12pt; color: #B0BBC8; margin: 0 0 .2in; }
+  .cta-phone { font-family: 'Courier New', monospace; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: .02em; display: block; }
+  .cta-web { font-family: 'Courier New', monospace; font-size: 12pt; color: #2E9874; display: block; margin-top: .06in; }
+
+  /* Service area */
+  .area { font-size: 10.5pt; color: #4A5568; text-align: center; margin-bottom: .25in; }
+  .area strong { color: #0F2547; }
+
+  /* Footer */
+  .footer-rule { border: none; border-top: 1px dashed #D4D8D4; margin: 0 0 .2in; }
+  .footer-contact { display: flex; justify-content: space-between; align-items: center; font-family: 'Courier New', monospace; font-size: 10pt; color: #0F2547; }
+  .disclaimer { font-size: 8pt; color: #9AAABB; text-align: center; margin-top: .15in; font-style: italic; }
+
+  /* Bottom accent */
+  .bottom-accent { height: 8px; background: #1F7A5C; margin: auto -.75in -.6in; }
+
+  @media print { body { width: 8.5in; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="top-accent"></div>
+
+  <!-- Brand -->
+  <div class="brand-row">
+    <svg class="shield" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><linearGradient id="sg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#16335E"/><stop offset="100%" stop-color="#0F2547"/></linearGradient></defs>
+      <path d="M100,10 L168,38 L168,104 C168,154 138,184 100,208 C62,184 32,154 32,104 L32,38 Z" fill="url(#sg)" stroke="#D4D8D4" stroke-width="2.5"/>
+      <path d="M66,100 L100,64 L134,100 Z" fill="#1F7A5C"/>
+      <rect x="72" y="100" width="56" height="50" fill="#1F7A5C"/>
+      <line x1="66" y1="100" x2="134" y2="100" stroke="#0F2547" stroke-width="2.5"/>
+      <path d="M84,124 L96,139 L120,106" fill="none" stroke="#FAFAF8" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="brand-text">
+      <h1>Rest Assured Moving LLC</h1>
+      <p class="sub">Moving Labor Co. &middot; Salem, Oregon</p>
+    </div>
+  </div>
+
+  <!-- Headline -->
+  <h2 class="headline">Heavy lifting,<br>handled <em>right.</em></h2>
+  <p class="sub-headline">You arrange the truck, trailer, or container. We bring the trained crew to load it, unload it, pack it, and put everything back together on the other end.</p>
+
+  <!-- Services -->
+  <div class="services">
+    <div class="svc"><span class="check"></span> Loading</div>
+    <div class="svc"><span class="check"></span> Unloading</div>
+    <div class="svc"><span class="check"></span> Packing</div>
+    <div class="svc"><span class="check"></span> Unpacking</div>
+    <div class="svc"><span class="check"></span> Furniture Assembly</div>
+    <div class="svc"><span class="check"></span> Furniture Disassembly</div>
+  </div>
+
+  <!-- Trust -->
+  <div class="trust-row">
+    <div class="trust-item">Locally Owned &amp; Operated</div>
+    <div class="trust-item">Licensed &amp; Insured</div>
+    <div class="trust-item">Flat Hourly Rate</div>
+    <div class="trust-item">No Hidden Fees</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <span class="cta-tag">Free, No-Obligation Quotes</span>
+    <h2>Rest assured, it's handled.</h2>
+    <p>Tell us your move date and what you need — we'll have a crew and a quote back to you within one business day.</p>
+    <span class="cta-phone">(971) 302-0120</span>
+    <span class="cta-web">[WEBSITE URL]</span>
+  </div>
+
+  <!-- Area -->
+  <p class="area">
+    <strong>Serving:</strong> Salem &middot; Keizer &middot; Woodburn &middot; Albany &middot; McMinnville &middot; Beaverton &middot; Hillsboro &middot; Tigard &middot; Portland Metro
+  </p>
+
+  <!-- Footer -->
+  <hr class="footer-rule">
+  <div class="footer-contact">
+    <span>(971) 302-0120</span>
+    <span>Shawn@restassuredmoving.net</span>
+    <span>[WEBSITE URL]</span>
+  </div>
+
+  <p class="disclaimer">Moving labor services only — we do not provide transportation, truck rental, or hauling. &nbsp;&copy; <span id="yr"></span> Rest Assured Moving LLC</p>
+  <div class="bottom-accent"></div>
+</div>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

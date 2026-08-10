@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1050 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC business card front">
+  <rect width="1050" height="600" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1050" height="10" fill="#1F7A5C"/>
+
+  <!-- Shield mark -->
+  <g transform="translate(120,150) scale(1.5)">
+    <defs>
+      <linearGradient id="cardShield" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#16335E"/>
+        <stop offset="100%" stop-color="#0F2547"/>
+      </linearGradient>
+    </defs>
+    <path d="M100,12 L166,38 L166,102 C166,150 138,182 100,206 C62,182 34,150 34,102 L34,38 Z"
+          fill="url(#cardShield)" stroke="#D9DEDC" stroke-width="3"/>
+    <path d="M68,98 L100,66 L132,98 Z" fill="#1F7A5C"/>
+    <rect x="74" y="98" width="52" height="48" fill="#1F7A5C"/>
+    <path d="M68,98 H132" stroke="#0F2547" stroke-width="2"/>
+    <path d="M86,122 L97,136 L118,108" fill="none" stroke="#EFF2F0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="430" y="245" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#0F2547">Rest Assured</text>
+  <text x="430" y="305" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#0F2547">Moving</text>
+  <text x="432" y="340" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#1F7A5C" letter-spacing="3">MOVING LABOR CO.</text>
+
+  <!-- Tagline -->
+  <text x="120" y="430" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#4B5563" font-style="italic">Rest assured, it's handled.</text>
+
+  <!-- Footer rule -->
+  <line x1="120" y1="480" x2="930" y2="480" stroke="#D8DCD8" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="120" y="520" font-family="'Courier New', monospace" font-size="22" fill="#1F7A5C" letter-spacing="2">LOADING &#183; UNLOADING &#183; PACKING &#183; UNPACKING &#183; ASSEMBLY</text>
+</svg>

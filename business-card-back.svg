@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1050 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC business card back">
+  <defs>
+    <linearGradient id="cardBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2547"/>
+      <stop offset="100%" stop-color="#16335E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="600" fill="url(#cardBack)"/>
+
+  <!-- Watermark shield, low-opacity, oversized -->
+  <g transform="translate(700,150) scale(2.2)" opacity="0.08">
+    <path d="M100,12 L166,38 L166,102 C166,150 138,182 100,206 C62,182 34,150 34,102 L34,38 Z" fill="#FFFFFF"/>
+  </g>
+
+  <text x="120" y="160" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#FFFFFF">Rest Assured Moving LLC</text>
+  <text x="120" y="195" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#2E9874" letter-spacing="2">MOVING LABOR &#183; SALEM, OREGON</text>
+
+  <line x1="120" y1="225" x2="930" y2="225" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <text x="120" y="290" font-family="'Courier New', monospace" font-size="28" fill="#FFFFFF">[OWNER / MANAGER NAME]</text>
+  <text x="120" y="330" font-family="'Courier New', monospace" font-size="24" fill="#C9D2DD">Owner</text>
+
+  <text x="120" y="390" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">(971) 302-0120</text>
+  <text x="120" y="425" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">Shawn@restassuredmoving.net</text>
+  <text x="120" y="460" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">[WEBSITE URL]</text>
+
+  <text x="120" y="530" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#9AA7BB">Serving Salem, Keizer, Woodburn, Albany, McMinnville &amp; Portland Metro</text>
+</svg>

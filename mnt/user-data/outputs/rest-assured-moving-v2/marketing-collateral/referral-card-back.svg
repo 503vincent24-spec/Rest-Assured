@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1050 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC referral card — back">
+  <defs><linearGradient id="rcb" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a1d3b"/><stop offset="100%" stop-color="#16335E"/></linearGradient></defs>
+  <rect width="1050" height="600" fill="url(#rcb)"/>
+  <rect x="0" y="0" width="1050" height="6" fill="#1F7A5C"/>
+  <rect x="0" y="594" width="1050" height="6" fill="#1F7A5C"/>
+  <!-- Watermark shield -->
+  <g transform="translate(660,50) scale(2.6)" opacity="0.07">
+    <path d="M100,10 L168,38 L168,104 C168,154 138,184 100,208 C62,184 32,154 32,104 L32,38 Z" fill="#FFFFFF"/>
+  </g>
+  <!-- Heading -->
+  <text x="72" y="105" font-family="Georgia,serif" font-size="38" font-weight="700" fill="#FFFFFF">Referral Reward Card</text>
+  <text x="72" y="138" font-family="'Courier New',monospace" font-size="16" fill="#2E9874" letter-spacing="2">REST ASSURED MOVING LLC · SALEM, OR</text>
+  <line x1="72" y1="163" x2="978" y2="163" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+  <!-- How it works -->
+  <text x="72" y="210" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">How it works:</text>
+  <text x="72" y="245" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#C9D2DD">1. Give this card to a friend, neighbor, or family member who's moving.</text>
+  <text x="72" y="278" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#C9D2DD">2. They mention your name when booking a job with us.</text>
+  <text x="72" y="311" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#C9D2DD">3. You both receive $25 off after their job is complete.</text>
+  <!-- Referred by line -->
+  <text x="72" y="375" font-family="'Courier New',monospace" font-size="16" fill="#9AAABB" letter-spacing="1">REFERRED BY</text>
+  <line x1="72" y1="410" x2="560" y2="410" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
+  <text x="72" y="435" font-family="'Courier New',monospace" font-size="13" fill="#6B7A8D">(customer fills in their name)</text>
+  <!-- Contact -->
+  <text x="72" y="498" font-family="'Courier New',monospace" font-size="22" font-weight="700" fill="#FFFFFF">(971) 302-0120</text>
+  <text x="72" y="528" font-family="'Courier New',monospace" font-size="18" fill="#9AAABB">[WEBSITE URL]</text>
+  <!-- Terms -->
+  <text x="72" y="572" font-family="'Courier New',monospace" font-size="13" fill="#4B5A6E">Valid for new customers only. One reward per completed job. Moving labor services only. No transportation services.</text>
+</svg>

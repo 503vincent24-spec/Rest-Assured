@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Estimate — Rest Assured Moving LLC</title>
+<style>
+  :root {
+    --navy: #0F2547; --navy2: #16335E; --emerald: #1F7A5C; --gray: #EFF2F0;
+    --line: #D8DCD8; --ink: #222B36; --ink-soft: #4B5563;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: var(--ink); max-width: 800px; margin: 0 auto; padding: 2.5rem;
+    background: #fff;
+  }
+  .doc-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 4px solid var(--emerald); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  .brand { display: flex; align-items: center; gap: 0.75rem; }
+  .brand h1 { font-family: Georgia, serif; font-size: 1.4rem; color: var(--navy); margin: 0; }
+  .brand small { display: block; font-family: 'Courier New', monospace; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--emerald); margin-top: 2px; }
+  .doc-meta { text-align: right; font-family: 'Courier New', monospace; font-size: 0.85rem; color: var(--ink-soft); }
+  .doc-meta .doc-title { font-family: Georgia, serif; font-size: 1.6rem; color: var(--navy); display: block; margin-bottom: 0.25rem; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.75rem; }
+  .panel { background: var(--gray); border-radius: 4px; padding: 1rem 1.25rem; font-size: 0.92rem; }
+  .panel h4 { margin: 0 0 0.5rem; font-family: 'Courier New', monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--emerald); }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+  th { text-align: left; font-family: 'Courier New', monospace; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy); border-bottom: 2px solid var(--navy); padding: 0.5rem 0.4rem; }
+  td { padding: 0.65rem 0.4rem; border-bottom: 1px solid var(--line); font-size: 0.92rem; vertical-align: top; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tfoot td { border-bottom: none; font-weight: 600; }
+  tfoot tr.total td { font-size: 1.1rem; color: var(--navy); border-top: 2px solid var(--navy); padding-top: 0.75rem; }
+  .notes { background: var(--gray); border-left: 4px solid var(--emerald); padding: 1rem 1.25rem; font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 1.5rem; }
+  .disclaimer { font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); padding-top: 1rem; margin-top: 1.5rem; }
+  .footer-contact { text-align: center; font-family: 'Courier New', monospace; font-size: 0.8rem; color: var(--ink-soft); margin-top: 2rem; }
+  .stamp { display: inline-block; border: 1.5px solid var(--emerald); color: var(--emerald); border-radius: 999px; padding: 0.2rem 0.75rem; font-family: 'Courier New', monospace; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  @media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+
+  <div class="doc-header">
+    <div class="brand">
+      <h1>Rest Assured Moving LLC
+        <small>MOVING LABOR CO. &middot; SALEM, OR</small>
+      </h1>
+    </div>
+    <div class="doc-meta">
+      <span class="doc-title">Estimate</span>
+      Estimate #: [EST-0001]<br>
+      Date: [MM/DD/YYYY]<br>
+      Valid until: [MM/DD/YYYY]
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h4>Prepared For</h4>
+      [CUSTOMER NAME]<br>
+      [PICKUP ADDRESS]<br>
+      [PHONE] &middot; [EMAIL]
+    </div>
+    <div class="panel">
+      <h4>Job Details</h4>
+      Move date: [MM/DD/YYYY]<br>
+      Arrival window: [TIME WINDOW]<br>
+      Crew size: [#] movers<br>
+      Drop-off address: [ADDRESS, if different]
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th class="num">Est. Hours</th>
+        <th class="num">Rate / Hour</th>
+        <th class="num">Est. Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Loading &amp; Unloading</td>
+        <td class="num">[#]</td>
+        <td class="num">$95</td>
+        <td class="num">$25</td>
+      </tr>
+      <tr>
+        <td>Packing &amp; Unpacking</td>
+        <td class="num">[#]</td>
+        <td class="num">$95</td>
+        <td class="num">$25</td>
+      </tr>
+      <tr>
+        <td>Furniture Assembly / Disassembly</td>
+        <td class="num">[#]</td>
+        <td class="num">$95</td>
+        <td class="num">$25</td>
+      </tr>
+      <tr>
+        <td>[Additional line item]</td>
+        <td class="num">[#]</td>
+        <td class="num">$95</td>
+        <td class="num">$25</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="3">Estimated Subtotal</td><td class="num">$[SUBTOTAL]</td></tr>
+      <tr><td colspan="3">Materials (boxes, wrap, tape — if applicable)</td><td class="num">$25</td></tr>
+      <tr class="total"><td colspan="3">Estimated Total</td><td class="num">$[TOTAL LOW]&ndash;$[TOTAL HIGH]</td></tr>
+    </tfoot>
+  </table>
+
+  <div class="notes">
+    <strong>Note:</strong> This is an estimate based on the information provided, not a final
+    invoice. Final cost reflects actual hours worked at the rate above. <span class="stamp">No fuel or mileage fees</span>
+  </div>
+
+  <p class="disclaimer">
+    Rest Assured Moving LLC provides moving labor only — loading, unloading,
+    packing, unpacking, and furniture assembly/disassembly. We do not provide
+    transportation, truck rental, or hauling services. Customer is responsible
+    for arranging and providing their own truck, trailer, POD, or moving
+    container.
+  </p>
+
+  <p class="footer-contact">
+    Rest Assured Moving LLC &middot; (971) 302-0120 &middot; Shawn@restassuredmoving.net &middot; [WEBSITE URL]
+  </p>
+
+</body>
+</html>

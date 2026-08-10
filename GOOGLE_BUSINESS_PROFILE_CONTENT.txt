@@ -1,0 +1,152 @@
+# Google Business Profile Content — Rest Assured Moving LLC
+
+Category to select: "Moving and Storage Service" or "Mover" — if Google offers
+a more specific labor-only option in your market, prefer it. Do NOT select
+"Trucking Company," "Freight Forwarding Service," or any transportation
+category, since this business does not provide that service.
+
+================================================================================
+BUSINESS DESCRIPTION (750 character max — this draft is ~620 characters)
+================================================================================
+Rest Assured Moving LLC provides professional moving labor in Salem, Oregon
+and the surrounding area, including Keizer, Woodburn, Albany, McMinnville,
+Beaverton, Hillsboro, Tigard, and Portland Metro. Our crew handles loading,
+unloading, packing, unpacking, and furniture assembly/disassembly — you
+arrange your own truck, trailer, POD, or moving container, and we provide the
+trained hands to fill it, empty it, and put everything back together
+correctly. Flat hourly pricing, no fuel surcharges, and a checklist-driven
+process so nothing gets left behind. Book us for one end of your move or both.
+
+================================================================================
+SHORT DESCRIPTION (used in some Google surfaces, ~250 characters)
+================================================================================
+Moving labor in Salem, Oregon — loading, unloading, packing, unpacking, and
+furniture assembly. You bring the truck or container; we bring the crew. Flat
+hourly pricing, no hidden fees.
+
+================================================================================
+SERVICES (Google Business Profile "Services" section — add each as its own item)
+================================================================================
+1. Loading Services
+   Description: Careful, efficient loading of your rental truck, trailer,
+   POD, or moving container, with furniture wrapped and protected and space
+   used wisely.
+
+2. Unloading Services
+   Description: Unloading at your new address with room-by-room placement, so
+   boxes and furniture land where you actually want them.
+
+3. Packing Services
+   Description: Full or partial packing, including specialty handling for
+   fragile items like glassware, dishware, mirrors, and electronics.
+
+4. Unpacking Services
+   Description: Unpacking and placing items into cabinets, closets, and
+   shelves after your move, with packing debris removed.
+
+5. Furniture Assembly
+   Description: Professional assembly of bed frames, tables, bookshelves, and
+   sectionals, with hardware bagged and labeled.
+
+6. Furniture Disassembly
+   Description: Disassembly of large furniture before your move so it fits
+   safely through doorways and into your truck or container.
+
+================================================================================
+ATTRIBUTES TO ENABLE (if available in your GBP dashboard)
+================================================================================
+- Identifies as locally owned
+- Online estimates / online appointments (if you set up the contact form)
+- LGBTQ+ friendly / Veteran-led / Women-led — only enable if accurate
+- "By appointment only" — recommend disabling; show real hours instead so
+  customers can call during business hours
+
+================================================================================
+SERVICE AREAS (add each as a separate service area in GBP)
+================================================================================
+Salem, OR · Keizer, OR · Woodburn, OR · Albany, OR · McMinnville, OR ·
+Beaverton, OR · Hillsboro, OR · Tigard, OR · Portland, OR (Metro)
+
+================================================================================
+FAQs (Google Q&A — seed these yourself so accurate answers appear first,
+since anyone can post a question publicly)
+================================================================================
+Q: Do you provide the moving truck?
+A: No — we're a moving labor company. We handle loading, unloading, packing,
+   unpacking, and furniture assembly. You arrange your own truck, trailer,
+   POD, or moving container.
+
+Q: Can I hire you for just loading or just unloading?
+A: Yes. Many customers book us for only one end of their move. You can also
+   book both.
+
+Q: How do you price a job?
+A: Flat hourly rate based on crew size and job scope, quoted before work
+   begins — no fuel charges, mileage fees, or surprise add-ons.
+
+Q: What areas do you serve?
+A: Salem and the surrounding area, including Keizer, Woodburn, Albany,
+   McMinnville, Beaverton, Hillsboro, Tigard, and Portland Metro.
+
+Q: Do you assemble furniture even if I'm not doing a full move?
+A: Yes — furniture assembly and disassembly are available as standalone
+   services, no full move required.
+
+Q: How far in advance should I book?
+A: 1–2 weeks ahead is ideal, especially around the 1st and last weekend of
+   the month. Shorter-notice requests are accommodated when our schedule
+   allows.
+
+================================================================================
+GOOGLE BUSINESS PROFILE POSTS (5 starter posts — post roughly weekly,
+rotate types: offer / update / event-style)
+================================================================================
+
+POST 1 — "What We Do" (Update)
+Headline: Moving labor, done right — loading to furniture assembly
+Body: Rest Assured Moving handles the loading, unloading, packing, unpacking,
+and furniture assembly for your move — you bring the truck or container, we
+bring the crew. Serving Salem and the surrounding area. Get a free quote
+today.
+CTA button: Learn more → [website services page link]
+
+POST 2 — "Free Quotes" (Offer-style update)
+Headline: Free, no-obligation moving labor quotes
+Body: Tell us your move date and what you need — loading, unloading, packing,
+or furniture assembly — and we'll send a flat hourly quote, usually within
+one business day.
+CTA button: Get quote → [website contact page link]
+
+POST 3 — "Service Spotlight: Furniture Assembly" (Update)
+Headline: Furniture assembly, without the leftover screws
+Body: Bed frames, bookshelves, sectionals — we disassemble before your move
+and rebuild everything correctly once you've arrived, hardware bagged and
+labeled the whole way through. Available as a standalone service, no full
+move required.
+CTA button: Learn more → [website services page link, #assembly anchor]
+
+POST 4 — "Service Area Reminder" (Update)
+Headline: Now booking across the Salem area
+Body: We serve Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton,
+Hillsboro, Tigard, and Portland Metro. Wherever your move starts or ends
+locally, our crew can meet you there.
+CTA button: Check availability → [website contact page link]
+
+POST 5 — "Moving Day Tip" (Update, links to blog)
+Headline: Packing fragile items? Read this first.
+Body: Dishes, glassware, and mirrors are the most commonly damaged items in a
+DIY move. Our latest guide covers the materials and technique that actually
+prevent breakage.
+CTA button: Read the guide → [website blog-packing-fragile-items.html link]
+
+================================================================================
+PHOTO CHECKLIST (upload these once available — GBP listings with photos get
+materially more engagement)
+================================================================================
+- [ ] Logo (square crop of logo-mark.svg, exported to PNG, min 720×720px)
+- [ ] Cover photo — crew in action (loading, wrapping furniture, etc.)
+- [ ] 3–5 "team at work" photos
+- [ ] Branded vehicle or equipment photo, if applicable (no transportation
+      service implied — just the crew's gear/branding)
+- [ ] Before/after of a furniture assembly job
+- [ ] Team headshot or group photo for the "About" section

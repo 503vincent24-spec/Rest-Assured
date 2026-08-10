@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC — shield mark">
+  <defs>
+    <linearGradient id="sg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16335E"/>
+      <stop offset="100%" stop-color="#0F2547"/>
+    </linearGradient>
+  </defs>
+  <path d="M100,10 L168,38 L168,104 C168,154 138,184 100,208 C62,184 32,154 32,104 L32,38 Z" fill="url(#sg)" stroke="#D4D8D4" stroke-width="2.5"/>
+  <path d="M100,22 L157,46 L157,102 C157,146 132,173 100,194 C68,173 43,146 43,102 L43,46 Z" fill="none" stroke="#2A3F66" stroke-width="1.5" opacity="0.6"/>
+  <path d="M66,100 L100,64 L134,100 Z" fill="#1F7A5C"/>
+  <rect x="72" y="100" width="56" height="50" fill="#1F7A5C"/>
+  <line x1="66" y1="100" x2="134" y2="100" stroke="#0F2547" stroke-width="2.5"/>
+  <path d="M84,124 L96,139 L120,106" fill="none" stroke="#FAFAF8" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

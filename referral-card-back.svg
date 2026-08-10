@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1050 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC referral card back">
+  <rect width="1050" height="600" fill="#0F2547"/>
+
+  <text x="120" y="110" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#FFFFFF">Rest Assured Moving LLC</text>
+  <text x="120" y="145" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2E9874" letter-spacing="2">REFERRAL REWARD CARD</text>
+
+  <line x1="120" y1="175" x2="930" y2="175" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <text x="120" y="230" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#FFFFFF">How it works:</text>
+  <text x="120" y="270" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#C9D2DD">1. Give this card to a friend, family member, or neighbor.</text>
+  <text x="120" y="305" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#C9D2DD">2. They mention your name when booking a job with us.</text>
+  <text x="120" y="340" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#C9D2DD">3. You both receive $25 off after their job is complete.</text>
+
+  <text x="120" y="410" font-family="'Courier New', monospace" font-size="16" fill="#9AA7BB">Referred by: ____________________________</text>
+
+  <text x="120" y="480" font-family="'Courier New', monospace" font-size="20" fill="#FFFFFF">(971) 302-0120 &middot; [WEBSITE URL]</text>
+  <text x="120" y="520" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#7E8CA3">Valid for new customers only. One reward per completed job. Moving labor services only.</text>
+</svg>

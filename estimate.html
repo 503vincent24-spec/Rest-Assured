@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moving Labor Cost Estimator | Rest Assured Moving LLC</title>
+<meta name="description" content="Estimate your moving labor cost in seconds. Loading, unloading, packing, and furniture assembly in Salem, Oregon — flat hourly pricing, no hidden fees.">
+<link rel="canonical" href="https://[YOUR-DOMAIN]/estimate.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<style>
+  .estimator-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    max-width: 700px;
+  }
+  .est-head {
+    background: var(--navy-900);
+    padding: 1.75rem 2rem;
+    color: var(--white);
+  }
+  .est-head h2 { color: var(--white); font-size: var(--text-2xl); margin-bottom: .25rem; }
+  .est-head p  { color: #9AAABB; font-size: var(--text-sm); margin: 0; }
+  .est-body    { padding: 2rem; }
+  .est-group   { margin-bottom: 1.5rem; }
+  .est-group label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--navy-900);
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .checkbox-row {
+    display: flex; flex-wrap: wrap; gap: .6rem;
+  }
+  .svc-toggle {
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: .4rem;
+    padding: .5rem .9rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm); font-weight: 600; color: var(--ink);
+    background: var(--white);
+    transition: all var(--ease);
+    user-select: none;
+  }
+  .svc-toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .svc-toggle:has(input:checked) {
+    background: var(--emerald-600);
+    border-color: var(--emerald-600);
+    color: var(--white);
+  }
+  .est-result {
+    background: var(--gray-100);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-top: 1.75rem;
+    border-left: 4px solid var(--emerald-600);
+  }
+  .est-result .result-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--emerald-700);
+    margin-bottom: .4rem;
+    display: block;
+  }
+  .est-result .result-price {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    color: var(--navy-900);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: .25rem;
+  }
+  .est-result .result-note {
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+  }
+  .est-breakdown {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--line);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+  }
+  .est-breakdown div {
+    display: flex; justify-content: space-between;
+    padding: .2rem 0;
+  }
+  .disclaimer {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  .sidebar-info .card { margin-bottom: 1.25rem; }
+  .sidebar-info h4 { font-size: var(--text-base); margin-bottom: .4rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="brand" aria-label="Rest Assured Moving LLC — Home">
+        <img src="assets/logo-mark.svg" class="brand-logo" alt="" width="38" height="38">
+        <div class="brand-text"><span class="brand-name">Rest Assured Moving</span><span class="brand-sub">Moving Labor · Salem, OR</span></div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service-area.html">Service Area</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:(971) 302-0120" class="nav-phone">(971) 302-0120</a>
+        <a href="quote.html" class="btn btn-primary btn-sm">Get a Free Quote</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero" aria-labelledby="est-title">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span class="current">Price Estimator</span>
+    </nav>
+    <span class="eyebrow" style="color:var(--emerald-500);">Instant estimate</span>
+    <h1 id="est-title">How much will my move cost?</h1>
+    <p>Get an instant ballpark estimate in under 60 seconds. No signup, no commitment — just a number to plan around.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:2.5rem;align-items:start;">
+
+      <!-- Estimator -->
+      <div class="estimator-card" role="form" aria-label="Moving cost estimator">
+        <div class="est-head">
+          <h2>Moving Labor Estimator</h2>
+          <p>Fill in your details — estimate updates instantly.</p>
+        </div>
+        <div class="est-body">
+
+          <!-- Home size -->
+          <div class="est-group">
+            <label for="home-size">Home size</label>
+            <select id="home-size">
+              <option value="0">— Select —</option>
+              <option value="1.5">Studio / 1 room</option>
+              <option value="2">1 Bedroom</option>
+              <option value="3.5">2 Bedrooms</option>
+              <option value="5">3 Bedrooms</option>
+              <option value="7">4+ Bedrooms</option>
+            </select>
+          </div>
+
+          <!-- Services -->
+          <div class="est-group">
+            <label>Services needed <span style="font-weight:400;text-transform:none;letter-spacing:0;font-family:var(--font-body);font-size:var(--text-xs);color:var(--ink-muted);">(select all that apply)</span></label>
+            <div class="checkbox-row" role="group" aria-label="Select services">
+              <label class="svc-toggle"><input type="checkbox" name="svc" value="1" data-label="Loading"> Loading</label>
+              <label class="svc-toggle"><input type="checkbox" name="svc" value="1" data-label="Unloading"> Unloading</label>
+              <label class="svc-toggle"><input type="checkbox" name="svc" value="0.5" data-label="Packing"> Packing</label>
+              <label class="svc-toggle"><input type="checkbox" name="svc" value="0.5" data-label="Unpacking"> Unpacking</label>
+              <label class="svc-toggle"><input type="checkbox" name="svc" value="0.5" data-label="Assembly"> Furniture Assembly</label>
+              <label class="svc-toggle"><input type="checkbox" name="svc" value="0.3" data-label="Disassembly"> Furniture Disassembly</label>
+            </div>
+          </div>
+
+          <!-- Floors / access -->
+          <div class="est-group">
+            <label for="floors">Access difficulty</label>
+            <select id="floors">
+              <option value="1.0">Ground floor, easy access</option>
+              <option value="1.1">1 flight of stairs</option>
+              <option value="1.2">2+ flights of stairs</option>
+              <option value="1.15">Elevator building</option>
+              <option value="1.25">Long carry distance (far parking)</option>
+            </select>
+          </div>
+
+          <!-- Result -->
+          <div class="est-result" id="est-result" aria-live="polite" aria-label="Estimate result">
+            <span class="result-label">Estimated cost</span>
+            <p class="result-price" id="result-price">Select options above</p>
+            <p class="result-note" id="result-note"></p>
+            <div class="est-breakdown" id="result-breakdown" style="display:none;"></div>
+            <p class="disclaimer">This is a ballpark estimate only, not a binding quote.
+              Actual cost depends on exact job scope confirmed with our team.
+              Flat hourly rate · No fuel or mileage fees.</p>
+          </div>
+
+          <div id="est-cta" style="display:none;margin-top:1.5rem;">
+            <a href="quote.html" class="btn btn-primary w-full" style="justify-content:center;">
+              Get Your Exact Free Quote →
+            </a>
+            <p style="font-size:var(--text-xs);color:var(--ink-muted);margin-top:.5rem;text-align:center;">
+              We respond within one business day with your crew size and flat hourly rate.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar-info">
+        <div class="card">
+          <h4>How our pricing works</h4>
+          <ul class="checklist" style="margin-top:.5rem;">
+            <li>Flat hourly rate — one number, confirmed before we start</li>
+            <li>No fuel surcharges or mileage fees</li>
+            <li>No travel time charges within our service area</li>
+            <li>Materials (boxes, tape) billed only if we supply them</li>
+            <li>2-hour minimum; 30-minute increments after that</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Current rates</h4>
+          <p style="font-size:var(--text-sm);">2-person crew: <strong>$95/hour</strong></p>
+          <p style="font-size:var(--text-sm);">3-person crew: <strong>$[RATE-3]/hour</strong></p>
+          <p style="font-size:var(--text-sm);color:var(--ink-muted);">
+            Larger crews quoted per job. Rates confirmed before work begins.
+          </p>
+        </div>
+        <div class="card card-navy">
+          <h4 style="color:var(--white);">Prefer to talk it through?</h4>
+          <p style="color:#B0BBC8;font-size:var(--text-sm);margin-bottom:.85rem;">Call us directly — we can usually give you a verbal estimate in a few minutes.</p>
+          <a href="tel:(971) 302-0120" class="btn btn-outline-light w-full" style="justify-content:center;">📞 (971) 302-0120</a>
+        </div>
+        <div class="card" style="background:var(--gray-100);">
+          <h4>Remember: labor only</h4>
+          <p style="font-size:var(--text-sm);">This estimate covers our crew's time only. You arrange your own truck, trailer, POD, or container — we provide the movers.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="brand"><img src="assets/logo-mark.svg" class="brand-logo" alt="" width="38" height="38"><div class="brand-text"><span class="brand-name">Rest Assured Moving</span><span class="brand-sub">Moving Labor · Salem, OR</span></div></a><p class="footer-desc">Professional moving labor in Salem, Oregon. Loading, unloading, packing, unpacking, and furniture assembly. You bring the truck — we bring the crew.</p></div>
+      <div class="footer-col"><h4>Pages</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About Us</a></li><li><a href="service-area.html">Service Area</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul role="list"><li><a href="services.html#loading">Loading</a></li><li><a href="services.html#unloading">Unloading</a></li><li><a href="services.html#packing">Packing</a></li><li><a href="services.html#unpacking">Unpacking</a></li><li><a href="services.html#assembly">Furniture Assembly</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="14" height="14"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 7.18 2 2 0 015 5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 12a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 19.92z"/></svg><a href="tel:(971) 302-0120">(971) 302-0120</a></div><div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:Shawn@restassuredmoving.net">Shawn@restassuredmoving.net</a></div><div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Mon–Sat, 7am–7pm</span></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; <span data-year>2024</span> Rest Assured Moving LLC. All rights reserved.</p><p class="footer-legal">Moving labor services only. We do not provide transportation, truck rental, or hauling.</p></div>
+  </div>
+</footer>
+<div class="mobile-cta" role="region" aria-label="Quick contact"><a href="tel:(971) 302-0120" class="btn btn-outline-light">📞 Call Now</a><a href="quote.html" class="btn btn-primary">Get a Quote</a></div>
+<script src="script.js"></script>
+<script>
+(function() {
+  var RATE   = 95;   // ← replace 95 with your 2-person hourly rate (number only, e.g. 95)
+  var RATE3  = 130;  // ← replace 130 with your 3-person rate
+  var MIN_HRS = 2;
+
+  function estimate() {
+    var homeHrs  = parseFloat(document.getElementById('home-size').value) || 0;
+    var accessMult = parseFloat(document.getElementById('floors').value)  || 1;
+    var svcInputs  = document.querySelectorAll('input[name="svc"]:checked');
+
+    if (!homeHrs || !svcInputs.length) {
+      document.getElementById('result-price').textContent = 'Select options above';
+      document.getElementById('result-note').textContent  = '';
+      document.getElementById('result-breakdown').style.display = 'none';
+      document.getElementById('est-cta').style.display = 'none';
+      return;
+    }
+
+    var svcMult = 0;
+    var svcNames = [];
+    svcInputs.forEach(function(inp) {
+      svcMult += parseFloat(inp.value);
+      svcNames.push(inp.dataset.label);
+    });
+
+    var rawHrs  = homeHrs * svcMult * accessMult;
+    var loHrs   = Math.max(MIN_HRS, Math.round((rawHrs * 0.85) * 2) / 2);
+    var hiHrs   = Math.round((rawHrs * 1.25) * 2) / 2;
+    var crew    = hiHrs >= 5 && homeHrs >= 3.5 ? 3 : 2;
+    var rate    = crew === 3 ? RATE3 : RATE;
+    var loTotal = loHrs * rate;
+    var hiTotal = hiHrs * rate;
+
+    document.getElementById('result-price').textContent =
+      '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal);
+    document.getElementById('result-note').textContent =
+      'Crew of ' + crew + ' · approx. ' + loHrs + '–' + hiHrs + ' hrs · $' + rate + '/hr';
+
+    var bd = document.getElementById('result-breakdown');
+    bd.style.display = 'block';
+    bd.innerHTML =
+      '<div><span>Services</span><span>' + svcNames.join(', ') + '</span></div>' +
+      '<div><span>Hourly rate</span><span>$' + rate + '/hr (' + crew + '-person crew)</span></div>' +
+      '<div><span>Est. hours</span><span>' + loHrs + '–' + hiHrs + ' hrs</span></div>' +
+      '<div><span>Fuel / mileage fees</span><span>$0.00</span></div>';
+
+    document.getElementById('est-cta').style.display = 'block';
+  }
+
+  document.getElementById('home-size').addEventListener('change', estimate);
+  document.getElementById('floors').addEventListener('change', estimate);
+  document.querySelectorAll('input[name="svc"]').forEach(function(cb) {
+    cb.addEventListener('change', estimate);
+  });
+})();
+</script>
+</body>
+</html>

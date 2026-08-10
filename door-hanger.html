@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Door Hanger — Rest Assured Moving LLC</title>
+<style>
+  /* Print at actual size: 4.25" × 11" = 1275 × 3300px at 300 DPI
+     Tell the printer to die-cut the doorknob hole at the top.
+     Open in browser → File → Print → "Actual Size" → Print to PDF, then send to printer. */
+  @page { size: 4.25in 11in; margin: 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+
+  .hanger {
+    width: 4.25in;
+    height: 11in;
+    background: #0F2547;
+    background-image: linear-gradient(170deg, #0a1d3b 0%, #0F2547 55%, #16335E 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Doorknob cutout guide — printer cuts this area */
+  .cutout-zone {
+    width: 1in;
+    height: .9in;
+    margin-top: .25in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cutout-circle {
+    width: .7in;
+    height: .7in;
+    border-radius: 50%;
+    background: #FAFAF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cutout-label {
+    font-family: 'Courier New', monospace;
+    font-size: 5pt;
+    color: rgba(255,255,255,.4);
+    margin-top: 3px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    text-align: center;
+  }
+
+  /* Top accent bar */
+  .accent-bar {
+    width: 100%;
+    height: .12in;
+    background: #1F7A5C;
+    margin-bottom: .25in;
+  }
+
+  /* Watermark shield */
+  .watermark {
+    position: absolute;
+    bottom: -1.2in;
+    right: -.8in;
+    opacity: .06;
+    width: 3.5in;
+  }
+
+  /* Shield mark */
+  .shield-wrap {
+    margin-bottom: .2in;
+  }
+
+  /* Headline */
+  .headline {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22pt;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.15;
+    padding: 0 .35in;
+    margin-bottom: .15in;
+  }
+  .headline em {
+    font-style: normal;
+    color: #2E9874;
+  }
+
+  /* Sub headline */
+  .sub {
+    font-size: 9pt;
+    color: #9AAABB;
+    text-align: center;
+    padding: 0 .4in;
+    line-height: 1.5;
+    margin-bottom: .3in;
+  }
+
+  /* Services list */
+  .services {
+    list-style: none;
+    margin: 0 0 .3in;
+    padding: 0 .35in;
+    width: 100%;
+  }
+  .services li {
+    display: flex;
+    align-items: center;
+    gap: .12in;
+    padding: .08in 0;
+    font-size: 9.5pt;
+    color: #FAFAF8;
+    border-bottom: 1px dotted rgba(255,255,255,.12);
+  }
+  .services li:last-child { border-bottom: none; }
+  .svc-check {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background: #1F7A5C;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .svc-check::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(40deg) translateY(-1px);
+  }
+
+  /* Divider */
+  .divider {
+    width: calc(100% - .7in);
+    height: 1px;
+    background: rgba(255,255,255,.2);
+    margin-bottom: .3in;
+  }
+
+  /* Trust badges */
+  .trust {
+    display: flex;
+    flex-direction: column;
+    gap: .08in;
+    margin-bottom: .3in;
+    padding: 0 .35in;
+    width: 100%;
+  }
+  .trust-item {
+    font-family: 'Courier New', monospace;
+    font-size: 7.5pt;
+    color: rgba(255,255,255,.65);
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: .1in;
+  }
+  .trust-item::before {
+    content: "✓";
+    color: #2E9874;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+
+  /* Offer badge */
+  .offer-badge {
+    border: 1.5px solid #2E9874;
+    border-radius: 999px;
+    padding: .08in .25in;
+    font-family: 'Courier New', monospace;
+    font-size: 8pt;
+    font-weight: 700;
+    color: #2E9874;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .25in;
+    width: calc(100% - .7in);
+    text-align: center;
+  }
+
+  /* CTA -->  */
+  .cta-section {
+    background: rgba(255,255,255,.05);
+    border-top: 1px solid rgba(255,255,255,.12);
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    width: 100%;
+    padding: .25in .35in;
+    text-align: center;
+    margin-bottom: .25in;
+  }
+  .cta-label {
+    font-family: 'Courier New', monospace;
+    font-size: 7pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.45);
+    display: block;
+    margin-bottom: .1in;
+  }
+  .cta-phone {
+    font-family: 'Courier New', monospace;
+    font-size: 18pt;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: block;
+    letter-spacing: .02em;
+    margin-bottom: .06in;
+  }
+  .cta-web {
+    font-family: 'Courier New', monospace;
+    font-size: 8pt;
+    color: #2E9874;
+    display: block;
+  }
+
+  /* Bottom -->  */
+  .bottom-section {
+    padding: 0 .35in .3in;
+    text-align: center;
+    width: 100%;
+  }
+  .company-name {
+    font-family: Georgia, serif;
+    font-size: 11pt;
+    font-weight: 700;
+    color: rgba(255,255,255,.85);
+    margin-bottom: 2px;
+  }
+  .area-list {
+    font-family: 'Courier New', monospace;
+    font-size: 6.5pt;
+    color: rgba(255,255,255,.35);
+    letter-spacing: .04em;
+    line-height: 1.6;
+  }
+  .disclaimer {
+    font-size: 6pt;
+    color: rgba(255,255,255,.2);
+    font-style: italic;
+    margin-top: .12in;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<div class="hanger">
+
+  <!-- Watermark -->
+  <svg class="watermark" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M100,10 L168,38 L168,104 C168,154 138,184 100,208 C62,184 32,154 32,104 L32,38 Z" fill="#FFFFFF"/>
+  </svg>
+
+  <!-- Doorknob cutout -->
+  <div class="cutout-zone">
+    <div class="cutout-circle">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <circle cx="14" cy="14" r="12" fill="none" stroke="#D4D8D4" stroke-width="1.5" stroke-dasharray="4,3"/>
+      </svg>
+    </div>
+    <span class="cutout-label">Die-cut hole</span>
+  </div>
+
+  <div class="accent-bar"></div>
+
+  <!-- Shield -->
+  <div class="shield-wrap">
+    <svg width="62" height="70" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><linearGradient id="dhsg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#16335E"/><stop offset="100%" stop-color="#0F2547"/></linearGradient></defs>
+      <path d="M100,10 L168,38 L168,104 C168,154 138,184 100,208 C62,184 32,154 32,104 L32,38 Z" fill="url(#dhsg)" stroke="#D4D8D4" stroke-width="2.5"/>
+      <path d="M66,100 L100,64 L134,100 Z" fill="#1F7A5C"/>
+      <rect x="72" y="100" width="56" height="50" fill="#1F7A5C"/>
+      <line x1="66" y1="100" x2="134" y2="100" stroke="#0F2547" stroke-width="2.5"/>
+      <path d="M84,124 L96,139 L120,106" fill="none" stroke="#FAFAF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Headline -->
+  <p class="headline">Just moved in?<br><em>We can finish the job.</em></p>
+  <p class="sub">Boxes to unpack. Furniture to put together. Loading help you still need. We're the local crew for all of it.</p>
+
+  <!-- Services -->
+  <ul class="services" role="list">
+    <li><span class="svc-check" aria-hidden="true"></span> Loading &amp; Unloading</li>
+    <li><span class="svc-check" aria-hidden="true"></span> Packing &amp; Unpacking</li>
+    <li><span class="svc-check" aria-hidden="true"></span> Furniture Assembly</li>
+    <li><span class="svc-check" aria-hidden="true"></span> Furniture Disassembly</li>
+  </ul>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- Trust -->
+  <div class="trust">
+    <p class="trust-item">Licensed &amp; Insured</p>
+    <p class="trust-item">Locally Owned &amp; Operated</p>
+    <p class="trust-item">Flat Hourly Rate — No Hidden Fees</p>
+    <p class="trust-item">Free, No-Obligation Quotes</p>
+  </div>
+
+  <!-- Offer -->
+  <div class="offer-badge">Free Quote · Same-Day Response</div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <span class="cta-label">Call or visit us online</span>
+    <span class="cta-phone">(971) 302-0120</span>
+    <span class="cta-web">[WEBSITE URL]</span>
+  </div>
+
+  <!-- Bottom -->
+  <div class="bottom-section">
+    <p class="company-name">Rest Assured Moving LLC</p>
+    <p class="area-list">
+      Salem · Keizer · Woodburn · Albany · McMinnville<br>
+      Beaverton · Hillsboro · Tigard · Portland Metro
+    </p>
+    <p class="disclaimer">Moving labor only — we do not provide transportation, truck rental, or hauling services.</p>
+  </div>
+
+</div>
+<script>/* Print: File → Print → Paper: Custom 4.25" × 11" → Scale: 100% → Print as PDF → Send to printer with die-cut specs. */</script>
+</body>
+</html>

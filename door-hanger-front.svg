@@ -1,0 +1,62 @@
+<svg viewBox="0 0 425 1100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC door hanger">
+  <defs>
+    <linearGradient id="dhBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F2547"/>
+      <stop offset="100%" stop-color="#16335E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="425" height="1100" fill="url(#dhBg)" rx="14"/>
+
+  <!-- Doorknob cutout guide (printer: die-cut this circle + slit to the edge) -->
+  <circle cx="212" cy="95" r="55" fill="#FAFAF8"/>
+  <text x="212" y="100" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#9AA7BB">DIE-CUT HOLE</text>
+  <rect x="197" y="40" width="30" height="55" fill="#FAFAF8"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="200" width="425" height="6" fill="#1F7A5C"/>
+
+  <!-- Shield mark -->
+  <g transform="translate(130,235) scale(0.85)">
+    <path d="M100,12 L166,38 L166,102 C166,150 138,182 100,206 C62,182 34,150 34,102 L34,38 Z"
+          fill="#16335E" stroke="#D9DEDC" stroke-width="3"/>
+    <path d="M68,98 L100,66 L132,98 Z" fill="#1F7A5C"/>
+    <rect x="74" y="98" width="52" height="48" fill="#1F7A5C"/>
+    <path d="M68,98 H132" stroke="#0F2547" stroke-width="2"/>
+    <path d="M86,122 L97,136 L118,108" fill="none" stroke="#EFF2F0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="212" y="465" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#FFFFFF">Rest Assured</text>
+  <text x="212" y="505" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#FFFFFF">Moving</text>
+
+  <!-- Headline -->
+  <text x="212" y="580" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#2E9874">Just moved in?</text>
+  <text x="212" y="615" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#FFFFFF">Let us handle what's left.</text>
+
+  <!-- Body copy -->
+  <foreignObject x="40" y="650" width="345" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #C9D2DD; text-align: center; line-height: 1.5;">
+      Still got boxes to unpack or furniture to put back together? We handle unpacking, assembly, and the parts of moving day nobody wants to finish.
+    </div>
+  </foreignObject>
+
+  <!-- Services list -->
+  <g font-family="'Courier New', monospace" font-size="13" fill="#FFFFFF">
+    <text x="212" y="850" text-anchor="middle">LOADING &#183; UNLOADING</text>
+    <text x="212" y="875" text-anchor="middle">PACKING &#183; UNPACKING</text>
+    <text x="212" y="900" text-anchor="middle">FURNITURE ASSEMBLY</text>
+  </g>
+
+  <line x1="60" y1="930" x2="365" y2="930" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+  <!-- Offer stamp -->
+  <rect x="112" y="950" width="200" height="40" rx="20" fill="none" stroke="#2E9874" stroke-width="1.5"/>
+  <text x="212" y="975" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="1" fill="#2E9874">FREE QUOTES &#183; NO OBLIGATION</text>
+
+  <!-- Contact -->
+  <text x="212" y="1030" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">(971) 302-0120</text>
+  <text x="212" y="1055" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#9AA7BB">[WEBSITE URL]</text>
+  <text x="212" y="1080" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#7E8CA3">Moving labor only &mdash; no transportation services provided</text>
+</svg>
