@@ -24,6 +24,8 @@ Version 2.0 | 42 files | GitHub Pages ready | All tasks validated
 
 ## Complete File Structure
 
+> In this repository every file sits at the root (only `assets/` and `tools/` are subfolders) so GitHub Pages can serve it directly. The tree below groups files by purpose.
+
 ```
 rest-assured-moving/
 │
@@ -36,7 +38,8 @@ rest-assured-moving/
 │   ├── contact.html                       ← General inquiries form
 │   ├── faq.html                           ← 20+ questions with FAQPage schema
 │   ├── service-area.html                  ← 9-city local SEO page
-│   ├── quote.html                         ← 3-step quote request form
+│   ├── quote.html                         ← 3-step quote request form (sends leads to your inbox)
+│   ├── estimate.html                      ← Instant cost estimator → pre-fills the quote form
 │   ├── thank-you.html                     ← Post-form confirmation page
 │   ├── 404.html                           ← Custom not-found page
 │   ├── blog.html                          ← Blog landing page
@@ -44,9 +47,10 @@ rest-assured-moving/
 │   ├── blog-packing-fragile-items.html    ← Blog post 2
 │   ├── blog-furniture-assembly-best-practices.html ← Blog post 3
 │   ├── style.css                          ← Full design system (all components)
-│   ├── script.js                          ← Nav · form · FAQ · stats · year
+│   ├── script.js                          ← Lead delivery · attribution · quote form · nav · FAQ
 │   ├── robots.txt                         ← Crawl rules + sitemap pointer
-│   ├── sitemap.xml                        ← 11-page XML sitemap
+│   ├── sitemap.xml                        ← 12-page XML sitemap
+│   ├── tools/set-domain.sh                ← Fills [YOUR-DOMAIN] everywhere in one command
 │   ├── IMAGE_GUIDE.md                     ← Page-by-page image specs + photo brief
 │   └── assets/
 │       ├── logo-mark.svg                  ← Shield mark (favicon, nav, avatars)
@@ -92,39 +96,58 @@ rest-assured-moving/
 
 ---
 
-## Step 1 — Replace All Placeholders (do this before anything else)
+## Step 1 — Turn On Lead Delivery (do this first — it's how the site makes money)
 
-Global find-and-replace across the entire project folder:
+Both forms (`quote.html`, `contact.html`) now send leads **directly to `Shawn@restassuredmoving.net`** through [FormSubmit](https://formsubmit.co) — free, no account, no server. The visitor never needs an email app.
 
-| Placeholder | Replace with | Used in |
-|---|---|---|
-| `(971) 302-0120` | `(503) 555-XXXX` | Website, GBP, templates, collateral |
-| `Shawn@restassuredmoving.net` | `your@email.com` | Website, GBP, templates, collateral |
-| `[WEBSITE URL]` | `https://restassuredmovingllc.com` | Website meta, templates, collateral |
-| `[YOUR-DOMAIN]` | `restassuredmovingllc.com` | Canonical URLs, schema, sitemap |
-| `97301` | Your Salem ZIP | Schema markup in index.html |
-| `95` | Your hourly rate (e.g. `85`) | services.html, FAQ, AI knowledge base |
-| `[#]` (crew size) | Default crew size (e.g. `2`) | Services, FAQ, templates |
-| `2024` | Year business founded | about.html |
-| `[REVIEW LINK]` | Your Google review URL | Email templates, AI knowledge base |
-| `25` (referral) | Referral discount amount | Referral cards |
-| `Cash, Cash App, Zelle, Venmo, card and Paypal` | Your accepted methods | FAQ, invoice, AI knowledge base |
-| `Shawn Vincent` | Your full name | Business card back |
-| `Owner` | Your title (e.g. `Owner`) | Business card back |
-| `[PIXEL-ID]` | Meta Pixel ID (from Business Manager) | Advertising strategy instructions |
+1. Deploy the site (Step 3), open `quote.html` on the live site, and submit a test request.
+2. FormSubmit emails `Shawn@restassuredmoving.net` an **"Activate Form"** link. Click it. **Until you do, no leads are delivered** (visitors get the email fallback below instead).
+3. Submit a second test — it should land in the inbox as a formatted table, and the visitor lands on `thank-you.html`.
+4. *(Recommended)* FormSubmit's activation email includes a random alias. Paste it into `FORM_ID` at the top of `script.js` so the real address isn't in the page source (reduces spam).
 
-**In VS Code:** Ctrl+Shift+H → check "Search across files" → find each placeholder → replace all.
+**What every lead email contains:** name, phone, email, best time to call, services, move date + flexibility, home size, truck status, pickup, destination, notes, "how did you hear about us", the instant estimate they saw (if they came from `estimate.html`), and **lead source** (UTM tags / `gclid` / `fbclid` / referrer) — so you can see which ads and channels actually produce jobs.
 
-**Replace testimonials on index.html** — the 3 testimonial cards are marked as placeholders. Swap them with real customer reviews before publishing.
+**Safety nets — a lead is never silently dropped:**
+- If FormSubmit is down, not activated, or the network fails, the visitor gets a one-tap pre-filled email to you plus the phone number.
+- With JavaScript disabled, the form posts to FormSubmit natively.
+- A hidden honeypot field filters bot spam.
+- Each submission pushes a `generate_lead` event to `dataLayer` (and `fbq('track','Lead')` if the Meta Pixel is installed), so Google Ads / GA4 / Meta conversion tracking works as soon as you add their tags.
+
+**Changing the destination email:** edit `LEAD_EMAIL` in `script.js` and the `action="https://formsubmit.co/…"` attribute on the two `<form>` tags, then re-activate.
 
 ---
 
-## Step 2 — Deploy to GitHub Pages
+## Step 2 — Set Your Domain
+
+Canonical URLs, Open Graph tags, schema, `sitemap.xml` and `robots.txt` still contain `[YOUR-DOMAIN]`. Once you know the live address, run:
+
+```bash
+./tools/set-domain.sh restassuredmoving.net                  # custom domain
+# or, before you have one:
+./tools/set-domain.sh 503vincent24-spec.github.io/Rest-Assured
+```
+
+Then submit `https://<domain>/sitemap.xml` in Google Search Console.
+
+### Business details already filled in
+
+| Detail | Current value | Where to change it |
+|---|---|---|
+| Phone | `(971) 302-0120` (links use `tel:+19713020120`) | All pages, `script.js` (`PHONE`, `TEL`) |
+| Email | `Shawn@restassuredmoving.net` | All pages, `script.js` (`LEAD_EMAIL`), form `action`s |
+| Hourly rate | `$95` (2-person) / `$130` (3-person) | `estimate.html` (`RATE`, `RATE3`), services, FAQ |
+| Payment methods | Cash, Cash App, Zelle, Venmo, card and PayPal | FAQ, invoice, AI knowledge base |
+
+Still to replace by hand: `[REVIEW LINK]` (email templates / AI knowledge base), `[PIXEL-ID]` (advertising strategy), and the placeholder testimonials on `index.html` — swap in real reviews before running ads.
+
+---
+
+## Step 3 — Deploy to GitHub Pages
 
 **Quickest path (5 minutes):**
 1. Create a GitHub account at github.com
 2. New repository → name it (e.g., `restassuredmoving`)
-3. Upload all files from the `website/` folder to the repository root
+3. The website already lives at this repository's root (pages, `style.css`, `script.js`, `assets/`), so there is nothing to move
 4. Repository Settings → Pages → Source: `main` branch, `/ (root)` folder → Save
 5. Site goes live at `https://[username].github.io/[repo-name]/`
 
@@ -142,13 +165,13 @@ Global find-and-replace across the entire project folder:
 4. Enable "Enforce HTTPS" in Pages settings
 
 **After deploying:**
-- Update all `[YOUR-DOMAIN]` placeholders with your real domain
+- Run `./tools/set-domain.sh <your-domain>` (Step 2)
 - Submit `sitemap.xml` to Google Search Console
 - Verify domain in Meta Business Manager (for Facebook advertising)
 
 ---
 
-## Step 3 — Pre-Launch Checklist
+## Step 4 — Pre-Launch Checklist
 
 **Content:**
 - [ ] All placeholders replaced globally
@@ -161,8 +184,8 @@ Global find-and-replace across the entire project folder:
 - [ ] Site tested in Chrome, Safari, Firefox
 - [ ] Site tested on a real mobile device
 - [ ] All nav links work
-- [ ] Quote form tested end-to-end (submit → email opens correctly)
-- [ ] Contact form tested end-to-end
+- [ ] FormSubmit activated (Step 1) and a test quote arrived in the inbox
+- [ ] Contact form test message arrived in the inbox
 - [ ] Footer `data-year` auto-updates (confirm it shows current year)
 - [ ] Phone numbers are clickable on mobile (tel: links)
 
@@ -179,10 +202,10 @@ Global find-and-replace across the entire project folder:
 
 ---
 
-## Step 4 — Going Live (Day of Launch)
+## Step 5 — Going Live (Day of Launch)
 
 - [ ] Push all files to GitHub → confirm live URL loads
-- [ ] Test quote form from a real phone (critical path)
+- [ ] Submit a real quote from a phone and confirm it lands in the inbox (critical path)
 - [ ] Upload photos to Google Business Profile (minimum: logo + cover)
 - [ ] Publish Facebook page (set to Public)
 - [ ] Post the pinned intro post (Post 1 from `FACEBOOK_CONTENT.md`)
@@ -191,7 +214,7 @@ Global find-and-replace across the entire project folder:
 
 ---
 
-## Step 5 — First 30 Days After Launch
+## Step 6 — First 30 Days After Launch
 
 **Week 1:** Google Business Profile active → request first reviews from any completed jobs
 **Week 2:** Facebook posting underway (3x/week from `FACEBOOK_CONTENT.md`)
@@ -204,11 +227,11 @@ Global find-and-replace across the entire project folder:
 
 **style.css** — All colors, fonts, spacing are CSS custom properties at the top of the file. Change a value once to update it everywhere.
 
-**script.js** — Vanilla JS. Controls: mobile nav toggle, multi-step quote form (3 steps), form validation, FAQ accordion, stat counter animation, year auto-update, smooth scroll.
+**script.js** — Vanilla JS. Controls: lead delivery + fallback, lead-source attribution, multi-step quote form with validation and estimator prefill, mobile nav, FAQ accordion, stat counter animation, year auto-update, smooth scroll.
 
-**Schema markup** — JSON-LD blocks are in every page's `<head>`. Update `[YOUR-DOMAIN]`, `(971) 302-0120`, and `Shawn@restassuredmoving.net` for full SEO benefit.
+**Schema markup** — JSON-LD blocks are in every page's `<head>`. `./tools/set-domain.sh` fills in the domain.
 
-**Forms** — Both forms (quote.html and contact.html) use `mailto:` to open the user's email client. This requires no backend and no monthly cost. To upgrade to a true form backend, see Formspree.io or Netlify Forms (README deployment notes).
+**Forms** — `quote.html` and `contact.html` POST to FormSubmit via `fetch`, fall back to a pre-filled `mailto:` if delivery fails, and redirect to `thank-you.html` on success. `quote.html` is a 3-step form; the steps collapse only when JavaScript runs, so it still works without JS. `estimate.html` passes the visitor's answers and ballpark price into `quote.html` via the URL. Config lives at the top of `script.js`.
 
 **estimate-template.html / invoice-template.html** — Open in any browser → File → Print → Save as PDF for a clean branded PDF. Or print directly.
 
