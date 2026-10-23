@@ -262,13 +262,14 @@
     <div class="footer-bottom"><p>&copy; <span data-year>2024</span> Rest Assured Moving LLC. All rights reserved.</p><p class="footer-legal">Moving labor services only. We do not provide transportation, truck rental, or hauling.</p></div>
   </div>
 </footer>
-<div class="mobile-cta" role="region" aria-label="Quick contact"><a href="tel:+19713020120" class="btn btn-outline-light">📞 Call Now</a><a href="quote.html" class="btn btn-primary">Get a Quote</a></div>
+<div class="mobile-cta" role="region" aria-label="Quick contact"><a href="tel:+19713020120" class="btn btn-outline-light">📞 Call</a><a href="sms:+19713020120" class="btn btn-outline-light">💬 Text</a><a href="quote.html" class="btn btn-primary">Get a Quote</a></div>
 <script src="script.js"></script>
 <script>
 (function() {
   var RATE   = 95;   // ← replace 95 with your 2-person hourly rate (number only, e.g. 95)
   var RATE3  = 130;  // ← replace 130 with your 3-person rate
   var MIN_HRS = 2;
+  var CREW3_SPEED = 1.4; // a 3-person crew works ~1.4× faster than 2
 
   function estimate() {
     var homeHrs  = parseFloat(document.getElementById('home-size').value) || 0;
@@ -290,16 +291,21 @@
       svcNames.push(inp.dataset.label);
     });
 
+    // rawHrs is in 2-person crew hours. Bigger jobs get a third mover, who
+    // finishes the same work in less time (~1.4× a 2-person crew's pace).
     var rawHrs  = homeHrs * svcMult * accessMult;
+    var crew    = rawHrs * 1.25 >= 5 && homeHrs >= 3.5 ? 3 : 2;
+    if (crew === 3) rawHrs = rawHrs / CREW3_SPEED;
     var loHrs   = Math.max(MIN_HRS, Math.round((rawHrs * 0.85) * 2) / 2);
-    var hiHrs   = Math.round((rawHrs * 1.25) * 2) / 2;
-    var crew    = hiHrs >= 5 && homeHrs >= 3.5 ? 3 : 2;
+    var hiHrs   = Math.max(loHrs, Math.round((rawHrs * 1.25) * 2) / 2);
     var rate    = crew === 3 ? RATE3 : RATE;
     var loTotal = loHrs * rate;
     var hiTotal = hiHrs * rate;
 
-    document.getElementById('result-price').textContent =
-      '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal);
+    var priceText = loTotal === hiTotal
+      ? '$' + Math.round(loTotal)
+      : '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal);
+    document.getElementById('result-price').textContent = priceText;
     document.getElementById('result-note').textContent =
       'Crew of ' + crew + ' · approx. ' + loHrs + '–' + hiHrs + ' hrs · $' + rate + '/hr';
 
@@ -319,7 +325,7 @@
       services:  svcNames.map(function(n) { return QUOTE_NAMES[n] || n; }).join(','),
       home_size: sizeSel.options[sizeSel.selectedIndex].text,
       access:    accessSel.options[accessSel.selectedIndex].text,
-      estimate:  '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal) + ' (' + crew + '-person crew, ' + loHrs + '–' + hiHrs + ' hrs)'
+      estimate:  priceText + ' (' + crew + '-person crew, ' + loHrs + '–' + hiHrs + ' hrs)'
     });
     document.getElementById('est-quote-link').href = 'quote.html?' + qp.toString();
     document.getElementById('est-cta').style.display = 'block';
