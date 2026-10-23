@@ -5,49 +5,148 @@ organic reach patterns — treat it as its own channel, not a Facebook copy.
 
 ---
 
-## 1. Profile Setup
+## 1. Profile Setup (built to get inquiries)
 
-**Username:** @restassuredmoving (preferred) or @restassuredmovingsalem
-**Name field:** Rest Assured Moving LLC (appears in search — use full name)
-**Category:** Moving Company or Local Business
+Instagram turns followers into customers in three places: the **bio**
+(what you do, where, for how much), the **contact buttons** (call, text,
+quote), and **fast replies** to messages. Set up all three before posting.
 
-**Bio (150 character limit):**
+1. **Create the account** on your phone with `Shawn@restassuredmoving.net`
+   and turn on two-step verification.
+2. **Switch to a business account:** Settings → *Account type and tools*
+   → *Switch to professional account* → **Business** → category **Moving
+   Company** (or *Local Service* if Moving Company isn't offered).
+3. **Connect it to the Facebook Page** when Instagram asks. Messages from
+   both then arrive in one Meta Business Suite inbox, and Facebook ads can
+   run on Instagram later.
+
+| Field | Enter exactly |
+|---|---|
+| **Username** | `@restassuredmoving` (or `@restassuredmovingllc` / `@restassuredmovingsalem` if taken) |
+| **Name** *(searchable on Instagram, so include what people search for)* | `Rest Assured Moving · Salem Moving Help` |
+| **Profile photo** | `assets/social/profile-1000.png` |
+| **Contact options** | Phone **(971) 302-0120** with **Call and Text** both on · Email `Shawn@restassuredmoving.net` |
+| **Address** | Leave blank (service-area business). Set **Salem, Oregon** as the city if asked |
+
+**Bio (150 characters max; this version is about 140):**
 ```
-Moving labor in Salem, OR 📦
-Loading · Unloading · Packing · Assembly
-You bring the truck. We bring the crew. ✅
+Moving labor: load · unload · pack · assemble 📦
+You bring the truck, we bring the crew
+From $95/hr · Salem–Portland
+👇 Text for a free quote
 ```
 
-**Link in bio:** Use a link-in-bio tool (Linktree, free) to point to:
-1. Get a Free Quote (quote.html)
-2. Our Services (services.html)
-3. Call Us ((971) 302-0120 as a tel: link)
+**Links (Instagram allows up to 5; add them in this order):**
 
-Or simply link directly to the quote page if only one link is needed.
+| Title | URL |
+|---|---|
+| Free quote | `https://[WEBSITE URL]/quote.html?utm_source=instagram&utm_medium=social&utm_campaign=ig-bio` |
+| See prices | `https://[WEBSITE URL]/estimate.html?utm_source=instagram&utm_medium=social&utm_campaign=ig-bio-estimate` |
 
-**Contact button:** Enable via "Edit Profile" → "Contact Options" → add phone number and email
-
-**Profile photo:** `logo-mark-180.png` — the shield icon works well as a square avatar
+Link straight to the quote page. Link-in-bio tools like Linktree add an
+extra tap, and every extra tap loses some customers. The UTM tags mean
+every lead email says it came from Instagram.
 
 ---
 
-## 2. Story Highlights (permanent featured Stories at top of profile)
+## 2. Story Highlights (permanent, shown under the bio)
 
-Create these 4 highlight covers using Canva at 1080 × 1920px, navy background with emerald icon and white label:
+Highlights are the first thing new visitors tap. Use them to answer
+"how much, what, where, how do I book" before anyone has to ask. The
+covers are ready in `assets/social/instagram/highlight-*.png`.
 
-| Highlight name | Cover icon | Content to add |
-|---|---|---|
-| **Services** | Checklist icon | Screenshots or graphics of each service; "Loading, Unloading, Packing, Unpacking, Assembly" |
-| **Reviews** | Star icon | Customer review screenshots (with permission); star rating graphics |
-| **How It Works** | Arrow/steps icon | 3-step process (quote → crew → done); the manifest card graphic |
-| **FAQ** | Question mark icon | Short text slides answering the 5 most common questions |
+| Order | Highlight | Cover | What to put in it |
+|---|---|---|---|
+| 1 | **Prices** | `highlight-prices.png` | Post `ig-02-prices.png` as a Story · "$95/hr for 2 movers, $130/hr for 3, 2-hr minimum" |
+| 2 | **Book** | `highlight-book.png` | `ig-06-text-for-quote.png` · a Story with a **Link sticker** to the quote page (UTM `ig-story`) |
+| 3 | **Services** | `highlight-services.png` | `ig-04-labor-only.png` · short clips of loading, wrapping, assembly |
+| 4 | **Areas** | `highlight-areas.png` | `ig-05-service-area.png` |
+| 5 | **Reviews** | `highlight-reviews.png` | Screenshots of **real** Google reviews only, shared with the customer's OK. Add this highlight once you have the first one |
 
-**How to create highlights:**
-1. Post a Story
-2. Go to your profile → "New" under Highlights
-3. Select the Story → name the highlight → choose cover
+To create one: post the image as a Story → profile → **New** (the +
+under the bio) → choose the Story → name it → *Edit cover* → pick the
+matching cover from your camera roll.
 
 ---
+
+## 2a. Turning Messages into Booked Jobs
+
+Most Instagram customers will **message** you instead of filling out the
+form. How fast you reply decides whether you get the job.
+
+**Turn on automatic replies.** In Meta Business Suite → Inbox →
+Automations (covers Instagram and Facebook together):
+
+- **Instant reply** (sent the moment someone messages):
+  ```
+  Thanks for reaching out to Rest Assured Moving! 👋 For a fast quote,
+  send: 1) your move date, 2) home size + any stairs, 3) the truck or
+  container you're using, 4) pickup & drop-off cities. We reply within
+  the hour, Mon–Sat 7am–7pm. Prefer to talk? Call/text (971) 302-0120.
+  ```
+- **Frequently asked questions** (tap-to-ask buttons in the chat):
+  - *How much does it cost?* → "$95/hr for 2 movers, $130/hr for 3, 2-hour minimum. Blankets & wrap included, no fuel or mileage fees. Most 1-bedroom loads run $190–$238."
+  - *Do you bring a truck?* → "We're labor-only, which keeps us cheaper than full-service movers. Book a U-Haul, Penske, or PODS, and we'll load and unload it."
+  - *What areas do you cover?* → "Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard & Portland Metro."
+  - *How do I book?* → "Send your move date and home size here, or text (971) 302-0120. We'll confirm the crew and rate in writing."
+- **Away message** (outside 7am–7pm): "We're off the clock but will reply first thing in the morning. Send your move date and home size and we'll have a quote ready."
+
+**Then reply personally within 15 minutes** during business hours. Use
+the 5 questions and the "ask for the booking" line in
+`SALES_PLAYBOOK.md` §2. Move to a phone call or text as soon as you can,
+because jobs get booked faster that way.
+
+**End every post** with one clear call to action: *"Text (971) 302-0120"*,
+*"DM us your move date"*, or *"Free quote: link in bio"*.
+
+---
+
+## 2b. Your First 9 Posts (fills the grid before you promote the account)
+
+Post these over the first 2–3 weeks, oldest first, so the profile looks
+established when people find it. Graphics are in
+`assets/social/instagram/`. **Tag the location (Salem, Oregon, or the
+job's city) on every post.** Instagram shows posts to nearby people.
+
+| # | Type | Asset | Caption (hook → body → call to action) |
+|---|---|---|---|
+| 1 | Image | `ig-01-intro.png` | **Rented the truck? We'll load it.** 💪 Rest Assured Moving is Salem's labor-only moving crew: loading, unloading, packing & furniture assembly. Licensed & insured, from $95/hr, no fuel fees. 📲 Text (971) 302-0120 for a free quote. |
+| 2 | Image | `ig-02-prices.png` | **Here's what moving help actually costs in Salem.** No "call for pricing" games. $95/hr for 2 movers, $130/hr for 3, blankets & wrap included. Save this for moving day 📌 and DM us your move date for an exact quote. |
+| 3 | Reel | Phone video: wrapping a dresser in blankets, 10–15 sec | **This is why your furniture arrives without scratches.** Every piece gets wrapped, every time, at no extra charge. Moving soon? Link in bio for a free quote. |
+| 4 | Image | `ig-04-labor-only.png` | **Why hire labor-only movers?** You book the U-Haul or PODS yourself and pay only for the crew, not full-service mover prices. Text (971) 302-0120. |
+| 5 | Reel | Time-lapse: empty rental truck → tightly packed, 15–20 sec | **2 hours of loading in 15 seconds.** ⏩ Heavy items low and forward, everything wrapped, no wasted space. You bring the truck, we bring the crew. Free quote: link in bio. |
+| 6 | Image | `ig-03-how-it-works.png` | **Booking us takes one text.** 1️⃣ Send your move details 2️⃣ Get your crew size + rate in writing 3️⃣ We do the heavy lifting. 📲 (971) 302-0120 |
+| 7 | Reel | Assembly reveal: flat-pack boxes → finished bed frame, 10–15 sec | **IKEA bed frame, start to finish. Zero leftover screws.** We do furniture assembly with or without a move. From $95/hr. DM "ASSEMBLY" for a quote. |
+| 8 | Image | `ig-05-service-area.png` | **Where we work** 📍 Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard & Portland Metro. No mileage fees inside our area. Which city are you moving to? 👇 |
+| 9 | Image | `ig-06-text-for-quote.png` *(pin this)* | **Get a quote in minutes.** Text us 3 things: your move date, home size, and your truck or container. That's it. 📲 (971) 302-0120 · Mon–Sat 7am–7pm |
+
+**Pin posts 9, 2, and 1** (open the post → ⋯ → *Pin to your profile*) so
+visitors always see how to book, what it costs, and what you do first.
+
+**Hashtags (add 3–5 at the end of each caption):** #SalemOregon #SalemOR
+#KeizerOR #MovingHelp #MovingLabor #FurnitureAssembly #RestAssuredMoving
+
+**Real photos and videos beat graphics.** After the first 9, aim for
+2 Reels and 1 image a week from actual jobs. Ask the customer first, and
+keep their faces, house numbers, and belongings with personal details
+out of the shot.
+
+---
+
+## 2c. Measuring What Instagram Actually Brings In
+
+Each month, check:
+- **Lead emails** with `utm_source=instagram` (from the bio link and
+  story links)
+- **"Heard about us: Instagram"** on the quote form (now in the menu)
+- **DMs and calls** that say they found you on Instagram (ask every caller
+  "How did you find us?")
+- **Profile → Professional dashboard → Insights**: profile visits,
+  link taps, and Call/Text button taps
+
+If Instagram produces fewer than 1–2 booked jobs a month after 90 days,
+cut back to reposting Facebook content once a week and put the time into
+Google reviews and the Moving Help marketplace instead.
 
 ## 3. Content Strategy: What Performs on Instagram
 

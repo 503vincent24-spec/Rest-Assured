@@ -26,6 +26,7 @@ or transport.**
 | Reviews from Cherry City Movers | ❌ Not done on purpose | See "Decisions" below |
 | Improve appeal and sales | ✅ Price table, promises, text buttons, estimator fixes, easier quote form | Homepage, `estimate.html`, `quote.html` |
 | Delete duplicate `mnt/` folder | ✅ Done | — |
+| Instagram and X (Twitter) accounts | ✅ Setup guide, 6 post graphics + 9-post plan, 5 highlight covers, X header | `INSTAGRAM_GUIDE.md`, `ONLINE_LISTINGS_LAUNCH_KIT.md` §3a–3b, `assets/social/instagram/` |
 | Show up in AI search (ChatGPT, Google AI, Perplexity, etc.) | ✅ Site side done; owner steps listed | `AI_SEARCH_VISIBILITY.md`, `llms.txt`, `robots.txt` |
 
 ## Checks run (all passing)

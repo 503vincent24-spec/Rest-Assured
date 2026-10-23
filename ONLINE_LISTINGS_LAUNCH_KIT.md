@@ -116,6 +116,35 @@ on it.
 
 ---
 
+## 3a. Instagram (step by step)
+
+Full setup is in `INSTAGRAM_GUIDE.md` §1–2c: business account, searchable
+name, bio, quote links, contact buttons, highlight covers, automatic
+message replies, and the first 9 posts with captions. Budget about
+45 minutes to set up, then 3 posts a week.
+
+## 3b. X / Twitter (reserve the name, 15 minutes)
+
+X rarely brings local moving customers. Claim the name so nobody else
+can, and so AI tools and Google see one more matching profile. Then
+leave it alone.
+
+1. Sign up at x.com with `Shawn@restassuredmoving.net`. Turn on two-step
+   verification.
+2. **Handle:** `@RestAssuredMove` (X caps handles at 15 characters).
+   Alternatives: `@RestAssuredLLC`, `@RAMovingSalem`.
+3. **Name:** `Rest Assured Moving LLC`
+4. **Profile photo:** `assets/social/profile-1000.png` ·
+   **Header:** `assets/social/x-header-1500x500.png`
+5. **Bio (160 max):**
+   ```
+   Licensed & insured moving labor in Salem, OR. Loading, unloading, packing & furniture assembly. You bring the truck, we bring the crew. 📲 (971) 302-0120
+   ```
+6. **Location:** `Salem, Oregon` · **Website:** `https://[WEBSITE URL]/?utm_source=x&utm_medium=social&utm_campaign=x-profile`
+7. Post `ig-06-text-for-quote.png` with "Moving in the Salem area? Text us your move date, home size, and truck. Free quotes in minutes. 📲 (971) 302-0120" and **pin it**.
+8. Check notifications once a week for messages. No regular posting
+   needed.
+
 ## 4. Image Map: Which File Goes Where
 
 All files are in `assets/social/` unless noted. To change wording on the
@@ -130,6 +159,8 @@ images, edit `tools/social-images.html` and re-run
 | Yelp | `profile-1000.png` | — | Real photos first, then `craigslist-ad-2-1200x900.png` |
 | Angi | `profile-1000.png` | — | `square-post-1080.png` + real job photos |
 | Craigslist | — | — | `craigslist-ad-1-1200x900.png` (lead image), `craigslist-ad-2-1200x900.png` |
+| Instagram | `profile-1000.png` | — (highlight covers: `instagram/highlight-*.png`) | `instagram/ig-01` … `ig-06` (1080×1350) + Reels |
+| X / Twitter | `profile-1000.png` | `x-header-1500x500.png` | `instagram/ig-06-text-for-quote.png` (pinned) |
 | Website link previews | `assets/og-image.png` (1200×630, used automatically when anyone shares the site) | | |
 
 ---
