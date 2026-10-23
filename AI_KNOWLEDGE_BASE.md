@@ -91,16 +91,16 @@ Say: "We're a labor-only company — we don't drive trucks or provide transporta
 ## PART 5 — PRICING
 
 **Structure:** Flat hourly rate based on crew size and job scope.
-**Rate:** $95 per hour for a crew of [#]. Larger crews quoted per job.
+**Rate:** $95 per hour for 2 movers, $130 per hour for 3 movers. 2-hour minimum, then 30-minute increments. Larger crews quoted per job.
 **No fuel surcharges.** No mileage fees. No travel time charges within service area.
 **Materials:** Moving blankets and shrink wrap included. Boxes, tape, and packing paper billed separately if we supply them.
-**Payment:** Due at end of job. Accepted methods: [LIST: cash, check, card, Venmo, Zelle, etc.]
+**Payment:** Due at end of job. Accepted methods: cash, credit/debit card, Venmo, Zelle, Cash App, and PayPal.
 
 **What the AI can say:**
-- "Our rate is $95 per hour for a crew of [#]."
+- "Our rate is $95 per hour for 2 movers or $130 per hour for 3, with a 2-hour minimum."
 - "We charge a flat hourly rate — no hidden fees."
-- "A 2-bedroom loading job typically takes [#–#] hours."
-- "Furniture assembly only (no move) usually takes [#–#] hours."
+- "A 2-bedroom loading job typically takes 3–4½ hours with 2 movers (about $285–$428)."
+- "Furniture assembly only (no move) usually fits within the 2-hour minimum ($190) for a few pieces."
 
 **What the AI should NOT do:**
 - Give a binding total ("your job will cost $350")
@@ -134,7 +134,7 @@ A: A moving labor company provides the physical crew — the people who do the l
 A: Yes. You can book any single service — loading only, unloading only, packing only, or furniture assembly only. You can also combine services.
 
 **Q: How much does it cost?**
-A: We charge $95 per hour for a crew of [#]. No fuel surcharges, no mileage fees. For an exact quote, share your move date, home size, and services needed — a team member will respond within one business day.
+A: We charge $95 per hour for 2 movers or $130 per hour for 3 movers, with a 2-hour minimum. No fuel surcharges, no mileage fees. For an exact quote, share your move date, home size, and services needed — a team member will respond within one business day.
 
 **Q: What areas do you serve?**
 A: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, and the Portland Metro area.
@@ -170,7 +170,7 @@ A: We don't operate storage facilities. We can help load items into a storage un
 A: Yes. Rest Assured Moving LLC is a licensed business and carries liability insurance. Contact us directly if you need documentation.
 
 **Q: What payment methods do you accept?**
-A: [LIST ACCEPTED METHODS: cash, check, card, Venmo, Zelle, etc.]. Payment is due at the end of the job.
+A: We accept cash, credit/debit card, Venmo, Zelle, Cash App, and PayPal. Payment is due at the end of the job.
 
 **Q: What if the job takes longer than estimated?**
 A: You're billed only for actual hours worked at the quoted rate. If we anticipate a significant overrun, we'll notify you before continuing.

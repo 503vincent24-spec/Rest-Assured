@@ -93,7 +93,7 @@ Just a quick heads-up before tomorrow's job (Job #RAM-[XXXX]).
 - ✓ Confirm your truck/POD/container will be on-site and accessible
 - ✓ Clear hallways, doorways, and any path from interior to truck
 - ✓ Set aside anything that should NOT be loaded (valuables, medications, first-night bag)
-- ✓ Have payment ready — we accept [LIST PAYMENT METHODS]
+- ✓ Have payment ready — we accept cash, credit/debit card, Venmo, Zelle, Cash App, and PayPal
 
 We'll call or text when the crew is about 30 minutes out.
 
@@ -141,7 +141,7 @@ Hi [CUSTOMER FIRST NAME],
 
 Just checking in on the quote we sent for your move on [JOB DATE or "your upcoming move"]. Wanted to make sure it didn't get buried during a busy week.
 
-**Your quote:** [#] movers at $95/hour for [SERVICES] — flat rate, no hidden fees.
+**Your quote:** [#] movers at $[95 or 130]/hour for [SERVICES] — flat rate, no hidden fees.
 
 If you'd like to lock in that date, we can hold it with a quick confirmation — no payment required yet. Dates fill up faster than most people expect, especially around the 1st and last weekend of the month.
 

@@ -1,4 +1,6 @@
 # Rest Assured Moving LLC — Complete Business System
+
+> **Start with [`PROJECT_STATUS.md`](PROJECT_STATUS.md)**: what's built, what's been tested, and the owner's next steps.
 Version 2.0 | 42 files | GitHub Pages ready | All tasks validated
 
 ---

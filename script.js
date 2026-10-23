@@ -130,8 +130,10 @@
 
   function validateFields(scope) {
     var firstBad = null;
-    $$('[required]', scope).forEach(function (f) {
+    // Optional email/phone fields are still checked for format when filled in.
+    $$('[required], input[type="email"], input[type="tel"]', scope).forEach(function (f) {
       var val = f.value.trim();
+      if (!val && !f.required) { setError(f, null, false); return; }
       var bad = !val;
       var msg = null;
       if (!bad && f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
@@ -143,6 +145,12 @@
       setError(f, msg, bad);
       if (bad && !firstBad) firstBad = f;
     });
+    // "Email me" needs an address to email.
+    var pref = $('[name="contact_pref"]', scope), mail = $('[name="email"]', scope);
+    if (pref && mail && pref.value === 'Email me' && !mail.value.trim()) {
+      setError(mail, 'Please add your email so we can send your quote.', true);
+      if (!firstBad) firstBad = mail;
+    }
     $$('[data-require-one]', scope).forEach(function (group) {
       var bad = !$$('input:checked', group).length;
       var err = group.parentElement.querySelector('.field-error');
@@ -268,7 +276,8 @@
       var fields = [
         ['Name', name],
         ['Phone', g('phone')],
-        ['Email', g('email')],
+        ['Email', g('email') || '—'],
+        ['Preferred contact', g('contact_pref') || '—'],
         ['Best time to call', g('best_time') || 'No preference'],
         ['Services', d.getAll('services').join(', ')],
         ['Move date', g('move_date') || 'Not set'],

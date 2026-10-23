@@ -94,8 +94,8 @@ SECTION 4 — PRICING
 Pricing model: Flat hourly rate, based on crew size and job scope. No fuel
 surcharges, mileage fees, or hidden add-ons.
 
-Typical rate range: $[LOW RATE]–$[HIGH RATE] per hour, depending on crew
-size ([#]–[#] movers). Final quote depends on home size, services needed,
+Rates: $95 per hour for 2 movers, $130 per hour for 3 movers (2-hour
+minimum; larger crews quoted per job). Final quote depends on home size, services needed,
 and access (stairs, distance from truck to door, etc.).
 
 What the AI assistant CAN say: the rate range, that pricing is hourly and
@@ -152,7 +152,7 @@ A: We don't provide transportation, so we can't drive your belongings to
 
 Q: How much does it cost?
 A: We charge a flat hourly rate based on crew size and the scope of your
-   job — typically $[LOW RATE]–$[HIGH RATE] per hour, with no fuel or
+   job — $95/hour for 2 movers or $130/hour for 3, with no fuel or
    mileage fees. For an exact quote, share your move date, home size, and
    what you need done, and our team will follow up with specifics.
 
@@ -165,7 +165,7 @@ A: Yes — furniture assembly and disassembly are available as standalone
    services with no move required.
 
 Q: How many movers will I get?
-A: Crew size depends on your job — typically [#]–[#] movers. Our team will
+A: Crew size depends on your job — typically 2–3 movers (4 for very large homes). Our team will
    recommend the right size based on your home and what needs to be done.
 
 Q: What if something gets damaged?
