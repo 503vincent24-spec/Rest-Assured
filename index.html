@@ -23,9 +23,12 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": [
+    "LocalBusiness",
+    "MovingCompany"
+  ],
   "name": "Rest Assured Moving LLC",
-  "description": "Professional moving labor company in Salem, Oregon providing loading, unloading, packing, unpacking, and furniture assembly services. Labor only — customers provide their own truck, POD, or container.",
+  "description": "Licensed and insured moving labor company in Salem, Oregon: loading, unloading, packing, unpacking, and furniture assembly for customers who arrange their own rental truck, PODS, or container. $95/hour for 2 movers, $130/hour for 3, 2-hour minimum. Labor only — no trucks or transportation.",
   "url": "https://[YOUR-DOMAIN]",
   "telephone": "(971) 302-0120",
   "email": "Shawn@restassuredmoving.net",
@@ -57,15 +60,78 @@
     }
   ],
   "areaServed": [
-    "Salem",
-    "Keizer",
-    "Woodburn",
-    "Albany",
-    "McMinnville",
-    "Beaverton",
-    "Hillsboro",
-    "Tigard",
-    "Portland"
+    {
+      "@type": "City",
+      "name": "Salem",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Keizer",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Woodburn",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Albany",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "McMinnville",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Beaverton",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Hillsboro",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Tigard",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Portland",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Oregon"
+      }
+    }
   ],
   "priceRange": "$95–$130 per hour",
   "hasOfferCatalog": {
@@ -143,6 +209,22 @@
         "unitText": "hour"
       }
     }
+  ],
+  "@id": "https://[YOUR-DOMAIN]/#business",
+  "slogan": "Rest assured, it's handled.",
+  "founder": {
+    "@type": "Person",
+    "name": "Shawn",
+    "jobTitle": "Owner"
+  },
+  "knowsAbout": [
+    "Moving labor",
+    "Loading rental trucks",
+    "Loading PODS and U-Box containers",
+    "Unloading",
+    "Packing and unpacking",
+    "Furniture assembly",
+    "Furniture disassembly"
   ]
 }
 </script>

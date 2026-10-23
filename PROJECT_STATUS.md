@@ -26,6 +26,7 @@ or transport.**
 | Reviews from Cherry City Movers | ❌ Not done on purpose | See "Decisions" below |
 | Improve appeal and sales | ✅ Price table, promises, text buttons, estimator fixes, easier quote form | Homepage, `estimate.html`, `quote.html` |
 | Delete duplicate `mnt/` folder | ✅ Done | — |
+| Show up in AI search (ChatGPT, Google AI, Perplexity, etc.) | ✅ Site side done; owner steps listed | `AI_SEARCH_VISIBILITY.md`, `llms.txt`, `robots.txt` |
 
 ## Checks run (all passing)
 
@@ -73,3 +74,4 @@ or transport.**
 8. Decide on a cancellation policy and add it to `faq.html` and
    `SERVICE_AGREEMENT_TEMPLATE.md`.
 9. Add real crew and job photos (`IMAGE_GUIDE.md`).
+10. Set up Bing Webmaster Tools, Bing Places, and Apple Business Connect (`AI_SEARCH_VISIBILITY.md` Part 2).
