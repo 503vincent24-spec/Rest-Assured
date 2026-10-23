@@ -52,6 +52,10 @@ furniture assembly. Flat hourly pricing from $95/hr. No fuel or mileage fees.
 
 ## 2. Setup Order (one evening per step)
 
+> For the Google verification walkthrough, the labor marketplaces (U-Haul
+> Moving Help, HireAHelper, TaskRabbit, Thumbtack), and a 14-day plan, see
+> `GET_CUSTOMERS_NOW.md`.
+
 | # | Platform | Time | Cost | Why this order | Full copy |
 |---|---|---|---|---|---|
 | 1 | **Google Business Profile** | 45 min + postcard/video verification | Free | Biggest source of local calls. Verification takes days, so start it first | `GBP_CONTENT.md` |
