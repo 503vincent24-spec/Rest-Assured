@@ -30,7 +30,7 @@ or transport.**
 ## Checks run (all passing)
 
 - **End-to-end browser test (30 checks):**
-  - All 21 HTML pages load with no script errors.
+  - All 19 HTML pages load with no script errors.
   - Estimator → quote form prefill → validation → submit → thank-you page.
   - The lead email includes phone, preferred contact, lead source (UTM tag), online estimate, and "heard about us".
   - When sending fails, the backup email/phone message appears.
