@@ -1,0 +1,85 @@
+<!doctype html>
+<!--
+  Business card, 2 pages (front, back).
+  Trim size 3.5 × 2 in. Each page is 3.75 × 2.25 in: 0.125 in bleed on every
+  side, as Vistaprint, Moo, and most local print shops require.
+  Keep text inside the dashed "safe" guide (shown only with ?guides).
+  Rendered to PDF + PNG by: node tools/render-print.js
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rest Assured Moving — Business Card</title>
+<style>
+  @page { size: 3.75in 2.25in; margin: 0; }
+  :root{ --navy:#0F2547; --navy2:#16335E; --em:#1F7A5C; --em5:#2E9874; --paper:#FAFAF8; --ink:#1C2533; --muted:#4A5568; --line:#E2E6E3;
+         --serif:Georgia,'Iowan Old Style','Times New Roman',serif; --sans:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; --mono:'Courier New',Courier,monospace; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page{ position:relative; width:3.75in; height:2.25in; overflow:hidden; page-break-after:always; break-after:page; font-family:var(--sans); color:var(--ink); }
+  .page:last-child{ page-break-after:auto; break-after:auto; }
+  .safe{ position:absolute; inset:0.25in; }               /* 0.125 bleed + 0.125 safe margin */
+  .guides .safe{ outline:1px dashed #e11; }
+  .guides .page::after{ content:""; position:absolute; inset:0.125in; outline:1px solid #11e; }
+
+  /* FRONT */
+  .front{ background:radial-gradient(130% 150% at 85% 0%, var(--navy2) 0%, var(--navy) 60%); color:#fff; }
+  .front .safe{ display:flex; align-items:center; gap:0.16in; }
+  .front img{ width:0.82in; height:auto; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.25)); }
+  .front h1{ font-family:var(--serif); font-size:17pt; line-height:1.02; font-weight:700; }
+  .front .sub{ font-family:var(--mono); font-size:5.6pt; letter-spacing:.16em; text-transform:uppercase; color:var(--em5); margin-top:5pt; }
+  .front .promise{ font-family:var(--serif); font-style:italic; font-size:8.4pt; color:rgba(255,255,255,.88); margin-top:7pt; padding-top:6pt; border-top:1px solid rgba(255,255,255,.22); }
+  .front .rule{ position:absolute; left:0; right:0; bottom:0; height:0.2in; background:var(--em); }
+
+  /* BACK */
+  .back{ background:var(--paper); }
+  .back .safe{ display:grid; grid-template-columns:1fr 0.78in; gap:0.12in; }
+  .back .name{ font-family:var(--serif); font-size:13pt; font-weight:700; color:var(--navy); }
+  .back .role{ font-family:var(--mono); font-size:5.6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--em); margin-top:1pt; }
+  .back .phone{ font-family:var(--mono); font-weight:700; font-size:12pt; color:var(--navy); margin-top:7pt; letter-spacing:.01em; }
+  .back .phone small{ display:block; font-family:var(--sans); font-weight:600; font-size:5.8pt; color:var(--muted); letter-spacing:0; margin-top:1pt; }
+  .back .email{ font-size:6.6pt; color:var(--ink); margin-top:4pt; }
+  .back ul{ list-style:none; margin-top:6pt; padding-top:5pt; border-top:1px dashed var(--line); font-size:6.2pt; color:var(--muted); line-height:1.5; }
+  .back ul b{ color:var(--em); }
+  .back .qr{ align-self:center; text-align:center; }
+  .back .qr img{ width:0.78in; height:0.78in; display:block; }
+  .back .qr span{ display:block; font-family:var(--mono); font-size:5pt; letter-spacing:.08em; color:var(--navy); margin-top:2pt; font-weight:700; }
+  .back .band{ position:absolute; left:0; right:0; bottom:0; height:0.2in; background:var(--navy); }
+</style>
+</head>
+<body>
+<script>if (location.search.indexOf('guides') !== -1) document.documentElement.classList.add('guides');</script>
+
+<section class="page front">
+  <div class="safe">
+    <img src="../assets/logo-mark.svg" alt="Rest Assured Moving shield logo">
+    <div>
+      <h1>Rest Assured<br>Moving</h1>
+      <div class="sub">Moving labor · Salem, OR</div>
+      <div class="promise">Honest work. Treated like family.</div>
+    </div>
+  </div>
+  <div class="rule"></div>
+</section>
+
+<section class="page back">
+  <div class="safe">
+    <div>
+      <div class="name">Shawn</div>
+      <div class="role">Owner · Rest Assured Moving LLC</div>
+      <div class="phone">(971) 302-0120<small>Call or text · Mon–Sat 7am–7pm</small></div>
+      <div class="email">Shawn@restassuredmoving.net</div>
+      <ul>
+        <li><b>✓</b> Loading · Unloading · Packing · Furniture assembly</li>
+        <li><b>✓</b> From $95/hr · Licensed &amp; insured · Free quotes</li>
+      </ul>
+    </div>
+    <div class="qr">
+      <img src="../assets/qr-text-us.svg" alt="QR code to text us">
+      <span>SCAN TO TEXT</span>
+    </div>
+  </div>
+  <div class="band"></div>
+</section>
+</body>
+</html>

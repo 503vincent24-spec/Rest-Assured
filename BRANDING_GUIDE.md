@@ -26,17 +26,29 @@ shows up on time and does it right" — not "the slick national franchise."
 ## 2. Logo
 
 ### 2.1 Concept
-A heraldic shield (trust, protection, a guarantee) containing a simplified
-house silhouette (the destination — home), with a checkmark integrated into
-the doorway (the job, verified complete). No truck, van, dolly, or
-transportation iconography appears anywhere in the mark — this was a hard
-constraint from the brief and is preserved deliberately.
+**Heart Home Shield** (v2). Three ideas in one simple mark:
+- **Shield:** trust, honesty, protection. *"Your belongings are safe with us."*
+- **Home under a sheltering roof:** what we're really moving is someone's home.
+- **Heart doorway:** care and family. *"We treat your home like family."*
+
+No truck, van, dolly, or transportation imagery appears anywhere in the
+mark. That rule was part of the original brief and still applies.
+
+**Supporting line (cards, flyers):** *"Honest work. Treated like family."*
+It's a promise about how we work. Don't call the company "family-owned"
+anywhere unless that's literally true.
+
+Earlier concepts, kept for reference: v1 shield with a checkmark doorway
+(`assets/logo-archive/`), "Family Under One Roof" (people figures, which
+blurred at small sizes), and "Home in Good Hands" (hands around a house).
+Overview of the current mark and its versions: `assets/logo-sheet.png`.
 
 ### 2.2 Files & Variants
 | File | Use |
 |---|---|
 | `logo-mark.svg` | Icon-only mark. Favicons, app icons, social avatars, watermarks, anywhere space is square/tight. |
 | `logo-lockup.svg` | Horizontal lockup (mark + wordmark + sub-line). Website header, email signature, letterhead, invoice header. |
+| `logo-mark-1color.svg` | Single-color version for embroidery (shirts, hats), vinyl decals, rubber stamps, one-ink printing. |
 
 Both are vector (SVG) — scale losslessly from a 16px favicon to a vehicle
 decal or storefront sign. Export to PNG/JPG at the specific pixel dimensions
@@ -151,19 +163,17 @@ quote summaries, and social post templates.
 
 ---
 
-## 7. Business Card
+## 7. Business Cards & Flyers
 
-Two print-ready SVG files at standard US business card size (3.5" × 2",
-designed at 300 DPI: 1050 × 600px viewBox):
+Print-ready files, filled in with real details and using the current logo,
+are in **`print/`**. See `print/README.md` for how to order them.
 
-- `business-card-front.svg` — logo lockup, tagline, service list footer
-- `business-card-back.svg` — navy background, watermarked shield, contact
-  block with bracketed placeholders for name/title/phone/email/website
+- `print/business-card.pdf`: 2-sided, 3.5 × 2 in with 0.125 in bleed
+- `print/flyer-laundromat.pdf`: bulletin-board flyer with 9 tear-off tabs
+- `print/flyer-apartments.pdf`: leasing office / mail-room flyer
 
-**Before printing:** replace all bracketed placeholders in the back design
-with real info, and send both files to your printer as vector SVG/PDF (not a
-screenshot) for crisp output. Most local/online print shops (e.g., Vistaprint,
-Moo, or a local Salem print shop) accept SVG or can convert it to PDF.
+The older `business-card-*.svg` files in the repository root are earlier
+drafts with placeholders. Use the `print/` versions.
 
 ---
 

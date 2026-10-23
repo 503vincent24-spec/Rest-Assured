@@ -1,0 +1,64 @@
+# Print Materials — Rest Assured Moving LLC
+
+Every file here is ready to print, with the current logo, real contact
+details, real prices, and a **scan-to-text QR code**. The code opens a text
+to (971) 302-0120 that already says *"Hi Shawn! I'd like a free moving
+quote."* It works on iPhone and Android, and it doesn't depend on the
+website being live.
+
+| File | Size | What it's for |
+|---|---|---|
+| `business-card.pdf` (+ `business-card-1.png`, `-2.png` previews) | 3.5 × 2 in, 2-sided, with bleed | Hand to every customer (two each: "one for you, one for whoever moves next"), leasing offices, U-Haul dealers, storage facilities |
+| `flyer-laundromat.pdf` (+ `.png`) | 8.5 × 11 in | Laundromat, grocery, library, and coffee-shop bulletin boards. 9 tear-off phone tabs at the bottom |
+| `flyer-apartments.pdf` (+ `.png`) | 8.5 × 11 in | Apartment leasing offices, mail rooms, clubhouse boards. Includes a note asking the office to call for free business cards |
+
+## Ordering
+
+**Business cards:** upload `business-card.pdf` to Vistaprint, Moo, Staples,
+or a local Salem print shop. Pick **standard 3.5 × 2 in, double-sided,
+matte or uncoated 14–16 pt stock** (matte reads as more trustworthy and is
+easy to write on). Page 1 is the front, page 2 the back. The file already
+includes the 0.125 in bleed most printers ask for. Start with **500**;
+they're cheap at that quantity and you'll hand them out fast.
+
+**Flyers:** print at home or at a copy shop on **plain white 24 lb paper,
+in color**. The flyers have a white border, so they need no bleed and any
+printer works. 50 of each is plenty to start. For the laundromat flyer,
+cut along the dashed lines between the tabs (stop at the top dashed line)
+so people can tear one off.
+
+## Where to post (and how to keep them working)
+
+- **Always ask the manager first.** Many laundromats and complexes take
+  down unapproved flyers. Leasing offices are more likely to say yes if you
+  leave a stack of business cards too.
+- **Laundromats:** eye level, near the change machine or folding tables
+  where people wait. Check back every 2 weeks and replace when most tabs
+  are gone. Missing tabs also show which locations work.
+- **Apartment complexes:** target large complexes near end-of-month
+  move-out dates (post around the 20th). Ask the leasing office to hand
+  the flyer to anyone giving notice.
+- **Track it:** when someone calls or texts, ask "How did you hear about
+  us?" and write down the location. After 60 days, keep posting only where
+  calls come from.
+
+## Editing
+
+Each PDF is generated from the matching `.html` file in this folder. Change
+the text in the `.html`, then run:
+
+```bash
+node tools/render-print.js
+```
+
+If prices change, update `RATE`/`RATE3` in `estimate.html` and the price
+table on `index.html` first, then copy the same numbers here so every piece
+matches.
+
+The QR code (`assets/qr-text-us.svg`) was generated with the Python
+`segno` library:
+
+```bash
+pip install segno
+python3 -c "import segno; segno.make(\"SMSTO:+19713020120:Hi Shawn! I'd like a free moving quote.\", error='q').save('assets/qr-text-us.svg', border=2, dark='#0F2547', xmldecl=False)"
+```

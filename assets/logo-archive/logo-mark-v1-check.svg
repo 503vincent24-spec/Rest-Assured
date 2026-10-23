@@ -1,0 +1,44 @@
+<svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rest Assured Moving LLC shield mark">
+  <defs>
+    <linearGradient id="shieldFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16335E"/>
+      <stop offset="100%" stop-color="#0F2547"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M100,12
+           L166,38
+           L166,102
+           C166,150 138,182 100,206
+           C62,182 34,150 34,102
+           L34,38
+           Z"
+        fill="url(#shieldFace)" stroke="#D9DEDC" stroke-width="3"/>
+
+  <!-- Inner hairline echo, light gray, for craft/depth -->
+  <path d="M100,24
+           L155,46
+           L155,100
+           C155,142 132,170 100,191
+           C68,170 45,142 45,100
+           L45,46
+           Z"
+        fill="none" stroke="#3A537A" stroke-width="1.5" opacity="0.55"/>
+
+  <!-- House roof -->
+  <path d="M68,98 L100,66 L132,98 Z" fill="#1F7A5C"/>
+  <!-- Roof ridge highlight -->
+  <path d="M100,66 L132,98" fill="none" stroke="#11533D" stroke-width="2" opacity="0.6"/>
+
+  <!-- House body -->
+  <rect x="74" y="98" width="52" height="48" fill="#1F7A5C"/>
+
+  <!-- Gap line separating roof/body from shield for cut-in clarity -->
+  <path d="M68,98 H132" stroke="#0F2547" stroke-width="2"/>
+
+  <!-- Checkmark doorway: the "verified, taken care of" signature element -->
+  <path d="M86,122 L97,136 L118,108"
+        fill="none" stroke="#EFF2F0" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
