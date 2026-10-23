@@ -169,8 +169,10 @@ Moo, or a local Salem print shop) accept SVG or can convert it to PDF.
 
 ## 8. Known Limitations / Next Steps
 
-- **No raster (PNG/JPG) exports were generated in this session** — the
-  sandbox environment couldn't reach a PNG rendering package this round. All
+- **Raster exports now exist** for the listings: `assets/social/*.png` and
+  `assets/og-image.png`, rendered from `tools/social-images.html`. The notes
+  below still apply to any *other* PNG you need (business cards, decals).
+  Previously: All
   logo and business card files are delivered as SVG. SVG is the better
   *source* format regardless, but you'll want PNG exports for platforms that
   don't accept SVG uploads (Facebook profile photo, Google Business Profile

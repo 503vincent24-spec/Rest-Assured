@@ -26,7 +26,7 @@ who hires moving labor.
 - **Phone:** (971) 302-0120
 - **Website:** [WEBSITE URL]
 - **Hours:** Monday–Saturday, 7:00 AM – 7:00 PM
-- **Profile photo:** logo-mark-300.png (300×300px minimum)
+- **Profile photo:** `assets/social/profile-1000.png` · **Cover:** `assets/social/facebook-cover-1640x624.png`
 
 ---
 

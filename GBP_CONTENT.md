@@ -156,7 +156,7 @@ CTA: Check Your Area → [website service-area page URL]
 GBP listings with 10+ photos receive significantly more engagement. Upload in this priority order:
 
 **Immediate (before launch):**
-- [ ] Logo (square crop, minimum 720×720px PNG — export from logo-mark.svg)
+- [ ] Logo (square crop, minimum 720×720px PNG — use `assets/social/profile-1000.png`)
 - [ ] Cover photo (crew working — loading, wrapping furniture, or in front of a clean exterior)
 
 **First 30 days:**

@@ -21,6 +21,14 @@ generic stock when the subject is real.
 | `logo-lockup.svg` | `website/assets/` | Letterhead, email signature |
 | `favicon.svg` | `website/assets/` | Browser tab icon |
 
+> ✅ **Done:** `assets/og-image.png` (1200×630) and a full set of listing
+> images in `assets/social/` (1000×1000 profile/logo, which every platform
+> accepts and downsizes, plus the Facebook cover, Craigslist ads, and a square
+> post) are generated from `tools/social-images.html` by
+> `node tools/render-social-images.js`. See `ONLINE_LISTINGS_LAUNCH_KIT.md` §4
+> for which file goes where. The sizes below are still useful for any other
+> export.
+
 **PNG exports needed (SVG → PNG conversion):**
 
 | Output | Dimensions | Where used |

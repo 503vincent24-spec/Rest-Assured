@@ -10,6 +10,11 @@
 **Website:** [WEBSITE URL]
 **Phone:** (971) 302-0120
 **Email:** Shawn@restassuredmoving.net
+**Profile picture:** `assets/social/profile-1000.png`
+**Cover photo:** `assets/social/facebook-cover-1640x624.png`
+
+> Step-by-step Page creation (category, action button, auto-reply, backup
+> admin) is in `ONLINE_LISTINGS_LAUNCH_KIT.md` §3.
 
 ---
 
