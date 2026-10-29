@@ -63,6 +63,7 @@ long drive, a storage unit, or rain in the forecast:
 |---|---|
 | "I need to think about it" | "Totally fair. Weekends near the end of the month fill up fast, so I can hold Saturday 8am until tomorrow at noon. Want me to do that?" |
 | "Someone else is cheaper" | "Check whether their price includes blankets and wrap, and whether they charge travel or fuel. Ours doesn't. A crew that loads the truck right saves you a second trip, too." |
+| "Can you come today?" | Check the crew first, then: "I can have 2 movers there by 2pm. Same-day is $115 an hour instead of $95, 2-hour minimum, because I'm pulling the crew in on short notice. Want me to lock it in? I'll text you the rate." If no crew is free: "Today's full, but I can do first thing tomorrow at the regular $95." |
 | "Do you have a truck?" | "We're labor-only, which is why we cost less than full-service movers. Book a U-Haul, Penske, or PODS, and I can tell you what size you need." |
 | "Can you do it cheaper?" | "I can't lower the hourly rate, but I can lower your total. If you have boxes packed and beds stripped before we arrive, the job goes faster." |
 

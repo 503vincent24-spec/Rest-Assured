@@ -16,6 +16,7 @@
 - Pricing: $95/hour for 2 movers, $130/hour for 3 movers, 2-hour minimum, then 30-minute increments
 - Included: moving blankets, shrink wrap, and equipment; no fuel charges, mileage fees, or travel charges within the service area
 - Full Wrap (optional, for jobs where we load and unload): every furniture piece padded with moving blankets and sealed in stretch wrap; extra wrapping time billed hourly plus a flat supply fee of $45 (studio), $65 (1 bedroom), $95 (2 bedrooms), $130 (3 bedrooms), $170 (4+ bedrooms)
+- Same-day service: $115/hour for 2 movers, $155/hour for 3 (2-hour minimum), when a crew is free; call or text by 12 pm Mon–Sat. Next-day and later bookings are regular price
 - Payment: cash, credit/debit card, Venmo, Zelle, Cash App, PayPal
 - Quotes: free; reply within one business day, usually same day
 
@@ -41,7 +42,7 @@
 - [Home](https://[YOUR-DOMAIN]/index.html): overview, typical prices, promises
 - [Services](https://[YOUR-DOMAIN]/services.html): each service and pricing details
 - [Service area](https://[YOUR-DOMAIN]/service-area.html): cities served
-- [FAQ](https://[YOUR-DOMAIN]/faq.html): 23 answers on pricing, booking, damage, tipping, specialty items
+- [FAQ](https://[YOUR-DOMAIN]/faq.html): 24 answers on pricing, booking, damage, tipping, specialty items
 - [Get a quote](https://[YOUR-DOMAIN]/quote.html)
 - [About](https://[YOUR-DOMAIN]/about.html)
 

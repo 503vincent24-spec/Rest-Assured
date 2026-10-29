@@ -90,6 +90,56 @@ Increment between tiers: roughly 40–50% of the 2-person rate.
 
 ---
 
+## 5b. Same-Day Service
+
+**Rates:** **$115/hr for 2 movers, $155/hr for 3**, with the same 2-hour
+minimum (so at least $230). That's **+$20/hr** (21%) and **+$25/hr** (19%)
+over the regular $95 and $130. Next-day and later bookings are regular
+price.
+
+**What it is:** the crew arrives the same day the customer books. Requests
+come by call or text by 12 pm, Mon–Sat, and only when a crew is actually
+free. The web form is answered within a business day, so it can't take
+same-day jobs; the site tells customers to call or text instead.
+
+**Why this price:** labor-only providers on HireAHelper typically add
+**10–20%** for same-day jobs and charge normal rates for next-day
+([HireAHelper](https://www.hireahelper.com/advice/same-day-moving-help/)).
+Other movers add flat rush fees of about $25–$150. An hourly premium is
+fairer than a flat fee: a flat $75 would add 39% to a 2-hour job but only 6%
+to a 3-bedroom. It also scales with how long you hold a crew off its
+schedule.
+
+**What the premium pays for** (per hour of the job):
+
+| | 2 movers | 3 movers |
+|---|---|---|
+| Same-day premium collected | +$20 | +$25 |
+| Same-day bonus to crew called in on short notice (suggested $5/hr per mover) | –$10 | –$15 |
+| Left to cover your dispatch time (calls, rearranging the day, about 30 min a job) and the risk of a crew sitting idle | $10 | $10 |
+
+Examples:
+- **1-bedroom load, 2–2.5 hrs, 2 movers:** the customer pays $230–$288
+  instead of $190–$238 (+$40–$50). The crew bonus is $20–$25, leaving you
+  $20–$25 for the scramble.
+- **2-bedroom, both ends, 4.5–6.5 hrs, 3 movers:** the customer pays
+  $698–$1,008 instead of $585–$845 (+$113–$163). The crew bonus is
+  $68–$98, leaving you $45–$65.
+
+If you work the job yourself with no extra crew to call in, the whole
+premium is yours.
+
+**Full Wrap on a same-day job:** the supply fee stays the same; the
+wrapping time is billed at the same-day rate like the rest of the job.
+
+**Changing the rate:** update `SAME_DAY_RATE` / `SAME_DAY_RATE3` in
+`estimate.html`, then the same-day text in `index.html` (visible text and
+the hidden business data), `faq.html`, `quote.html`, `llms.txt`, both AI knowledge bases, both
+Google profile content files, `SALES_PLAYBOOK.md`, `BOOKING_WORKFLOW.md`,
+and this section.
+
+---
+
 ## 6. Materials Pricing
 
 If you supply packing materials, bill separately with a 25–40% markup

@@ -94,6 +94,9 @@ A: Yes. Furniture assembly and disassembly are available as completely standalon
 **Q: How far in advance should I book?**
 A: We recommend 1–2 weeks ahead, especially around the 1st and last weekend of the month. We accommodate shorter-notice requests when the schedule allows.
 
+**Q: Do you offer same-day service?**
+A: Yes, when a crew is free. Call or text (971) 302-0120 by 12 pm, Monday–Saturday, and we'll tell you right away whether we can make it today. Same-day service is $115 per hour for 2 movers or $155 per hour for 3, with the usual 2-hour minimum, and we confirm the rate by text before the crew heads out. Booking for tomorrow or later is our regular $95 or $130 per hour. Please call or text for same-day jobs; the quote form isn't checked fast enough.
+
 **Q: What areas do you serve?**
 A: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, and the greater Portland Metro area.
 

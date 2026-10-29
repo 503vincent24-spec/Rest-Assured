@@ -30,6 +30,7 @@ or transport.**
 | Logo (trust, honesty, family) + business cards + flyers for laundromats and apartments | ✅ New logo applied everywhere; print-ready PDFs with a QR code that has been scan-tested | `assets/logo-sheet.png`, `print/` |
 | Show up in AI search (ChatGPT, Google AI, Perplexity, etc.) | ✅ Site side done; owner steps listed | `AI_SEARCH_VISIBILITY.md`, `llms.txt`, `robots.txt` |
 | Premium price point: blankets + shrink wrap on all furniture | ✅ "Full Wrap" option in the estimator, homepage price table, FAQ, quote form; supply and labor costs worked out | `PRICING_GUIDE.md` §6, `estimate.html` |
+| Same-day service option | ✅ $115/hr (2 movers), $155/hr (3), call or text by 12 pm; in the estimator, homepage, FAQ, quote form, AI notes, booking workflow; costs worked out | `PRICING_GUIDE.md` §5b, `estimate.html` |
 
 ## Checks run (all passing)
 

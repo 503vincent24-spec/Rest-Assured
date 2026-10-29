@@ -194,6 +194,16 @@
             <p class="est-hint" id="wrap-hint"><strong>Standard:</strong> furniture goes into moving blankets or shrink wrap, at no extra cost. <strong>Full Wrap:</strong> every piece is padded with moving blankets <em>and</em> sealed in stretch wrap. Available when we load and unload.</p>
           </div>
 
+          <!-- Timing -->
+          <div class="est-group">
+            <label for="timing">When do you need us?</label>
+            <select id="timing">
+              <option value="standard">A future date (tomorrow or later)</option>
+              <option value="sameday">Today: same-day service</option>
+            </select>
+            <p class="est-hint" id="timing-hint" style="display:none;"><strong>Same-day:</strong> $115/hr for 2 movers, $155/hr for 3, when a crew is free. Call or text <a href="tel:+19713020120">(971) 302-0120</a> by 12 pm (Mon–Sat). The form isn't checked fast enough for same-day jobs.</p>
+          </div>
+
           <!-- Floors / access -->
           <div class="est-group">
             <label for="floors">Access difficulty</label>
@@ -247,6 +257,7 @@
           <h4>Current rates</h4>
           <p style="font-size:var(--text-sm);">2-person crew: <strong>$95/hour</strong></p>
           <p style="font-size:var(--text-sm);">3-person crew: <strong>$130/hour</strong></p>
+          <p style="font-size:var(--text-sm);">Same-day service: <strong>$115/hour</strong> (2) · <strong>$155/hour</strong> (3)</p>
           <p style="font-size:var(--text-sm);color:var(--ink-muted);">
             Larger crews quoted per job. Rates confirmed before work begins.
           </p>
@@ -283,6 +294,8 @@
 (function() {
   var RATE   = 95;   // ← replace 95 with your 2-person hourly rate (number only, e.g. 95)
   var RATE3  = 130;  // ← replace 130 with your 3-person rate
+  var SAME_DAY_RATE  = 115; // same-day service, 2 movers (PRICING_GUIDE.md §5b)
+  var SAME_DAY_RATE3 = 155; // same-day service, 3 movers
   var MIN_HRS = 2;
   var CREW3_SPEED = 1.4; // a 3-person crew works ~1.4× faster than 2
 
@@ -307,6 +320,8 @@
 
   function estimate() {
     var homeHrs  = parseFloat(document.getElementById('home-size').value) || 0;
+    var sameDay  = document.getElementById('timing').value === 'sameday';
+    document.getElementById('timing-hint').style.display = sameDay ? 'block' : 'none';
     var accessMult = parseFloat(document.getElementById('floors').value)  || 1;
     var svcInputs  = document.querySelectorAll('input[name="svc"]:checked');
 
@@ -342,7 +357,7 @@
     if (crew === 3) rawHrs = rawHrs / CREW3_SPEED;
     var loHrs   = Math.max(MIN_HRS, Math.round((rawHrs * 0.85) * 2) / 2);
     var hiHrs   = Math.max(loHrs, Math.round((rawHrs * 1.25) * 2) / 2);
-    var rate    = crew === 3 ? RATE3 : RATE;
+    var rate    = sameDay ? (crew === 3 ? SAME_DAY_RATE3 : SAME_DAY_RATE) : (crew === 3 ? RATE3 : RATE);
     var loTotal = loHrs * rate + wrapFee;
     var hiTotal = hiHrs * rate + wrapFee;
 
@@ -350,13 +365,14 @@
     var priceText = loTotal === hiTotal ? usd(loTotal) : usd(loTotal) + '–' + usd(hiTotal);
     document.getElementById('result-price').textContent = priceText;
     document.getElementById('result-note').textContent =
-      'Crew of ' + crew + ' · approx. ' + (loHrs === hiHrs ? loHrs : loHrs + '–' + hiHrs) + ' hrs · $' + rate + '/hr';
+      'Crew of ' + crew + ' · approx. ' + (loHrs === hiHrs ? loHrs : loHrs + '–' + hiHrs) + ' hrs · $' + rate + '/hr' + (sameDay ? ' (same-day)' : '');
 
     var bd = document.getElementById('result-breakdown');
     bd.style.display = 'block';
     bd.innerHTML =
       '<div><span>Services</span><span>' + svcNames.join(', ') + '</span></div>' +
-      '<div><span>Hourly rate</span><span>$' + rate + '/hr (' + crew + '-person crew)</span></div>' +
+      '<div><span>Hourly rate</span><span>$' + rate + '/hr (' + crew + '-person crew' + (sameDay ? ', same-day' : '') + ')</span></div>' +
+      (sameDay ? '<div><span>Same-day premium</span><span>+$' + (rate - (crew === 3 ? RATE3 : RATE)) + '/hr (in the rate above)</span></div>' : '') +
       '<div><span>Est. hours</span><span>' + loHrs + '–' + hiHrs + ' hrs</span></div>' +
       (fullWrap
         ? '<div><span>Full Wrap time</span><span>~' + (Math.round(wrapHrs / (crew === 3 ? CREW3_SPEED : 1) * 10) / 10) + ' hrs (in the hours above)</span></div>' +
@@ -372,8 +388,10 @@
       services:  svcNames.map(function(n) { return QUOTE_NAMES[n] || n; }).concat(fullWrap ? ['Full Wrap'] : []).join(','),
       home_size: sizeSel.options[sizeSel.selectedIndex].text,
       access:    accessSel.options[accessSel.selectedIndex].text,
+      when:      sameDay ? 'today' : '',
       estimate:  priceText + ' (' + crew + '-person crew, ' + loHrs + '–' + hiHrs + ' hrs' +
-                 (fullWrap ? ', Full Wrap incl. $' + wrapFee + ' supplies' : '') + ')'
+                 (fullWrap ? ', Full Wrap incl. $' + wrapFee + ' supplies' : '') +
+                 (sameDay ? ', same-day rate' : '') + ')'
     });
     document.getElementById('est-quote-link').href = 'quote.html?' + qp.toString();
     document.getElementById('est-cta').style.display = 'block';
@@ -381,6 +399,7 @@
 
   document.getElementById('home-size').addEventListener('change', estimate);
   document.getElementById('floors').addEventListener('change', estimate);
+  document.getElementById('timing').addEventListener('change', estimate);
   document.querySelectorAll('input[name="wrap"]').forEach(function(r) {
     r.addEventListener('change', estimate);
   });

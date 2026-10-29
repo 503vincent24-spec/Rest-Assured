@@ -254,6 +254,19 @@
     var preAccess = qs.get('access');
     var notes = $('[name="notes"]', quoteForm);
     if (preAccess && notes && !notes.value) notes.value = 'Access: ' + preAccess;
+    // Same-day jobs need a call or text, not a form that's answered within a business day
+    var dateField = $('[name="move_date"]', quoteForm), sameDayHint = $('#same-day-hint', quoteForm);
+    var todayISO = function () {
+      var t = new Date();
+      return t.getFullYear() + '-' + ('0' + (t.getMonth() + 1)).slice(-2) + '-' + ('0' + t.getDate()).slice(-2);
+    };
+    var checkSameDay = function () { if (sameDayHint) sameDayHint.hidden = !dateField || dateField.value !== todayISO(); };
+    if (dateField) {
+      if (qs.get('when') === 'today' && !dateField.value) dateField.value = todayISO();
+      on(dateField, 'change', checkSameDay);
+      on(dateField, 'input', checkSameDay);
+      checkSameDay();
+    }
     var preEstimate = qs.get('estimate');
     var estField = $('[name="online_estimate"]', quoteForm);
     if (preEstimate && estField) estField.value = preEstimate;

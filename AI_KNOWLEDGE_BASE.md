@@ -60,7 +60,7 @@ We unload at the customer's new address with room-by-room placement. Items place
 Full or partial packing — dishware, glassware, fragile items, electronics, artwork. We use the right materials and technique so nothing arrives broken.
 
 ### 4. Unpacking Services
-Boxes unpacked, items placed in cabinets and closets, packing debris removed. Available same-day as delivery or separately.
+Boxes unpacked, items placed in cabinets and closets, packing debris removed. Available on the same day as your unloading, or separately.
 
 ### 5. Furniture Assembly
 Bed frames, tables, bookshelves, sectionals, office desks — assembled correctly. Hardware tracked per component. Available as a standalone service with no move required.
@@ -94,6 +94,8 @@ Say: "We're a labor-only company — we don't drive trucks or provide transporta
 **Rate:** $95 per hour for 2 movers, $130 per hour for 3 movers. 2-hour minimum, then 30-minute increments. Larger crews quoted per job.
 **No fuel surcharges.** No mileage fees. No travel time charges within service area.
 **Materials:** Moving blankets and shrink wrap included. Boxes, tape, and packing paper billed separately if we supply them.
+
+**Same-day service:** $115/hr for 2 movers, $155/hr for 3 (2-hour minimum), only when a crew is free. Customer must call or text (971) 302-0120 by 12 pm Mon–Sat. Next-day and later = regular rates.
 
 **Full Wrap (optional):** every furniture piece padded with moving blankets AND sealed in stretch wrap. Only when we do both loading and unloading (our blankets ride in the customer's truck and come back with us). Price = extra wrapping time at the hourly rate (about 4 crew-minutes per piece) + flat supply fee: studio $45 · 1BR $65 · 2BR $95 · 3BR $130 · 4BR+ $170. Both-ends totals with Full Wrap (ground floor): studio $330–$473 · 1BR $445–$635 · 2BR $745–$1,070 · 3BR $1,105–$1,495 · 4BR+ $1,470–$2,120.
 **Payment:** Due at end of job. Accepted methods: cash, credit/debit card, Venmo, Zelle, Cash App, and PayPal.
@@ -143,6 +145,9 @@ A: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, a
 
 **Q: How far in advance should I book?**
 A: We recommend 1–2 weeks ahead, especially around the 1st and last weekend of the month. Call us for last-minute availability — we do our best to accommodate.
+
+**Q: Do you offer same-day service?**
+A: Yes, when a crew is free. Call or text (971) 302-0120 by 12 pm, Monday–Saturday, and we'll tell you right away whether we can make it today. Same-day service is $115 per hour for 2 movers or $155 per hour for 3, with the usual 2-hour minimum, and we confirm the rate by text before the crew heads out. Booking for tomorrow or later is our regular $95 or $130 per hour. Please call or text for same-day jobs; the quote form isn't checked fast enough. Never promise a same-day crew yourself. [→ ESCALATE to human team member immediately, by phone or text]
 
 **Q: Do you assemble furniture if I'm not doing a full move?**
 A: Yes. Furniture assembly is one of our most-booked standalone services. New flat-pack furniture, reassembly after storage, or a new bedroom setup — no move required.

@@ -38,6 +38,20 @@ responses. This document ties them together into a complete, repeatable workflow
 
 **If inquiry comes via phone:** Take all notes during the call. Follow up with a written quote by email within 2 hours so the customer has a record.
 
+**If it's a same-day request** (call or text by 12 pm, Mon–Sat):
+1. Check that a crew is actually free and can arrive with enough daylight
+   left in the day *before* saying yes. Never promise a same-day crew you
+   don't have.
+2. Quote the same-day rate: **$115/hr for 2 movers, $155/hr for 3**
+   (2-hour minimum). Full Wrap supply fees stay the same.
+3. Text the customer the rate, crew size, and arrival window, and get a
+   "yes" by text before the crew heads out. That text is the booking
+   record.
+4. Pay any crew member called in on short notice the same-day bonus
+   (`PRICING_GUIDE.md` §5b).
+5. If no crew is free, offer the earliest regular-rate slot (usually
+   tomorrow morning).
+
 **If inquiry comes via form:** Review the submitted details. If anything critical is missing (no date, no address, unclear scope), reply with one targeted clarifying question before quoting — not a list of 5 questions.
 
 ---

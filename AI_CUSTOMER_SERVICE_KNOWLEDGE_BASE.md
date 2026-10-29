@@ -95,7 +95,7 @@ Pricing model: Flat hourly rate, based on crew size and job scope. No fuel
 surcharges, mileage fees, or hidden add-ons.
 
 Rates: $95 per hour for 2 movers, $130 per hour for 3 movers (2-hour
-minimum; larger crews quoted per job). Final quote depends on home size, services needed,
+minimum; same-day service $115 / $155; larger crews quoted per job). Final quote depends on home size, services needed,
 and access (stairs, distance from truck to door, etc.).
 
 Full Wrap (optional, only when we do both loading and unloading): every
@@ -127,6 +127,11 @@ SECTION 5 — BOOKING PROCESS
 
 Lead time: Recommend booking 1–2 weeks ahead, especially around the 1st and
 last weekend of the month. Shorter notice accommodated when schedule allows.
+
+Same-day service: $115/hour for 2 movers, $155/hour for 3 (2-hour minimum),
+only when a crew is free. The customer must call or text (971) 302-0120 by
+12 pm, Mon–Sat. Never promise a same-day crew; hand the customer to a human
+right away. Booking for tomorrow or later is the regular rate.
 
 ================================================================================
 SECTION 6 — BRAND VOICE FOR THE AI ASSISTANT
@@ -185,6 +190,11 @@ A: Yes, we're open Monday through Saturday, 7am to 7pm.
 Q: How far in advance should I book?
 A: We recommend 1–2 weeks ahead, especially around the 1st and last weekend
    of the month, though we'll do our best to accommodate shorter notice.
+
+Q: Do you offer same-day service?
+A: Yes, when a crew is free: $115/hour for 2 movers or $155/hour for 3
+   (2-hour minimum). Call or text (971) 302-0120 by 12 pm, Mon–Sat, and
+   we'll tell you right away whether we can make it today.
 
 Q: Do you pack boxes for me, or just load them?
 A: Both — we offer full or partial packing services in addition to loading,
