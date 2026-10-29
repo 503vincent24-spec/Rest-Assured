@@ -120,6 +120,11 @@ job's city) on every post.** Instagram shows posts to nearby people.
 | 8 | Image | `ig-05-service-area.png` | **Where we work** 📍 Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard & Portland Metro. No mileage fees inside our area. Which city are you moving to? 👇 |
 | 9 | Image | `ig-06-text-for-quote.png` *(pin this)* | **Free quote, usually the same day.** Text us 3 things: your move date, home size, and your truck or container. That's it. 📲 (971) 302-0120 · Mon–Sat 7am–7pm |
 
+| 10 | Image | `ig-07-full-wrap.png` | **Every piece padded and sealed.** 🛡️ This is Full Wrap: moving blankets plus stretch wrap on every piece of furniture, for moves where we load and unload. Ask for it when you book. 📲 (971) 302-0120 |
+| 11 | Image | `ig-08-packed-tight.png` | **Packed tight. Nothing shifts.** 📦 A real load in a customer's rental truck: heavy items low, bins and bags floor to ceiling. You bring the truck, we load it right. Free quote: link in bio. |
+| 12 | Image | `ig-09-your-truck.png` | **Your truck. Our crew.** 🚚➡️💪 Mattress bagged and strapped, sofa loaded last. Labor only, from $95/hr. Text us your move date for a free quote. 📲 (971) 302-0120 |
+| 13+ | Carousel | 3–6 plain job photos from `assets/photos/upload/` | **A few recent loads.** Swipe through ➡️ Every truck here was the customer's rental. Want yours loaded like this? Text (971) 302-0120. |
+
 **Pin posts 9, 2, and 1** (open the post → ⋯ → *Pin to your profile*) so
 visitors always see how to book, what it costs, and what you do first.
 

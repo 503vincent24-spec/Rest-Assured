@@ -31,6 +31,7 @@ or transport.**
 | Show up in AI search (ChatGPT, Google AI, Perplexity, etc.) | ✅ Site side done; owner steps listed | `AI_SEARCH_VISIBILITY.md`, `llms.txt`, `robots.txt` |
 | Premium price point: blankets + shrink wrap on all furniture | ✅ "Full Wrap" option in the estimator, homepage price table, FAQ, quote form; supply and labor costs worked out | `PRICING_GUIDE.md` §6, `estimate.html` |
 | Same-day service option | ✅ $115/hr (2 movers), $155/hr (3), call or text by 12 pm; in the estimator, homepage, FAQ, quote form, AI notes, booking workflow; costs worked out | `PRICING_GUIDE.md` §5b, `estimate.html` |
+| Real job photos on the website and social profiles | ✅ 8 photos cropped, faces/plate removed, phone data stripped; homepage gallery, services page, 3 Instagram posts, photo covers for Facebook and X, upload set for Google/Yelp/Angi/Nextdoor | `assets/photos/`, `IMAGE_GUIDE.md` §0, `ONLINE_LISTINGS_LAUNCH_KIT.md` §4 |
 
 ## Checks run (all passing)
 
@@ -88,7 +89,7 @@ or transport.**
 7. Create the Facebook, Nextdoor, and Yelp pages using the launch kit.
 8. Decide on a cancellation policy and add it to `faq.html` and
    `SERVICE_AGREEMENT_TEMPLATE.md`.
-9. Add real crew and job photos (`IMAGE_GUIDE.md`).
+9. Add a photo of Shawn or the crew at work, plus unloading and assembly shots. Eight real truck-load photos are already in use (`IMAGE_GUIDE.md` §0).
 10. Set up Bing Webmaster Tools, Bing Places, and Apple Business Connect (`AI_SEARCH_VISIBILITY.md` Part 2).
 11. Consider general liability insurance. Google Local Services Ads
     requires it, and some apartment buildings ask movers for an insurance

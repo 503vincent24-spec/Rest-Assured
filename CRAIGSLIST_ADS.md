@@ -21,7 +21,7 @@ these ads work best when they say "labor only" up front.
 | **City or neighborhood** | `Salem / Keizer` or `Portland Metro` |
 | **ZIP code** | `97301` (Salem) · `97205` (Portland) |
 | **Contact** | Show phone number · turn on **calls** and **texts** · let Craigslist hide your email |
-| **Images** | `assets/social/craigslist-ad-1-1200x900.png` first (it becomes the thumbnail), then `craigslist-ad-2-1200x900.png`, then any real job photos |
+| **Images** | `assets/social/craigslist-ad-1-1200x900.png` first (it becomes the thumbnail), then `craigslist-ad-2-1200x900.png`, then 2–3 real job photos from `assets/photos/upload/` |
 
 **Cost:** in most US areas, Craigslist charges a small fee for each
 *services offered* post (about $5 in recent years). Check the amount at

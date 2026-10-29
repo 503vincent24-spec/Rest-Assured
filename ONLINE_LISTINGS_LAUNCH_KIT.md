@@ -153,15 +153,26 @@ images, edit `tools/social-images.html` and re-run
 
 | Platform | Profile / logo | Cover / banner | Posts / gallery |
 |---|---|---|---|
-| Google Business Profile | `profile-1000.png` | `facebook-cover-1640x624.png` (as cover) | Real job photos + `square-post-1080.png` |
-| Facebook | `profile-1000.png` | `facebook-cover-1640x624.png` | `square-post-1080.png` |
-| Nextdoor | `profile-1000.png` | `facebook-cover-1640x624.png` | `square-post-1080.png` |
-| Yelp | `profile-1000.png` | — | Real photos first, then `craigslist-ad-2-1200x900.png` |
-| Angi | `profile-1000.png` | — | `square-post-1080.png` + real job photos |
+| Google Business Profile | `profile-1000.png` | `assets/photos/upload/job-full-wrap.jpg` (cover: Google wants a real photo, no text) | All 8 photos in `assets/photos/upload/` (plain, no text: Google's photo rules) |
+| Facebook | `profile-1000.png` | `facebook-cover-photo-1640x624.png` (real photo) or `facebook-cover-1640x624.png` | `square-post-1080.png`, `instagram/ig-07`–`ig-09`, and an album of `assets/photos/upload/` |
+| Nextdoor | `profile-1000.png` | `facebook-cover-photo-1640x624.png` | 3–5 photos from `assets/photos/upload/` |
+| Yelp | `profile-1000.png` | — | All 8 photos in `assets/photos/upload/` first (Yelp ranks real photos higher), then `craigslist-ad-2-1200x900.png` |
+| Angi | `profile-1000.png` | — | All 8 photos in `assets/photos/upload/` + `square-post-1080.png` |
 | Craigslist | — | — | `craigslist-ad-1-1200x900.png` (lead image), `craigslist-ad-2-1200x900.png` |
-| Instagram | `profile-1000.png` | — (highlight covers: `instagram/highlight-*.png`) | `instagram/ig-01` … `ig-06` (1080×1350) + Reels |
-| X / Twitter | `profile-1000.png` | `x-header-1500x500.png` | `instagram/ig-06-text-for-quote.png` (pinned) |
+| Instagram | `profile-1000.png` | — (highlight covers: `instagram/highlight-*.png`) | `instagram/ig-01` … `ig-09` (1080×1350) + photo carousels + Reels |
+| X / Twitter | `profile-1000.png` | `x-header-photo-1500x500.png` (real photo) or `x-header-1500x500.png` | `instagram/ig-06-text-for-quote.png` (pinned), `ig-07`–`ig-09` |
+| Craigslist (extra images) | | | Add 2–3 photos from `assets/photos/upload/` after the two ad images; real photos get more replies |
 | Website link previews | `assets/og-image.png` (1200×630, used automatically when anyone shares the site) | | |
+
+**Profile pictures stay the logo everywhere.** Customers recognize it
+across platforms, and Google and Facebook both recommend a logo for a
+business profile. Real photos go in covers, galleries, and posts.
+
+**Real job photos** (`assets/photos/`): 8 photos of real loads, cropped,
+with faces on U-Haul's wall ads and a license plate removed, and all
+hidden phone data (location, device) stripped. `assets/photos/upload/`
+has the 1,536 px versions for listings; the 900 px versions in
+`assets/photos/` are for the website.
 
 ---
 

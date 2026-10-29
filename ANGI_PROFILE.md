@@ -125,7 +125,7 @@ Licensed, local moving labor — you bring the truck, we bring the crew.
 
 ### Profile photo and gallery
 - Profile / logo: `assets/social/profile-1000.png`
-- Gallery: `assets/social/square-post-1080.png`, then **real job photos**
+- Gallery: `assets/social/square-post-1080.png`, then the **real job photos** in `assets/photos/upload/`
   (a well-packed truck, wrapped furniture, finished assembly, the crew at
   work). Angi profiles with 10+ project photos usually get more leads.
 

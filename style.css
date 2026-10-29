@@ -687,6 +687,16 @@ a[href^="mailto:"] { overflow-wrap:anywhere; }
 }
 
 /* ─── TYPICAL PRICES TABLE + PROMISE CARDS ───────────────── */
+/* Job photo gallery: real loads from Rest Assured jobs (assets/photos/) */
+.photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin:0; padding:0; list-style:none; }
+.photo-grid.two { grid-template-columns:repeat(2,1fr); max-width:820px; margin:0 auto; }
+.photo-card { margin:0; background:var(--white); border:1px solid var(--line); border-radius:var(--radius-md); overflow:hidden; }
+.photo-card img { display:block; width:100%; height:auto; aspect-ratio:3/4; object-fit:cover; background:var(--gray-100); }
+.photo-card figcaption { padding:.75rem 1rem .9rem; font-size:var(--text-sm); color:var(--ink-muted); line-height:1.5; }
+.photo-card figcaption strong { color:var(--navy-900); }
+@media(max-width:860px){ .photo-grid { grid-template-columns:1fr 1fr; } }
+@media(max-width:480px){ .photo-grid, .photo-grid.two { grid-template-columns:1fr; } }
+
 .price-table-wrap { max-width:820px; margin:0 auto; overflow-x:auto; border-radius:var(--radius-lg,14px); box-shadow:0 10px 30px rgba(15,37,71,.08); background:var(--white); border-top:6px solid var(--emerald-600); }
 .price-table { width:100%; border-collapse:collapse; font-size:var(--text-base); }
 .price-table th, .price-table td { padding:.9rem 1.1rem; text-align:left; border-bottom:1px dashed var(--gray-200); vertical-align:top; }

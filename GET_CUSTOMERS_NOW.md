@@ -73,7 +73,7 @@ create a second profile. Duplicates get both profiles suspended.
       it in place of `[REVIEW LINK]` in `EMAIL_TEMPLATES.md` and
       `AI_KNOWLEDGE_BASE.md`
 - [ ] Upload `assets/social/profile-1000.png` (logo),
-      `facebook-cover-1640x624.png` (cover), and 5+ real job photos
+      `assets/photos/upload/job-full-wrap.jpg` (cover), and all 8 real job photos in `assets/photos/upload/`
 - [ ] Turn on **Messages** and **Booking / Quote** button pointing to
       `/quote.html?utm_source=google&utm_medium=organic&utm_campaign=gbp`
 - [ ] Publish the first post from `GBP_CONTENT.md`

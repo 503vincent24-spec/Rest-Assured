@@ -214,7 +214,7 @@ Still to replace by hand: `[REVIEW LINK]` (email templates / AI knowledge base),
 **Images:**
 - [x] Logo PNG exported (`assets/social/profile-1000.png`) — upload to GBP and Facebook
 - [x] OG image (1200×630px) created at `assets/og-image.png`
-- [ ] Real crew/job photos added to website, GBP, and social profiles
+- [x] Real job photos added to the website and prepared for GBP and social profiles (`assets/photos/`); upload them to each platform (`ONLINE_LISTINGS_LAUNCH_KIT.md` §4). Still wanted: a crew photo
 - [ ] Full image checklist in `website/IMAGE_GUIDE.md`
 
 ---

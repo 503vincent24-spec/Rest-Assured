@@ -65,7 +65,7 @@ on the one before it.
 - [ ] Post the pinned introduction post (Post 1 from FACEBOOK_CONTENT.md)
 - [ ] Create Instagram account and complete profile using `INSTAGRAM_GUIDE.md`
 - [ ] Claim Nextdoor Business Page using `NEXTDOOR_GUIDE.md`
-- [ ] Take the first real crew/job photos (even phone-quality beats stock photos)
+- [x] First real job photos (8 truck loads, in `assets/photos/`); still take a crew photo
   - At minimum: one loading shot, one team photo
   - Upload immediately to Google Business Profile (logo + cover + 1 action photo)
 
