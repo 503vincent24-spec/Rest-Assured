@@ -19,12 +19,12 @@ generic stock when the subject is real.
 |---|---|---|
 | `job-full-wrap.jpg` | Dressers in blankets + green stretch wrap, chairs padded | Homepage gallery, services page, Instagram post 10, Facebook/X photo covers, Google cover |
 | `job-sofa-mattress.jpg` | Mattress bagged and strapped, sofa in front | Homepage gallery, Instagram post 12 |
-| `job-wrapped-furniture.jpg` | Wrapped furniture at the front, boxes stacked tight | Homepage gallery |
+| `job-wrapped-furniture.jpg` | Wrapped furniture at the front, boxes stacked tight | Homepage gallery, About page |
 | `job-tight-load.jpg` | Bins and bags floor to ceiling | Homepage gallery, services page, Instagram post 11 |
 | `job-wall-of-bins.jpg` | Solid wall of drawers and bins | Homepage gallery |
 | `job-cabinet-ramp.jpg` | Tall wrapped cabinet, hand truck, ramp | Homepage gallery |
-| `job-mattress-tarp.jpg` | Mattress under a blue tarp, boxes, bags | Listings only |
-| `job-boxes-furniture.jpg` | Boxes under a desk, dresser pieces | Listings only |
+| `job-mattress-tarp.jpg` | Mattress under a blue tarp, boxes, bags | About page, listings |
+| `job-boxes-furniture.jpg` | Boxes under a desk, dresser pieces | About page, listings |
 
 Each has a 900 px web version in `assets/photos/` and a 1,536 px version
 for listing sites in `assets/photos/upload/`.
