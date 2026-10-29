@@ -47,7 +47,7 @@ below matches a field in Yelp for Business, so you can copy and paste.
 > suggests trucking, freight, or delivery.
 
 **Business attributes / amenities** (answer *Yes*):
-Offers free estimates · Locally owned & operated · Licensed · Insured ·
+Offers free estimates · Locally owned & operated · Licensed ·
 Accepts credit cards · Accepts Venmo/Zelle/Cash App/PayPal *(if offered)* ·
 Responds to quote requests.
 
@@ -57,7 +57,7 @@ Responds to quote requests.
 
 ### Specialties
 ```
-Rest Assured Moving LLC is a licensed and insured moving LABOR crew serving
+Rest Assured Moving LLC is a licensed, locally owned moving LABOR crew serving
 Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard,
 and the Portland Metro area.
 

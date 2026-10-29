@@ -110,7 +110,7 @@ job's city) on every post.** Instagram shows posts to nearby people.
 
 | # | Type | Asset | Caption (hook → body → call to action) |
 |---|---|---|---|
-| 1 | Image | `ig-01-intro.png` | **Rented the truck? We'll load it.** 💪 Rest Assured Moving is Salem's labor-only moving crew: loading, unloading, packing & furniture assembly. Licensed & insured, from $95/hr, no fuel fees. 📲 Text (971) 302-0120 for a free quote. |
+| 1 | Image | `ig-01-intro.png` | **Rented the truck? We'll load it.** 💪 Rest Assured Moving is Salem's labor-only moving crew: loading, unloading, packing & furniture assembly. Licensed & local, from $95/hr, no fuel fees. 📲 Text (971) 302-0120 for a free quote. |
 | 2 | Image | `ig-02-prices.png` | **Here's what moving help actually costs in Salem.** No "call for pricing" games. $95/hr for 2 movers, $130/hr for 3, blankets & wrap included. Save this for moving day 📌 and DM us your move date for an exact quote. |
 | 3 | Reel | Phone video: wrapping a dresser in blankets, 10–15 sec | **This is why your furniture arrives without scratches.** Every piece gets wrapped, every time, at no extra charge. Moving soon? Link in bio for a free quote. |
 | 4 | Image | `ig-04-labor-only.png` | **Why hire labor-only movers?** You book the U-Haul or PODS yourself and pay only for the crew, not full-service mover prices. Text (971) 302-0120. |

@@ -44,8 +44,7 @@ call.
       cards (`business-card-front.svg` / `-back.svg`), a printed estimate or
       invoice with the logo
 - [ ] Proof you run the business: your Oregon Secretary of State LLC
-      registration (on screen or printed), your insurance certificate, and
-      your business bank or payment app showing the business name
+      registration (on screen or printed) and your business bank or payment app showing the business name
 - [ ] Your work equipment: moving blankets, dollies, straps, tool bag
 - [ ] A street sign or landmark in Salem you can film to show location
 
@@ -57,8 +56,8 @@ seconds, phone held steady. Shoot it in this order:
 2. **Your equipment and branding.** Blankets, dollies, tools, a branded
    shirt, business cards.
 3. **Proof you run the business.** Open the garage or storage unit with
-   your own key, and show the LLC registration or insurance document with
-   the business name visible.
+   your own key, and show the LLC registration with the business name
+   visible.
 
 Upload it in the Google Business Profile app. Don't film customers' homes
 or faces, and don't show a rental truck as if it's yours.
@@ -79,8 +78,9 @@ create a second profile. Duplicates get both profiles suspended.
       `/quote.html?utm_source=google&utm_medium=organic&utm_campaign=gbp`
 - [ ] Publish the first post from `GBP_CONTENT.md`
 - [ ] Apply for **Google Local Services Ads** (see
-      `ADVERTISING_STRATEGY.md`). It needs a background check and proof of
-      insurance, and takes 2–4 weeks, so start now.
+      `ADVERTISING_STRATEGY.md`). It needs a background check and **proof of
+      insurance**, so it isn't available until you have a liability
+      policy. Skip it for now.
 
 ---
 

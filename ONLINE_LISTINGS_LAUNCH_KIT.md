@@ -35,12 +35,12 @@ Scope:          LABOR ONLY — loading, unloading, packing, unpacking,
 
 **Short (≈100 characters): Facebook intro, Nextdoor tagline, Angi headline**
 ```
-Licensed & insured moving labor in Salem, OR. You bring the truck — we bring the crew.
+Licensed, local moving labor in Salem, OR. You bring the truck — we bring the crew.
 ```
 
 **Medium (≈250 characters): directory "short description" fields**
 ```
-Rest Assured Moving LLC provides licensed, insured moving labor in Salem and
+Rest Assured Moving LLC provides licensed, local moving labor in Salem and
 Portland Metro: truck and PODS loading, unloading, packing, unpacking, and
 furniture assembly. Flat hourly pricing from $95/hr. No fuel or mileage fees.
 ```
@@ -138,7 +138,7 @@ leave it alone.
    **Header:** `assets/social/x-header-1500x500.png`
 5. **Bio (160 max):**
    ```
-   Licensed & insured moving labor in Salem, OR. Loading, unloading, packing & furniture assembly. You bring the truck, we bring the crew. 📲 (971) 302-0120
+   Licensed, local moving labor in Salem, OR. Loading, unloading, packing & furniture assembly. You bring the truck, we bring the crew. 📲 (971) 302-0120
    ```
 6. **Location:** `Salem, Oregon` · **Website:** `https://[WEBSITE URL]/?utm_source=x&utm_medium=social&utm_campaign=x-profile`
 7. Post `ig-06-text-for-quote.png` with "Moving in the Salem area? Text us your move date, home size, and truck. Free quotes, usually same day. 📲 (971) 302-0120" and **pin it**.
@@ -194,7 +194,7 @@ booked job stays above 40% of an average job's revenue.
 - [ ] Replace `[WEBSITE URL]` in this kit and every platform file with the live domain
 - [ ] FormSubmit activated: a test quote arrived in the inbox (README Step 1)
 - [ ] `[YEAR]` founded and `[#]` employees filled into `YELP_PROFILE.md` / `ANGI_PROFILE.md`
-- [ ] Certificate of insurance PDF ready to upload
+- [ ] Oregon LLC registration (Secretary of State registry number) ready to upload
 
 **Accounts**
 - [ ] Google Business Profile claimed and verification requested

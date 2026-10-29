@@ -40,8 +40,9 @@ by answering fast (Section 5), or only pick task types with cheaper leads.
    and Facebook character for character.
 3. Complete the **background check** on the owner. Angi requires it, and
    it usually takes a few business days.
-4. Upload **proof of insurance** (general liability certificate) and
-   business registration (Oregon Secretary of State registry number).
+4. Upload your business registration (Oregon Secretary of State registry
+   number). Skip any optional insurance upload, and never check an
+   "insured" box: Rest Assured doesn't carry liability insurance yet.
 5. Set up the **Angi Pro app** on your phone with notifications ON.
 
 | Field | Enter exactly |
@@ -94,7 +95,7 @@ anything farther away. Out-of-area leads waste the budget.
 
 ### Business description
 ```
-Rest Assured Moving LLC is a licensed and insured moving labor company
+Rest Assured Moving LLC is a licensed, locally owned moving labor company
 based in Salem, Oregon. You arrange the rental truck, PODS, U-Box, or
 trailer — we provide the trained crew to load it, unload it, and put your
 home back together.
@@ -119,7 +120,7 @@ Rest assured, it's handled.
 
 ### Short tagline / headline (if asked)
 ```
-Licensed & insured moving labor — you bring the truck, we bring the crew.
+Licensed, local moving labor — you bring the truck, we bring the crew.
 ```
 
 ### Profile photo and gallery

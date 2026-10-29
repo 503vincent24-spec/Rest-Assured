@@ -42,7 +42,7 @@ LOW       BUILDING      PEAK SEASON         TAPERING   LOW
 
 ### Admin
 - File business taxes or prepare records for accountant
-- Review and update business insurance — confirm coverage is current
+- Decide on business liability insurance (not carried yet); if you have a policy, confirm it's current
 - Confirm business license is active for current year
 
 ### KPI to check

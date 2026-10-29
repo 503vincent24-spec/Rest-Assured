@@ -64,6 +64,11 @@ or transport.**
   come in (marked spots in `index.html` and `quote.html`).
 - **Never ask for Yelp reviews** (Yelp's rule). Do ask for Google and Angi
   reviews.
+- **Licensed, not insured.** Shawn is licensed but carries no liability
+  insurance, so nothing may say "insured", "bonded", or "covered". The FAQ,
+  Google Q&A, and AI knowledge base say so honestly when asked. If a policy
+  is bought later, search the repo for "liability insurance" to update those
+  answers, the service agreement's damage clause, and `llms.txt`.
 
 ## Only the owner can do these (in order)
 
@@ -82,3 +87,6 @@ or transport.**
    `SERVICE_AGREEMENT_TEMPLATE.md`.
 9. Add real crew and job photos (`IMAGE_GUIDE.md`).
 10. Set up Bing Webmaster Tools, Bing Places, and Apple Business Connect (`AI_SEARCH_VISIBILITY.md` Part 2).
+11. Consider general liability insurance. Google Local Services Ads
+    requires it, and some apartment buildings ask movers for an insurance
+    certificate before they can use elevators or loading docks.

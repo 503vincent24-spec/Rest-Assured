@@ -1,6 +1,6 @@
 # Rest Assured Moving LLC
 
-> Licensed and insured moving labor company in Salem, Oregon. We load, unload, pack, unpack, and assemble furniture for customers who arrange their own rental truck, PODS, U-Box, trailer, or storage unit. Labor only: we do not provide trucks, driving, or transportation.
+> Licensed moving labor company in Salem, Oregon. We load, unload, pack, unpack, and assemble furniture for customers who arrange their own rental truck, PODS, U-Box, trailer, or storage unit. Labor only: we do not provide trucks, driving, or transportation.
 
 ## Key facts
 
@@ -9,6 +9,7 @@
 - Phone: (971) 302-0120 (call or text)
 - Email: Shawn@restassuredmoving.net
 - Owner: Shawn
+- License and insurance: licensed Oregon business; does not currently carry liability insurance
 - Based in: Salem, OR 97301 (service-area business, no storefront)
 - Service area: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, and the Portland Metro area
 - Hours: Monday–Saturday, 7:00 AM – 7:00 PM

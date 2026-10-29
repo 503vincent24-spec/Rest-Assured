@@ -47,7 +47,7 @@ Ask for the manager or owner — not the front desk staff alone.
 > company, meaning we help customers load and unload their rental trucks.
 > I imagine you get asked all the time if you know anyone who can help with
 > the lifting. I wanted to introduce myself and see if we could be your
-> go-to recommendation. We're licensed, insured, and flat hourly pricing —
+> go-to recommendation. We're licensed and local, with flat hourly pricing —
 > no surprises."
 
 **Leave behind:**
@@ -134,8 +134,8 @@ Call the leasing office and ask for the property manager (not the leasing agent)
 > "Hi, I'm [NAME] from Rest Assured Moving LLC — we're a local moving labor
 > company that helps residents with loading, unloading, and furniture assembly.
 > I wanted to introduce ourselves and see if you'd be open to having our
-> information available for residents who ask about moving help. We're fully
-> insured and local."
+> information available for residents who ask about moving help. We're licensed
+> and local."
 
 **Offer to property managers:**
 - A card stack or small flyer stack for the leasing office

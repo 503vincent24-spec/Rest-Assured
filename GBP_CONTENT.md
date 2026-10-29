@@ -98,7 +98,7 @@ A: We recommend 1–2 weeks ahead, especially around the 1st and last weekend of
 A: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, and the greater Portland Metro area.
 
 **Q: Are you licensed and insured?**
-A: Yes. Rest Assured Moving LLC is a licensed business and carries appropriate liability insurance. Contact us for documentation if needed.
+A: We're licensed: Rest Assured Moving LLC is a licensed Oregon business. We don't carry liability insurance at this time. Furniture is wrapped in blankets or shrink wrap before it moves, and we do a walkthrough with you before we leave. If anything is damaged, tell us before the crew leaves and Shawn will work it out with you directly.
 
 ---
 

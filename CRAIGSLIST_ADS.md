@@ -64,14 +64,14 @@ example `restassuredmoving.net`) before posting.
 
 **Title:**
 ```
-Moving Help – Load/Unload Crew $95/hr – Licensed & Insured – Salem
+Moving Help – Load/Unload Crew $95/hr – Licensed – Salem
 ```
 
 **Body:**
 ```
 RENTED THE TRUCK? WE'LL LOAD IT.
 
-Rest Assured Moving LLC is a local, licensed and insured moving LABOR crew.
+Rest Assured Moving LLC is a local, licensed moving LABOR crew.
 You arrange the U-Haul, Penske, Budget, PODS, U-Box, or trailer — we bring
 the trained crew to load it right, unload it at the other end, and put your
 furniture back together.
@@ -215,7 +215,7 @@ Moving Labor Crew – Load/Unload Your Truck – Beaverton/Tigard/PDX
 ```
 You handle the truck. We handle the heavy lifting.
 
-Rest Assured Moving LLC sends trained, licensed and insured movers to load
+Rest Assured Moving LLC sends trained, licensed movers to load
 and unload rental trucks, PODS, containers, and storage units across the
 west side and Portland Metro.
 

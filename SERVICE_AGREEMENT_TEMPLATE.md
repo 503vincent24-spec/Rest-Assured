@@ -107,9 +107,10 @@ Moving LLC personnel during the performance of services:
    crew departs the job site.
 2. Damage reported after the crew departs may not be accepted as the
    responsibility of Rest Assured Moving LLC.
-3. Rest Assured Moving LLC carries general liability insurance. Claims will
-   be evaluated based on the circumstances and handled directly between the
-   owner and the customer.
+3. Rest Assured Moving LLC does not currently carry liability insurance.
+   Claims will be evaluated based on the circumstances and handled directly
+   between the owner and the customer, subject to the Limitation of
+   Liability below.
 4. Rest Assured Moving LLC is not responsible for damage to items that were:
    - Already damaged prior to the service
    - Improperly packed by the customer prior to the crew's arrival
