@@ -42,10 +42,16 @@ wins the job.
 
 **Give the price on the call.** Use the table on the homepage or
 `estimate.html`:
-> "For a 2-bedroom on the second floor, loading and unloading, I'd send
+> "For a 2-bedroom on the ground floor, loading and unloading, I'd send
 > 3 movers at $130 an hour. That usually runs 4½ to 6½ hours, so plan on
 > roughly $585 to $845. No fuel or mileage fees, and blankets and wrap are
 > included."
+
+**Offer Full Wrap** when they book both ends and mention nice furniture, a
+long drive, a storage unit, or rain in the forecast:
+> "If you want every piece padded and sealed, we offer Full Wrap: blankets
+> plus stretch wrap on everything. For a 2-bedroom that's a $95 supply fee
+> plus about an hour of extra crew time, so roughly $160 to $225 more in total."
 
 **Ask for the booking:**
 > "I've got a crew open on Saturday morning at 8. Want me to put you down

@@ -19,7 +19,7 @@ the business as possible, which is what they draw on.
 | AI crawlers explicitly allowed (ChatGPT, Claude, Perplexity, Gemini, Apple, Copilot/Bing, and others) | `robots.txt` | Blocked crawlers can't read or cite the site |
 | `llms.txt`: a plain-language fact sheet (services, prices, area, hours, phone, what we don't do) | `llms.txt` | An emerging standard that gives AI tools the key facts in one short file |
 | Business details for Google and AI: business type, owner, slogan, cities, hourly prices, payment, hours, logo | `index.html` (hidden structured data) | Machine-readable facts that search engines and AI tools trust more than plain text |
-| All 22 FAQ answers marked up as questions and answers, matching the page word for word | `faq.html` | AI answers are often taken straight from question-and-answer content |
+| All 23 FAQ answers marked up as questions and answers, matching the page word for word | `faq.html` | AI answers are often taken straight from question-and-answer content |
 | Clear answer-first content: price table, labor-only explanation, service-area page | Homepage, `services.html`, `service-area.html` | AI tools quote pages that state facts plainly ("$95/hour for 2 movers") |
 | Sitemap with last-updated dates | `sitemap.xml` | Helps crawlers find and refresh pages |
 

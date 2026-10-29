@@ -94,6 +94,8 @@ Say: "We're a labor-only company — we don't drive trucks or provide transporta
 **Rate:** $95 per hour for 2 movers, $130 per hour for 3 movers. 2-hour minimum, then 30-minute increments. Larger crews quoted per job.
 **No fuel surcharges.** No mileage fees. No travel time charges within service area.
 **Materials:** Moving blankets and shrink wrap included. Boxes, tape, and packing paper billed separately if we supply them.
+
+**Full Wrap (optional):** every furniture piece padded with moving blankets AND sealed in stretch wrap. Only when we do both loading and unloading (our blankets ride in the customer's truck and come back with us). Price = extra wrapping time at the hourly rate (about 4 crew-minutes per piece) + flat supply fee: studio $45 · 1BR $65 · 2BR $95 · 3BR $130 · 4BR+ $170. Both-ends totals with Full Wrap (ground floor): studio $330–$473 · 1BR $445–$635 · 2BR $745–$1,070 · 3BR $1,105–$1,495 · 4BR+ $1,470–$2,120.
 **Payment:** Due at end of job. Accepted methods: cash, credit/debit card, Venmo, Zelle, Cash App, and PayPal.
 
 **What the AI can say:**
@@ -180,6 +182,9 @@ A: Some oversized items can be accommodated — contact us before booking to dis
 
 **Q: Do you bring moving blankets and supplies?**
 A: We bring moving blankets and shrink wrap, which are included in the hourly rate. Boxes, packing paper, and tape can be supplied at an additional cost, or you can provide your own.
+
+**Q: What is Full Wrap?**
+A: Full Wrap is our highest level of furniture protection. Every piece of furniture is padded with moving blankets and then sealed in stretch wrap, which keeps out dust and moisture and holds the blankets in place. Standard service already puts furniture in blankets or shrink wrap at no extra cost; Full Wrap does both on every piece. You pay for the extra wrapping time at your hourly rate plus a flat supply fee: $45 for a studio, $65 for 1 bedroom, $95 for 2 bedrooms, $130 for 3 bedrooms, and $170 for 4+ bedrooms. For a typical 1-bedroom move, Full Wrap adds about $110–$160 in total. It's available when we do both the loading and the unloading, because our blankets ride in your truck and come back with us.
 
 **Q: How do I get a free quote?**
 A: Submit our online quote form at [WEBSITE URL]/quote.html, call (971) 302-0120, or email Shawn@restassuredmoving.net. We respond within one business day.

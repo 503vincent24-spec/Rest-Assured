@@ -29,6 +29,7 @@ or transport.**
 | Instagram and X (Twitter) accounts | ✅ Setup guide, 6 post graphics + 9-post plan, 5 highlight covers, X header | `INSTAGRAM_GUIDE.md`, `ONLINE_LISTINGS_LAUNCH_KIT.md` §3a–3b, `assets/social/instagram/` |
 | Logo (trust, honesty, family) + business cards + flyers for laundromats and apartments | ✅ New logo applied everywhere; print-ready PDFs with a QR code that has been scan-tested | `assets/logo-sheet.png`, `print/` |
 | Show up in AI search (ChatGPT, Google AI, Perplexity, etc.) | ✅ Site side done; owner steps listed | `AI_SEARCH_VISIBILITY.md`, `llms.txt`, `robots.txt` |
+| Premium price point: blankets + shrink wrap on all furniture | ✅ "Full Wrap" option in the estimator, homepage price table, FAQ, quote form; supply and labor costs worked out | `PRICING_GUIDE.md` §6, `estimate.html` |
 
 ## Checks run (all passing)
 
@@ -37,8 +38,9 @@ or transport.**
   - Estimator → quote form prefill → validation → submit → thank-you page.
   - The lead email includes phone, preferred contact, lead source (UTM tag), online estimate, and "heard about us".
   - When sending fails, the backup email/phone message appears.
-- **Price table vs. estimator:** every homepage price matches the live
-  estimator for all home sizes (0 mismatches).
+- **Price table vs. estimator:** every homepage price, including the Full
+  Wrap column and its supply fees, matches the live estimator for all home
+  sizes (0 mismatches).
 - **Links and data:** no broken internal links or images. Structured data
   for Google parses on every page. Every public page is in `sitemap.xml`.
 - **Brand rule:** no copy claims trucks, driving, delivery, or transport.

@@ -98,6 +98,12 @@ Rates: $95 per hour for 2 movers, $130 per hour for 3 movers (2-hour
 minimum; larger crews quoted per job). Final quote depends on home size, services needed,
 and access (stairs, distance from truck to door, etc.).
 
+Full Wrap (optional, only when we do both loading and unloading): every
+furniture piece padded with moving blankets AND sealed in stretch wrap.
+Price = the extra wrapping time at the hourly rate plus a flat supply fee:
+studio $45, 1 bedroom $65, 2 bedrooms $95, 3 bedrooms $130, 4+ bedrooms
+$170. Standard service (blankets or shrink wrap on furniture) stays included.
+
 What the AI assistant CAN say: the rate range, that pricing is hourly and
 transparent, and that materials (boxes, wrap, tape) may be billed separately
 if the customer wants us to supply them.
