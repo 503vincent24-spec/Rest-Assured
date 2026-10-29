@@ -45,6 +45,11 @@ or transport.**
 - **Consistency:** rates, 2-hour minimum, and payment methods are the same
   on the website, ads, profiles, email templates, and both AI knowledge
   bases.
+- **New materials (AI search, Instagram/X, logo, print):** every price on
+  the flyers, Instagram graphics, and `llms.txt` matches the live
+  estimator. The FAQ's hidden data matches the visible FAQ word for word.
+  All 4 QR codes scan to a text to (971) 302-0120 with the right message.
+  No copy offers trucks or driving, and no old logo is left in use.
 
 ## Decisions on record
 

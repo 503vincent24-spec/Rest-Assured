@@ -141,7 +141,7 @@ leave it alone.
    Licensed & insured moving labor in Salem, OR. Loading, unloading, packing & furniture assembly. You bring the truck, we bring the crew. 📲 (971) 302-0120
    ```
 6. **Location:** `Salem, Oregon` · **Website:** `https://[WEBSITE URL]/?utm_source=x&utm_medium=social&utm_campaign=x-profile`
-7. Post `ig-06-text-for-quote.png` with "Moving in the Salem area? Text us your move date, home size, and truck. Free quotes in minutes. 📲 (971) 302-0120" and **pin it**.
+7. Post `ig-06-text-for-quote.png` with "Moving in the Salem area? Text us your move date, home size, and truck. Free quotes, usually same day. 📲 (971) 302-0120" and **pin it**.
 8. Check notifications once a week for messages. No regular posting
    needed.
 

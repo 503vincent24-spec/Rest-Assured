@@ -31,7 +31,8 @@
   .front .promise{ font-family:var(--serif); font-style:italic; font-size:8.4pt; color:rgba(255,255,255,.88); margin-top:7pt; padding-top:6pt; border-top:1px solid rgba(255,255,255,.22); }
   .front .fphone{ font-size:7.4pt; color:rgba(255,255,255,.8); margin-top:5pt; }
   .front .fphone b{ font-family:var(--mono); font-size:9pt; color:#fff; letter-spacing:.01em; }
-  .front .rule{ position:absolute; left:0; right:0; bottom:0; height:0.2in; background:var(--em); }
+  /* Bottom stripe: 0.125in bleed + 0.125in visible after trim, so cutting drift can't shave it to a sliver */
+  .front .rule{ position:absolute; left:0; right:0; bottom:0; height:0.25in; background:var(--em); }
 
   /* BACK */
   .back{ background:var(--paper); }
@@ -46,7 +47,7 @@
   .back .qr{ align-self:center; text-align:center; }
   .back .qr img{ width:0.86in; height:0.86in; display:block; }
   .back .qr span{ display:block; font-family:var(--mono); font-size:5pt; letter-spacing:.08em; color:var(--navy); margin-top:2pt; font-weight:700; }
-  .back .band{ position:absolute; left:0; right:0; bottom:0; height:0.2in; background:var(--navy); }
+  .back .band{ position:absolute; left:0; right:0; bottom:0; height:0.25in; background:var(--navy); }
 </style>
 </head>
 <body>

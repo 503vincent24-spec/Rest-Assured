@@ -85,7 +85,7 @@ Automations (covers Instagram and Facebook together):
   the hour, Mon–Sat 7am–7pm. Prefer to talk? Call/text (971) 302-0120.
   ```
 - **Frequently asked questions** (tap-to-ask buttons in the chat):
-  - *How much does it cost?* → "$95/hr for 2 movers, $130/hr for 3, 2-hour minimum. Blankets & wrap included, no fuel or mileage fees. Most 1-bedroom loads run $190–$238."
+  - *How much does it cost?* → "$95/hr for 2 movers, $130/hr for 3, 2-hour minimum. Blankets & wrap included, no fuel or mileage fees. A ground-floor 1-bedroom load usually runs $190–$238."
   - *Do you bring a truck?* → "We're labor-only, which keeps us cheaper than full-service movers. Book a U-Haul, Penske, or PODS, and we'll load and unload it."
   - *What areas do you cover?* → "Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard & Portland Metro."
   - *How do I book?* → "Send your move date and home size here, or text (971) 302-0120. We'll confirm the crew and rate in writing."
@@ -118,7 +118,7 @@ job's city) on every post.** Instagram shows posts to nearby people.
 | 6 | Image | `ig-03-how-it-works.png` | **Booking us takes one text.** 1️⃣ Send your move details 2️⃣ Get your crew size + rate in writing 3️⃣ We do the heavy lifting. 📲 (971) 302-0120 |
 | 7 | Reel | Assembly reveal: flat-pack boxes → finished bed frame, 10–15 sec | **IKEA bed frame, start to finish. Zero leftover screws.** We do furniture assembly with or without a move. From $95/hr. DM "ASSEMBLY" for a quote. |
 | 8 | Image | `ig-05-service-area.png` | **Where we work** 📍 Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard & Portland Metro. No mileage fees inside our area. Which city are you moving to? 👇 |
-| 9 | Image | `ig-06-text-for-quote.png` *(pin this)* | **Get a quote in minutes.** Text us 3 things: your move date, home size, and your truck or container. That's it. 📲 (971) 302-0120 · Mon–Sat 7am–7pm |
+| 9 | Image | `ig-06-text-for-quote.png` *(pin this)* | **Free quote, usually the same day.** Text us 3 things: your move date, home size, and your truck or container. That's it. 📲 (971) 302-0120 · Mon–Sat 7am–7pm |
 
 **Pin posts 9, 2, and 1** (open the post → ⋯ → *Pin to your profile*) so
 visitors always see how to book, what it costs, and what you do first.

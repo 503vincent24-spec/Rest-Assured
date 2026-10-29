@@ -307,7 +307,7 @@
       : '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal);
     document.getElementById('result-price').textContent = priceText;
     document.getElementById('result-note').textContent =
-      'Crew of ' + crew + ' · approx. ' + loHrs + '–' + hiHrs + ' hrs · $' + rate + '/hr';
+      'Crew of ' + crew + ' · approx. ' + (loHrs === hiHrs ? loHrs : loHrs + '–' + hiHrs) + ' hrs · $' + rate + '/hr';
 
     var bd = document.getElementById('result-breakdown');
     bd.style.display = 'block';

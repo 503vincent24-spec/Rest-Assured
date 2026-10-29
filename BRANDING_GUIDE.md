@@ -58,7 +58,7 @@ needed per platform (see Section 7).
 Maintain clear space around the mark equal to the height of the shield's top
 edge on all sides — don't let text or other graphics crowd it. Minimum
 display size: 24px tall for the icon-only mark, 32px tall for the horizontal
-lockup, below which the checkmark detail starts to lose legibility.
+lockup, below which the heart doorway starts to lose legibility.
 
 ### 2.4 Don'ts
 - Don't recolor the shield or house outside the approved palette.
@@ -102,7 +102,7 @@ for headings, icons, or buttons with white text instead.
 |---|---|---|---|
 | Display / Headlines | Georgia (or Lora if available) | `Georgia, 'Iowan Old Style', 'Times New Roman', serif` | H1–H4, the wordmark, pull quotes. Conveys the "established, trustworthy" feel. |
 | Body | System UI sans | `-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif` | Paragraphs, navigation, buttons, forms. |
-| Utility / Labels | Monospace | `'Courier New', ui-monospace, monospace` | Eyebrows, manifest/checklist labels, stamps, fine print — the "ledger" texture that ties to the checkmark motif. |
+| Utility / Labels | Monospace | `'Courier New', ui-monospace, monospace` | Eyebrows, manifest/checklist labels, stamps, fine print — the "ledger" texture of the Move Manifest checklist. |
 
 **Why a serif display face for a labor/trades business?** It's a deliberate
 contrast play — most moving-labor competitors lean on bold sans-serif and
@@ -154,7 +154,7 @@ Supporting / contextual alternates:
 A recurring "checklist/ledger card" component — dashed rule lines, a
 checkbox-style checkmark bullet, monospace labels like job numbers and
 statuses — appears across the website, social templates, and print
-collateral. It visually echoes the logo's checkmark and gives the brand a
+collateral. It gives the brand a
 consistent, ownable motif beyond just "navy and green," distinguishing it
 from generic moving-company visuals (boxes, trucks, tape).
 
