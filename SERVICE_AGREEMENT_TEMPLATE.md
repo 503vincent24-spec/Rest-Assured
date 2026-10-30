@@ -52,6 +52,8 @@ will provide the following moving labor services at the address(es) listed below
 
 **Services:**
 ☐ Loading ☐ Unloading ☐ Packing ☐ Unpacking ☐ Furniture Assembly ☐ Furniture Disassembly
+☐ Full Wrap (moving blankets + stretch wrap on every piece; loading and unloading both booked)
+☐ Same-day service (booked for today)
 
 **Pickup address:** _______________________________________________
 **Destination address:** _______________________________________________
@@ -70,7 +72,7 @@ covers labor services exclusively. The customer is responsible for:
 2. Ensuring the truck or container is properly parked and accessible at the
    pickup address at the agreed start time
 3. Providing sufficient fuel, keys, and any access codes needed for the
-   pickup and delivery locations
+   pickup and destination locations
 
 Rest Assured Moving LLC does not own, operate, or provide any vehicle,
 truck, trailer, or transportation service. This agreement does not include
@@ -80,18 +82,25 @@ any freight, hauling, or transportation between locations.
 
 ### Pricing and Payment
 
-**Hourly rate:** $95 per hour for a crew of [#] movers
-**Minimum charge:** [#] hours ([#] hours × $95 = $[MIN CHARGE])
-**Materials (if supplied by RAM):** $25 or included at no charge
+**Hourly rate (check one):**
+☐ $95 per hour, 2 movers ☐ $130 per hour, 3 movers
+☐ Same-day: $115 per hour, 2 movers ☐ Same-day: $155 per hour, 3 movers
 
-Billing begins when the crew arrives at the pickup address and ends upon
-completion of the end-of-job walkthrough. Time is tracked in 30-minute
+**Minimum charge:** 2 hours at the rate above.
+**Moving blankets and shrink wrap:** included.
+**Full Wrap supply fee (if checked above):** $[45 / 65 / 95 / 130 / 170]
+(studio / 1 / 2 / 3 / 4+ bedrooms). The wrapping time is billed at the
+hourly rate.
+**Boxes, packing paper, tape (only if supplied by Rest Assured):** $[AMOUNT]
+
+Billing begins when the crew arrives at the first job address and ends upon
+completion of the end-of-job walkthrough. Time is billed in 30-minute
 increments after the minimum.
 
 Fuel, mileage, and travel time within the service area are not billed.
 
 **Payment is due in full at the completion of the job.**
-Accepted payment methods: [CASH / CHECK / VENMO / ZELLE / CARD — list your methods]
+Accepted payment methods: cash, credit/debit card, Venmo, Zelle, Cash App, or PayPal.
 
 A receipt or invoice will be provided upon payment.
 
@@ -171,7 +180,7 @@ Printed name: _________________________________________
 
 Signature: _________________________________________ Date: ___________
 
-Name/Title: [YOUR NAME], Owner
+Name/Title: Shawn, Owner
 
 ---
 

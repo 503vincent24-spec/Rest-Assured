@@ -35,6 +35,8 @@
   .footer-contact { text-align: center; font-family: 'Courier New', monospace; font-size: 0.8rem; color: var(--ink-soft); margin-top: 2rem; }
   .thanks { font-family: Georgia, serif; font-size: 1.1rem; color: var(--navy); text-align: center; margin: 2rem 0 0.5rem; }
   @media print { body { padding: 0; } }
+  .ratecard{font-size:11px;color:#4A5568;margin:10px 0 18px;line-height:1.5}
+  td small{display:block;font-size:10.5px;color:#5A6576;font-weight:400;margin-top:2px}
 </style>
 </head>
 <body>
@@ -81,41 +83,34 @@
     </thead>
     <tbody>
       <tr>
-        <td>Loading &amp; Unloading</td>
+        <td>Moving labor, [2 / 3]-mover crew: [loading, unloading, packing, unpacking, assembly]<br><small>[Same-day rate, if booked the same day]</small></td>
         <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
+        <td class="num">$[RATE]</td>
+        <td class="num">$[AMOUNT]</td>
       </tr>
       <tr>
-        <td>Packing &amp; Unpacking</td>
-        <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
-      </tr>
-      <tr>
-        <td>Furniture Assembly / Disassembly</td>
-        <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
-      </tr>
-      <tr>
-        <td>Materials (boxes, wrap, tape)</td>
+        <td>Full Wrap supplies, if chosen<br><small>Blankets + stretch wrap on every piece: $45 studio · $65 1 BR · $95 2 BR · $130 3 BR · $170 4+ BR</small></td>
         <td class="num">&mdash;</td>
         <td class="num">&mdash;</td>
-        <td class="num">$25</td>
+        <td class="num">$[FEE]</td>
+      </tr>
+      <tr>
+        <td>Boxes, packing paper, tape<br><small>Only if we supplied them</small></td>
+        <td class="num">&mdash;</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$[AMOUNT]</td>
       </tr>
     </tbody>
     <tfoot>
-      <tr><td colspan="3">Subtotal</td><td class="num">$[SUBTOTAL]</td></tr>
-      <tr><td colspan="3">Tax (if applicable)</td><td class="num">$25</td></tr>
       <tr class="total"><td colspan="3">Total Due</td><td class="num">$[TOTAL]</td></tr>
     </tfoot>
   </table>
+  <p class="ratecard"><strong>Rates:</strong> $95/hr for 2 movers · $130/hr for 3 · same-day service $115/hr (2) or $155/hr (3) · 2-hour minimum, then 30-minute increments · moving blankets and shrink wrap included · no fuel, mileage, or travel fees in our service area.</p>
 
   <div class="pay-block">
     <div class="panel pay">
       <h4>Payment Methods</h4>
-      [Cash / Check / Card / Venmo / Zelle — list accepted methods]
+      Cash, credit/debit card, Venmo, Zelle, Cash App, or PayPal. Due at the end of the job.
     </div>
     <div class="panel pay">
       <h4>Notes</h4>
@@ -127,7 +122,7 @@
     Rest Assured Moving LLC provides moving labor only — loading, unloading,
     packing, unpacking, and furniture assembly/disassembly. We do not provide
     transportation, truck rental, or hauling services. This invoice reflects
-    labor and materials only.
+    labor and materials only. No sales tax (Oregon has none).
   </p>
 
   <p class="thanks">Thank you for trusting Rest Assured Moving with your move.</p>

@@ -59,7 +59,7 @@ rest-assured-moving/
 │   ├── script.js                          ← Lead delivery · attribution · quote form · nav · FAQ
 │   ├── robots.txt                         ← Crawl rules + sitemap pointer
 │   ├── sitemap.xml                        ← 12-page XML sitemap
-│   ├── tools/set-domain.sh                ← Fills [YOUR-DOMAIN] everywhere in one command
+│   ├── tools/set-domain.sh                ← Fills [YOUR-DOMAIN] and [WEBSITE URL] everywhere in one command
 │   ├── IMAGE_GUIDE.md                     ← Page-by-page image specs + photo brief
 │   └── assets/
 │       ├── logo-mark.svg                  ← Shield mark (favicon, nav, avatars)
@@ -137,7 +137,7 @@ Both forms (`quote.html`, `contact.html`) now send leads **directly to `Shawn@re
 
 ## Step 2 — Set Your Domain
 
-Canonical URLs, Open Graph tags, schema, `sitemap.xml` and `robots.txt` still contain `[YOUR-DOMAIN]`. Once you know the live address, run:
+Canonical URLs, Open Graph tags, schema, `sitemap.xml`, `robots.txt` and `llms.txt` contain `[YOUR-DOMAIN]`, and the listing, ad, email and print copy contains `[WEBSITE URL]`. One command fills in both:
 
 ```bash
 ./tools/set-domain.sh restassuredmoving.net                  # custom domain
@@ -147,16 +147,22 @@ Canonical URLs, Open Graph tags, schema, `sitemap.xml` and `robots.txt` still co
 
 Then submit `https://<domain>/sitemap.xml` in Google Search Console.
 
+Run it with the domain you'll keep. The placeholders are gone afterwards,
+so if you start on the GitHub Pages address and buy a domain later, do a
+find-and-replace of the old address across the repo.
+
 ### Business details already filled in
 
 | Detail | Current value | Where to change it |
 |---|---|---|
 | Phone | `(971) 302-0120` (links use `tel:+19713020120`) | All pages, `script.js` (`PHONE`, `TEL`) |
 | Email | `Shawn@restassuredmoving.net` | All pages, `script.js` (`LEAD_EMAIL`), form `action`s |
-| Hourly rate | `$95` (2-person) / `$130` (3-person) | `estimate.html` (`RATE`, `RATE3`), services, FAQ |
+| Hourly rate | `$95` (2-person) / `$130` (3-person) | `estimate.html` (`RATE`, `RATE3`), homepage price table, services, FAQ (full list: `PRICING_GUIDE.md`) |
+| Same-day rate | `$115` / `$155` | `estimate.html` (`SAME_DAY_RATE`, `SAME_DAY_RATE3`); full list in `PRICING_GUIDE.md` §5b |
+| Full Wrap supply fee | `$45`–`$170` by home size | `estimate.html` (`WRAP` block); full list in `PRICING_GUIDE.md` §6 |
 | Payment methods | Cash, Cash App, Zelle, Venmo, card and PayPal | FAQ, invoice, AI knowledge base |
 
-Still to replace by hand: `[REVIEW LINK]` (email templates / AI knowledge base), `[PIXEL-ID]` (advertising strategy), 
+Still to replace by hand: `[REVIEW LINK]` (your Google review link, once the profile is verified: email templates, review system, Facebook content), and `[YEAR]` / `[#]` employees in the Yelp and Angi files.
 
 ---
 

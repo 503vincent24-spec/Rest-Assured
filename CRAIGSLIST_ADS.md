@@ -55,7 +55,7 @@ and repost ads from one dashboard.
 
 Each ad has a tracking link. When someone clicks it, the quote form records
 "craigslist" plus the ad number as the lead source, so you can see which
-ad brings in jobs. Replace `[WEBSITE URL]` with your live domain (for
+ad brings in jobs. `./tools/set-domain.sh` fills `[WEBSITE URL]` with your live domain (for
 example `restassuredmoving.net`) before posting.
 
 ---

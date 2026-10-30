@@ -95,6 +95,8 @@ Say: "We're a labor-only company — we don't drive trucks or provide transporta
 **No fuel surcharges.** No mileage fees. No travel time charges within service area.
 **Materials:** Moving blankets and shrink wrap included. Boxes, tape, and packing paper billed separately if we supply them.
 
+**Referral reward:** when a past customer refers a new customer, both get $25 off after the new customer's job is done (one reward per completed job; new customers only). This is the only standing discount.
+
 **Same-day service:** $115/hr for 2 movers, $155/hr for 3 (2-hour minimum), only when a crew is free. Customer must call or text (971) 302-0120 by 12 pm Mon–Sat. Next-day and later = regular rates.
 
 **Full Wrap (optional):** every furniture piece padded with moving blankets AND sealed in stretch wrap. Only when we do both loading and unloading (our blankets ride in the customer's truck and come back with us). Price = extra wrapping time at the hourly rate (about 4 crew-minutes per piece) + flat supply fee: studio $45 · 1BR $65 · 2BR $95 · 3BR $130 · 4BR+ $170. Both-ends totals with Full Wrap (ground floor): studio $330–$473 · 1BR $445–$635 · 2BR $745–$1,070 · 3BR $1,105–$1,495 · 4BR+ $1,470–$2,120.

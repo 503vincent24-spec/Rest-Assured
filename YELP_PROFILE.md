@@ -48,7 +48,7 @@ below matches a field in Yelp for Business, so you can copy and paste.
 
 **Business attributes / amenities** (answer *Yes*):
 Offers free estimates · Locally owned & operated · Licensed ·
-Accepts credit cards · Accepts Venmo/Zelle/Cash App/PayPal *(if offered)* ·
+Accepts credit cards · Accepts Venmo/Zelle/Cash App/PayPal ·
 Responds to quote requests.
 
 ---

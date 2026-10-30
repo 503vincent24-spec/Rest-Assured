@@ -223,7 +223,7 @@ You get:
 ✅ Specialist labor crew for the physical work
 ✅ Flat hourly pricing with no freight markups
 
-Many customers find this the smarter option. 💡
+For most moves, it costs less too. 💡
 
 #MovingLabor #FullServiceMovers #MovingTips #SalemOregon
 

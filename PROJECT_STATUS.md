@@ -33,27 +33,34 @@ or transport.**
 | Same-day service option | ✅ $115/hr (2 movers), $155/hr (3), call or text by 12 pm; in the estimator, homepage, FAQ, quote form, AI notes, booking workflow; costs worked out | `PRICING_GUIDE.md` §5b, `estimate.html` |
 | Real job photos on the website and social profiles | ✅ 8 photos cropped, faces/plate removed, phone data stripped; homepage gallery, services and About pages, 3 Instagram posts, photo covers for Facebook and X, upload set for Google/Yelp/Angi/Nextdoor | `assets/photos/`, `IMAGE_GUIDE.md` §0, `ONLINE_LISTINGS_LAUNCH_KIT.md` §4 |
 
-## Checks run (all passing)
+## Checks run (all passing, last full audit Oct 30, 2026)
 
-- **End-to-end browser test (30 checks):**
-  - All 19 HTML pages load with no script errors.
-  - Estimator → quote form prefill → validation → submit → thank-you page.
-  - The lead email includes phone, preferred contact, lead source (UTM tag), online estimate, and "heard about us".
-  - When sending fails, the backup email/phone message appears.
-- **Price table vs. estimator:** every homepage price, including the Full
-  Wrap column and its supply fees, matches the live estimator for all home
-  sizes (0 mismatches).
-- **Links and data:** no broken internal links or images. Structured data
-  for Google parses on every page. Every public page is in `sitemap.xml`.
-- **Brand rule:** no copy claims trucks, driving, delivery, or transport.
-- **Consistency:** rates, 2-hour minimum, and payment methods are the same
-  on the website, ads, profiles, email templates, and both AI knowledge
-  bases.
-- **New materials (AI search, Instagram/X, logo, print):** every price on
-  the flyers, Instagram graphics, and `llms.txt` matches the live
-  estimator. The FAQ's hidden data matches the visible FAQ word for word.
-  All 4 QR codes scan to a text to (971) 302-0120 with the right message.
-  No copy offers trucks or driving, and no old logo is left in use.
+- **Browser tests (all 19 pages, desktop and phone):** every page loads
+  with no script errors or missing files and no sideways scrolling.
+  Estimator → quote form → thank-you page, including Full Wrap and
+  same-day; the lead email carries services, estimate, phone, lead source
+  and "heard about us"; the backup message appears if sending fails.
+  The contact form, mobile menu, FAQ dropdowns and skip link all work.
+- **Prices:** every homepage price, including the Full Wrap column and
+  supply fees, matches the live estimator. Same-day rates ($115/$155),
+  Full Wrap fees ($45–$170) and regular rates match in every page, ad,
+  profile, template and AI knowledge base.
+- **Accessibility:** automated WCAG scan (axe) is clean on every page:
+  text contrast, a main region and skip link, underlined links in text.
+  One advisory note left: some card headings skip a level (h2 → h4).
+- **Search data:** the hidden business data parses on every page; the
+  FAQ's 24 hidden answers match the visible FAQ word for word; sitemap
+  dates are current; no broken links or missing anchors.
+- **Rules:** no copy offers trucks, driving, delivery or transport;
+  nothing claims insurance; no borrowed or invented reviews; no Yelp
+  review requests; no unbacked claims ("guaranteed", "#1", customer
+  counts).
+- **Images and print:** every rendered image and PDF matches its source
+  file; all QR codes scan to a text to (971) 302-0120; job photos carry
+  no hidden location data.
+- **Domain script:** tested on a copy of the repo: fills all
+  `[YOUR-DOMAIN]` and `[WEBSITE URL]` placeholders, leaves instructions
+  alone, safe to re-run.
 
 ## Decisions on record
 
@@ -66,6 +73,10 @@ or transport.**
 - **No invented reviews or stats on the site.** They were replaced with
   real prices and promises. Add genuine reviews, with permission, as they
   come in (marked spots in `index.html` and `quote.html`).
+- **Founding year: please confirm.** The About page says "Serving Salem
+  since 2024" and the AI knowledge base says founded 2024, but the 90-day
+  plan lists `2024` as a value to replace. If 2024 is right, use it for
+  `[YEAR]` in the Yelp and Angi files; if not, change all three.
 - **Never ask for Yelp reviews** (Yelp's rule). Do ask for Google and Angi
   reviews.
 - **Licensed, not insured.** Shawn is licensed but carries no liability
@@ -82,8 +93,9 @@ or transport.**
    Steps 2–3).
 3. Submit one test quote, then click FormSubmit's **Activate** email.
    Until then no website leads arrive (README Step 1).
-4. Replace `[WEBSITE URL]` in the listing files, and fill in `[YEAR]` and
-   `[#]` employees in the Yelp and Angi files.
+4. Fill in `[YEAR]` and `[#]` employees in the Yelp and Angi files. (The
+   domain script in step 2 now also fills `[WEBSITE URL]` in the listing
+   files.)
 5. Verify Google Business Profile (`GET_CUSTOMERS_NOW.md` Part 1).
 6. Sign up on U-Haul Moving Help + HireAHelper. Post Craigslist Ads 1 and 5.
 7. Create the Facebook, Nextdoor, and Yelp pages using the launch kit.

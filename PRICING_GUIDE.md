@@ -1,8 +1,10 @@
 # Pricing Guide — Rest Assured Moving LLC
 
-This document helps you set, structure, and adjust hourly rates with
-confidence. The $95 placeholder throughout the project needs a real
-number — this guide helps you find it.
+How Rest Assured's prices are set, what each one covers, and how to
+adjust them. **Current rates:** $95/hr (2 movers), $130/hr (3 movers),
+same-day $115/hr / $155/hr, 2-hour minimum, Full Wrap supply fee $45–$170.
+Use §2 with your real costs to check that these rates still pay you
+enough.
 
 ---
 
@@ -72,13 +74,15 @@ a premium.
 
 ## 4. Rate Tiers by Crew Size
 
-| Crew | Best for | Rate |
-|---|---|---|
-| 2 movers | Studio, 1BR, assembly only | $[BASE] |
-| 3 movers | 2BR, packing jobs | $[BASE × ~1.4] |
-| 4 movers | 3BR+, large homes | $[BASE × ~1.7] |
+| Crew | Best for | Rate | Same-day |
+|---|---|---|---|
+| 2 movers | Studio, 1BR, one-end 2BR, assembly only | **$95/hr** | $115/hr |
+| 3 movers | 2BR both ends, 3BR+ | **$130/hr** | $155/hr |
+| 4+ movers | Very large homes | Quoted per job | Quoted per job |
 
-Increment between tiers: roughly 40–50% of the 2-person rate.
+The 3-mover rate is about 1.37× the 2-mover rate. A third mover works
+about 1.4× faster, so bigger jobs cost the customer about the same in total
+and finish sooner. The estimator picks the crew size by the same rule.
 
 ---
 

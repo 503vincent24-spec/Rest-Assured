@@ -129,7 +129,7 @@ Thank you again for the opportunity to be part of your move.
 Rest Assured Moving LLC
 (971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
 
-P.S. Know someone else who's moving? We offer [REFERRAL DISCOUNT, e.g., $25 off] to both you and anyone you refer. Just have them mention your name when they book.
+P.S. Know someone else who's moving? We offer $25 off to both you and anyone you refer. Just have them mention your name when they book.
 
 ---
 

@@ -104,6 +104,10 @@ Price = the extra wrapping time at the hourly rate plus a flat supply fee:
 studio $45, 1 bedroom $65, 2 bedrooms $95, 3 bedrooms $130, 4+ bedrooms
 $170. Standard service (blankets or shrink wrap on furniture) stays included.
 
+Referral reward: a past customer and the new customer they refer each get
+$25 off after the new customer's job is done (new customers only, one reward
+per completed job). It is the only standing discount.
+
 What the AI assistant CAN say: the rate range, that pricing is hourly and
 transparent, and that materials (boxes, wrap, tape) may be billed separately
 if the customer wants us to supply them.

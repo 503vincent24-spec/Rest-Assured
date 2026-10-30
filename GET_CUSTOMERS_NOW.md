@@ -127,11 +127,10 @@ honestly *can* say:
 - If a past customer **personally** knows Shawn's work and later hires
   Rest Assured Moving, they can review Rest Assured from their own
   experience.
-- If you want to quote a past review on the website, it has to be clearly
-  labeled with where it came from (for example, *"Review of a Cherry City
-  Movers crew that included Shawn, MovingHelp.com, Jan 2026"*), and you
-  should get that company's permission first. Never put it on a review
-  site.
+- Don't quote those reviews on the website either, even with a label.
+  Visitors read any review on the site as a review of Rest Assured. Use
+  Shawn's years of hands-on experience in the About copy instead, and let
+  real Rest Assured reviews fill the review spots.
 
 ---
 
