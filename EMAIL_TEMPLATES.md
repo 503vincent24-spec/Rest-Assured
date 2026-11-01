@@ -119,7 +119,7 @@ Thanks again for trusting Rest Assured Moving LLC with your move on [JOB DATE]. 
 
 **If our crew took good care of you,** a quick review would mean a tremendous amount to a small, locally owned business:
 
-→ Leave a Google review: [GOOGLE REVIEW LINK]
+→ Leave a Google review: [REVIEW LINK]
 
 It takes about 60 seconds and helps other Salem-area families find us when they need the same kind of help you did.
 

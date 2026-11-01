@@ -14,6 +14,11 @@ Google checks that a real person runs the business, and nobody else can do
 it for you. Plan on about 1 hour of work and roughly 2–7 business days of
 review.
 
+**Do this first:** the website has to be live, because Google checks that
+it shows the same name and phone number. That means merging the branch,
+turning on GitHub Pages, and running `./tools/set-domain.sh` (README Steps
+2–3).
+
 ### 1. Create the profile correctly (avoid the common rejections)
 
 1. Go to **business.google.com** and sign in with the Google account that
@@ -35,14 +40,14 @@ review.
 
 ### 2. Verify
 
-Google chooses the method. For service-area businesses it is usually a
-**video recording**, sometimes a phone/text code, email, or a live video
-call.
+Google chooses the method; you can't pick it. In 2026 it is usually a
+**video recording**, sometimes a phone/text code, email, a live video call,
+or (rarely now) a postcard.
 
 **Before recording the video, get these ready:**
 - [ ] Something branded: a Rest Assured shirt or hoodie, printed business
-      cards (`business-card-front.svg` / `-back.svg`), a printed estimate or
-      invoice with the logo
+      cards (`print/business-card.pdf`), a printed flyer
+      (`print/flyer-laundromat.pdf`), or an estimate/invoice with the logo
 - [ ] Proof you run the business: your Oregon Secretary of State LLC
       registration (on screen or printed) and your business bank or payment app showing the business name
 - [ ] Your work equipment: moving blankets, dollies, straps, tool bag
@@ -70,8 +75,9 @@ create a second profile. Duplicates get both profiles suspended.
 ### 3. Right after verification (same day)
 
 - [ ] Profile → **Ask for reviews** → copy the short review link and paste
-      it in place of `[REVIEW LINK]` in `EMAIL_TEMPLATES.md` and
-      `AI_KNOWLEDGE_BASE.md`
+      it in place of `[REVIEW LINK]` in `EMAIL_TEMPLATES.md`,
+      `CUSTOMER_EMAIL_TEMPLATES_EXPANDED.txt`, `REVIEW_MANAGEMENT_SYSTEM.md`,
+      and `FACEBOOK_CONTENT.md` (a find-and-replace across the folder does it)
 - [ ] Upload `assets/social/profile-1000.png` (logo),
       `assets/photos/upload/job-full-wrap.jpg` (cover), and all 8 real job photos in `assets/photos/upload/`
 - [ ] Turn on **Messages** and **Booking / Quote** button pointing to
