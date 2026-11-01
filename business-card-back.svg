@@ -17,12 +17,12 @@
 
   <line x1="120" y1="225" x2="930" y2="225" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
 
-  <text x="120" y="290" font-family="'Courier New', monospace" font-size="28" fill="#FFFFFF">[OWNER / MANAGER NAME]</text>
+  <text x="120" y="290" font-family="'Courier New', monospace" font-size="28" fill="#FFFFFF">Shawn</text>
   <text x="120" y="330" font-family="'Courier New', monospace" font-size="24" fill="#C9D2DD">Owner</text>
 
   <text x="120" y="390" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">(971) 302-0120</text>
   <text x="120" y="425" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">Shawn@restassuredmoving.net</text>
-  <text x="120" y="460" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">[WEBSITE URL]</text>
+  <text x="120" y="460" font-family="'Courier New', monospace" font-size="24" fill="#FFFFFF">503vincent24-spec.github.io/Rest-Assured</text>
 
   <text x="120" y="530" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#9AA7BB">Serving Salem, Keizer, Woodburn, Albany, McMinnville &amp; Portland Metro</text>
 </svg>

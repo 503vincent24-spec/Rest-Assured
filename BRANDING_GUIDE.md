@@ -26,17 +26,29 @@ shows up on time and does it right" — not "the slick national franchise."
 ## 2. Logo
 
 ### 2.1 Concept
-A heraldic shield (trust, protection, a guarantee) containing a simplified
-house silhouette (the destination — home), with a checkmark integrated into
-the doorway (the job, verified complete). No truck, van, dolly, or
-transportation iconography appears anywhere in the mark — this was a hard
-constraint from the brief and is preserved deliberately.
+**Heart Home Shield** (v2). Three ideas in one simple mark:
+- **Shield:** trust, honesty, protection. *"Your belongings are safe with us."*
+- **Home under a sheltering roof:** what we're really moving is someone's home.
+- **Heart doorway:** care and family. *"We treat your home like family."*
+
+No truck, van, dolly, or transportation imagery appears anywhere in the
+mark. That rule was part of the original brief and still applies.
+
+**Supporting line (cards, flyers):** *"Honest work. Treated like family."*
+It's a promise about how we work. Don't call the company "family-owned"
+anywhere unless that's literally true.
+
+Earlier concepts, kept for reference: v1 shield with a checkmark doorway
+(`assets/logo-archive/`), "Family Under One Roof" (people figures, which
+blurred at small sizes), and "Home in Good Hands" (hands around a house).
+Overview of the current mark and its versions: `assets/logo-sheet.png`.
 
 ### 2.2 Files & Variants
 | File | Use |
 |---|---|
 | `logo-mark.svg` | Icon-only mark. Favicons, app icons, social avatars, watermarks, anywhere space is square/tight. |
 | `logo-lockup.svg` | Horizontal lockup (mark + wordmark + sub-line). Website header, email signature, letterhead, invoice header. |
+| `logo-mark-1color.svg` | Single-color version for embroidery (shirts, hats), vinyl decals, rubber stamps, one-ink printing. |
 
 Both are vector (SVG) — scale losslessly from a 16px favicon to a vehicle
 decal or storefront sign. Export to PNG/JPG at the specific pixel dimensions
@@ -46,7 +58,7 @@ needed per platform (see Section 7).
 Maintain clear space around the mark equal to the height of the shield's top
 edge on all sides — don't let text or other graphics crowd it. Minimum
 display size: 24px tall for the icon-only mark, 32px tall for the horizontal
-lockup, below which the checkmark detail starts to lose legibility.
+lockup, below which the heart doorway starts to lose legibility.
 
 ### 2.4 Don'ts
 - Don't recolor the shield or house outside the approved palette.
@@ -90,7 +102,7 @@ for headings, icons, or buttons with white text instead.
 |---|---|---|---|
 | Display / Headlines | Georgia (or Lora if available) | `Georgia, 'Iowan Old Style', 'Times New Roman', serif` | H1–H4, the wordmark, pull quotes. Conveys the "established, trustworthy" feel. |
 | Body | System UI sans | `-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif` | Paragraphs, navigation, buttons, forms. |
-| Utility / Labels | Monospace | `'Courier New', ui-monospace, monospace` | Eyebrows, manifest/checklist labels, stamps, fine print — the "ledger" texture that ties to the checkmark motif. |
+| Utility / Labels | Monospace | `'Courier New', ui-monospace, monospace` | Eyebrows, manifest/checklist labels, stamps, fine print — the "ledger" texture of the Move Manifest checklist. |
 
 **Why a serif display face for a labor/trades business?** It's a deliberate
 contrast play — most moving-labor competitors lean on bold sans-serif and
@@ -142,7 +154,7 @@ Supporting / contextual alternates:
 A recurring "checklist/ledger card" component — dashed rule lines, a
 checkbox-style checkmark bullet, monospace labels like job numbers and
 statuses — appears across the website, social templates, and print
-collateral. It visually echoes the logo's checkmark and gives the brand a
+collateral. It gives the brand a
 consistent, ownable motif beyond just "navy and green," distinguishing it
 from generic moving-company visuals (boxes, trucks, tape).
 
@@ -151,26 +163,26 @@ quote summaries, and social post templates.
 
 ---
 
-## 7. Business Card
+## 7. Business Cards & Flyers
 
-Two print-ready SVG files at standard US business card size (3.5" × 2",
-designed at 300 DPI: 1050 × 600px viewBox):
+Print-ready files, filled in with real details and using the current logo,
+are in **`print/`**. See `print/README.md` for how to order them.
 
-- `business-card-front.svg` — logo lockup, tagline, service list footer
-- `business-card-back.svg` — navy background, watermarked shield, contact
-  block with bracketed placeholders for name/title/phone/email/website
+- `print/business-card.pdf`: 2-sided, 3.5 × 2 in with 0.125 in bleed
+- `print/flyer-laundromat.pdf`: bulletin-board flyer with 9 tear-off tabs
+- `print/flyer-apartments.pdf`: leasing office / mail-room flyer
 
-**Before printing:** replace all bracketed placeholders in the back design
-with real info, and send both files to your printer as vector SVG/PDF (not a
-screenshot) for crisp output. Most local/online print shops (e.g., Vistaprint,
-Moo, or a local Salem print shop) accept SVG or can convert it to PDF.
+The older `business-card-*.svg` files in the repository root are earlier
+drafts with placeholders. Use the `print/` versions.
 
 ---
 
 ## 8. Known Limitations / Next Steps
 
-- **No raster (PNG/JPG) exports were generated in this session** — the
-  sandbox environment couldn't reach a PNG rendering package this round. All
+- **Raster exports now exist** for the listings: `assets/social/*.png` and
+  `assets/og-image.png`, rendered from `tools/social-images.html`. The notes
+  below still apply to any *other* PNG you need (business cards, decals).
+  Previously: All
   logo and business card files are delivered as SVG. SVG is the better
   *source* format regardless, but you'll want PNG exports for platforms that
   don't accept SVG uploads (Facebook profile photo, Google Business Profile

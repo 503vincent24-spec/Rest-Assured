@@ -94,11 +94,14 @@ A: Yes. Furniture assembly and disassembly are available as completely standalon
 **Q: How far in advance should I book?**
 A: We recommend 1–2 weeks ahead, especially around the 1st and last weekend of the month. We accommodate shorter-notice requests when the schedule allows.
 
+**Q: Do you offer same-day service?**
+A: Yes, when a crew is free. Call or text (971) 302-0120 by 12 pm, Monday–Saturday, and we'll tell you right away whether we can make it today. Same-day service is $115 per hour for 2 movers or $155 per hour for 3, with the usual 2-hour minimum, and we confirm the rate by text before the crew heads out. Booking for tomorrow or later is our regular $95 or $130 per hour. Please call or text for same-day jobs; the quote form isn't checked fast enough.
+
 **Q: What areas do you serve?**
 A: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, and the greater Portland Metro area.
 
 **Q: Are you licensed and insured?**
-A: Yes. Rest Assured Moving LLC is a licensed business and carries appropriate liability insurance. Contact us for documentation if needed.
+A: We're licensed: Rest Assured Moving LLC is a licensed Oregon business. We don't carry liability insurance at this time. Furniture is wrapped in blankets or shrink wrap before it moves, and we do a walkthrough with you before we leave. If anything is damaged, tell us before the crew leaves and Shawn will work it out with you directly.
 
 ---
 
@@ -156,7 +159,7 @@ CTA: Check Your Area → [website service-area page URL]
 GBP listings with 10+ photos receive significantly more engagement. Upload in this priority order:
 
 **Immediate (before launch):**
-- [ ] Logo (square crop, minimum 720×720px PNG — export from logo-mark.svg)
+- [ ] Logo (square crop, minimum 720×720px PNG — use `assets/social/profile-1000.png`)
 - [ ] Cover photo (crew working — loading, wrapping furniture, or in front of a clean exterior)
 
 **First 30 days:**

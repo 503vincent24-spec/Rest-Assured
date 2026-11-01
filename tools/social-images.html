@@ -1,0 +1,381 @@
+<!doctype html>
+<!--
+  Source designs for every raster image the online listings need.
+  Each <section class="frame" id="…" data-out="…"> is rendered to PNG at its
+  exact pixel size by tools/render-social-images.js. Edit text here, re-run
+  the script, and every platform image updates together.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rest Assured Moving — Listing Images</title>
+<style>
+  :root{
+    --navy-900:#0F2547; --navy-800:#16335E; --emerald-700:#11533D; --emerald-600:#1F7A5C;
+    --emerald-500:#2E9874; --gray-100:#EFF2F0; --gray-200:#E2E6E3; --paper:#FAFAF8; --ink:#1C2533;
+    --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    --mono:'Courier New',Courier,ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#888;font-family:var(--sans);color:var(--ink)}
+  .frame{position:relative;overflow:hidden;margin:0 0 40px}
+  .navy{background:radial-gradient(120% 140% at 85% 10%, var(--navy-800) 0%, var(--navy-900) 60%);color:#fff}
+  .paper{background:var(--paper)}
+  .eyebrow{font-family:var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--emerald-500)}
+  .serif{font-family:var(--serif)}
+  .accent{color:var(--emerald-500)}
+  .grid-lines{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 48px);pointer-events:none}
+  .manifest{background:#fff;color:var(--ink);border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.35);border-top:10px solid var(--emerald-600)}
+  .manifest .head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px dashed var(--gray-200)}
+  .manifest .head b{font-family:var(--serif);color:var(--navy-900)}
+  .manifest .head span,.manifest .foot{font-family:var(--mono);color:#718096}
+  .manifest ul{list-style:none}
+  .manifest li{display:flex;align-items:center;border-bottom:1px dashed var(--gray-200)}
+  .manifest li:last-child{border-bottom:0}
+  .box{flex:none;display:grid;place-items:center;background:var(--emerald-600);border-radius:5px}
+  .box svg{display:block}
+  .manifest .foot{display:flex;justify-content:space-between;border-top:2px dashed var(--gray-200)}
+  .manifest .foot .ok{color:var(--emerald-600);font-weight:700}
+  .pill{display:inline-block;border:2px solid rgba(255,255,255,.25);border-radius:999px;color:#fff;font-weight:600}
+  .btn{display:inline-block;background:var(--emerald-600);color:#fff;font-weight:700;border-radius:10px}
+  .phone{font-family:var(--mono);font-weight:700;letter-spacing:.02em}
+  .muted{color:rgba(255,255,255,.72)}
+  .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+</style>
+</head>
+<body>
+
+<!-- Reusable shield mark (same geometry as assets/logo-mark.svg) -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="sf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#16335E"/><stop offset="100%" stop-color="#0F2547"/></linearGradient>
+    <symbol id="shield" viewBox="0 0 200 220">
+      <path d="M100,12 L166,38 L166,102 C166,150 138,182 100,206 C62,182 34,150 34,102 L34,38 Z" fill="url(#sf)" stroke="#D9DEDC" stroke-width="3"/>
+      <path d="M100,24 L155,46 L155,100 C155,142 132,170 100,191 C68,170 45,142 45,100 L45,46 Z" fill="none" stroke="#3A537A" stroke-width="1.5" opacity=".55"/>
+      <path d="M60,100 L100,62 L140,100" fill="none" stroke="#2E9874" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M72,98 V150 a4,4 0 0 0 4,4 H124 a4,4 0 0 0 4,-4 V98 L100,72 Z" fill="#1F7A5C"/>
+    <!-- Heart doorway: care for your home, treated like family -->
+    <path d="M100,143 C78,128 76,112 87,109 C93,107.5 98,111 100,116 C102,111 107,107.5 113,109 C124,112 122,128 100,143 Z" fill="#FAFAF8"/>
+    </symbol>
+    <symbol id="tick" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- 1. PROFILE PICTURE — Facebook, Yelp, Angi, Nextdoor, Google (displayed as a circle on most) -->
+<section class="frame paper" id="profile" data-out="assets/social/profile-1000.png" style="width:1000px;height:1000px;display:grid;place-items:center">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 46%, #fff 0 38%, var(--paper) 62%)"></div>
+  <svg style="position:relative;width:560px;height:616px;margin-top:-10px"><use href="#shield"/></svg>
+</section>
+
+<!-- 2. FACEBOOK COVER — 1640×624 (2× of 820×312). Mobile crops ~180px off each side: keep content centred. -->
+<section class="frame navy" id="fb-cover" data-out="assets/social/facebook-cover-1640x624.png" style="width:1640px;height:624px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:250px;right:250px;top:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:60px">
+    <div style="max-width:640px">
+      <div class="eyebrow" style="font-size:22px;margin-bottom:22px">Moving labor · Salem &amp; Portland Metro</div>
+      <div class="serif" style="font-size:76px;line-height:1.04;font-weight:700">Rest assured,<br><span class="accent">it's handled.</span></div>
+      <div class="muted" style="font-size:28px;line-height:1.4;margin-top:24px">You bring the truck. We bring the crew.</div>
+    </div>
+    <div class="manifest" style="width:440px;padding:26px 30px 18px;transform:rotate(1.5deg)">
+      <div class="head" style="padding-bottom:14px"><b style="font-size:26px">Move Manifest</b><span style="font-size:17px">CREW 2–4</span></div>
+      <ul style="font-size:23px">
+        <li style="gap:14px;padding:12px 0"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>Loading &amp; unloading</li>
+        <li style="gap:14px;padding:12px 0"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>Packing &amp; unpacking</li>
+        <li style="gap:14px;padding:12px 0"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>Furniture assembly</li>
+      </ul>
+      <div class="foot" style="padding-top:12px;font-size:17px"><span class="ok">✓ STATUS: COMPLETE</span><span>(971) 302-0120</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CRAIGSLIST IMAGE 1 (lead photo / thumbnail) — 1200×900 -->
+<section class="frame navy" id="cl-main" data-out="assets/social/craigslist-ad-1-1200x900.png" style="width:1200px;height:900px;padding:70px 80px">
+  <div class="grid-lines"></div>
+  <div style="position:relative;display:flex;align-items:center;gap:22px">
+    <svg style="width:84px;height:92px"><use href="#shield"/></svg>
+    <div><div class="serif" style="font-size:38px;font-weight:700">Rest Assured Moving</div><div class="eyebrow" style="font-size:17px;margin-top:6px">Moving labor · Salem, OR</div></div>
+  </div>
+  <div class="serif" style="position:relative;font-size:94px;line-height:1.02;font-weight:700;margin-top:56px">Moving Help<br><span class="accent">from $95/hr</span></div>
+  <div class="muted" style="position:relative;font-size:34px;margin-top:22px">You bring the truck. We bring the crew.</div>
+  <div style="position:relative;display:flex;flex-wrap:wrap;gap:14px;margin-top:40px">
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Load &amp; unload</span>
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Pack &amp; unpack</span>
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Furniture assembly</span>
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Licensed &amp; local</span>
+  </div>
+  <div style="position:absolute;left:80px;right:80px;bottom:64px;display:flex;justify-content:space-between;align-items:center">
+    <span class="btn phone" style="font-size:46px;padding:20px 34px">(971) 302-0120</span>
+    <span class="muted" style="font-size:24px;text-align:right;line-height:1.4">Call or text<br>Free quotes · Mon–Sat 7am–7pm</span>
+  </div>
+</section>
+
+<!-- 4. CRAIGSLIST IMAGE 2 — what's included + rates + service area — 1200×900 -->
+<section class="frame paper" id="cl-details" data-out="assets/social/craigslist-ad-2-1200x900.png" style="width:1200px;height:900px;padding:64px 80px">
+  <div class="eyebrow" style="font-size:20px;color:var(--emerald-600)">Simple, flat hourly pricing</div>
+  <div style="display:flex;gap:28px;margin-top:22px">
+    <div style="flex:1;background:var(--navy-900);color:#fff;border-radius:16px;padding:30px 34px">
+      <div class="eyebrow" style="font-size:18px">2 movers</div>
+      <div class="serif" style="font-size:80px;font-weight:700;margin-top:6px">$95<span style="font-size:32px;font-weight:400" class="muted">/hour</span></div>
+      <div class="muted" style="font-size:22px">Studios · 1–2 bedrooms · assembly</div>
+    </div>
+    <div style="flex:1;background:var(--navy-900);color:#fff;border-radius:16px;padding:30px 34px">
+      <div class="eyebrow" style="font-size:18px">3 movers</div>
+      <div class="serif" style="font-size:80px;font-weight:700;margin-top:6px">$130<span style="font-size:32px;font-weight:400" class="muted">/hour</span></div>
+      <div class="muted" style="font-size:22px">2–3 bedrooms · packing jobs</div>
+    </div>
+  </div>
+  <div class="manifest" style="margin-top:34px;padding:22px 34px 16px;box-shadow:0 10px 30px rgba(15,37,71,.12)">
+    <div class="head" style="padding-bottom:12px"><b style="font-size:28px">What's included</b><span style="font-size:18px">2-HR MINIMUM</span></div>
+    <ul style="font-size:25px;columns:2;column-gap:40px">
+      <li style="gap:14px;padding:11px 0;break-inside:avoid"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>Moving blankets &amp; shrink wrap</li>
+      <li style="gap:14px;padding:11px 0;break-inside:avoid"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>Crew brings the equipment</li>
+      <li style="gap:14px;padding:11px 0;break-inside:avoid"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>Furniture take-apart &amp; rebuild</li>
+      <li style="gap:14px;padding:11px 0;break-inside:avoid"><span class="box" style="width:30px;height:30px"><svg width="22" height="22"><use href="#tick"/></svg></span>No fuel or mileage fees</li>
+    </ul>
+  </div>
+  <div style="margin-top:34px;font-size:24px;line-height:1.55">
+    <b class="serif" style="font-size:28px;color:var(--navy-900)">Serving:</b>
+    Salem · Keizer · Woodburn · Albany · McMinnville · Beaverton · Hillsboro · Tigard · Portland Metro
+  </div>
+  <div style="margin-top:22px;font-size:22px;line-height:1.5;color:#4A5568;background:var(--gray-100);border-left:6px solid var(--emerald-600);border-radius:6px;padding:14px 20px">
+    <b style="color:var(--navy-900)">Labor only:</b> you book the truck, PODS, or container — we do the lifting, wrapping, and packing.
+  </div>
+  <div style="position:absolute;left:80px;right:80px;bottom:54px;display:flex;justify-content:space-between;align-items:center;border-top:2px dashed var(--gray-200);padding-top:24px">
+    <span style="font-size:24px;color:#4A5568">Rental trucks · PODS · U-Box · trailers · storage units</span>
+    <span class="phone" style="font-size:36px;color:var(--navy-900)">(971) 302-0120</span>
+  </div>
+</section>
+
+<!-- 5. OPEN GRAPH / LINK PREVIEW — 1200×630 (referenced by every page's og:image) -->
+<section class="frame navy" id="og" data-out="assets/og-image.png" style="width:1200px;height:630px;padding:64px 76px">
+  <div class="grid-lines"></div>
+  <div style="position:relative;display:flex;align-items:center;gap:20px">
+    <svg style="width:70px;height:77px"><use href="#shield"/></svg>
+    <div><div class="serif" style="font-size:32px;font-weight:700">Rest Assured Moving</div><div class="eyebrow" style="font-size:15px;margin-top:5px">Moving labor · Salem, OR</div></div>
+  </div>
+  <div class="serif" style="position:relative;font-size:70px;line-height:1.06;font-weight:700;margin-top:44px">Professional moving labor<br>in <span class="accent">Salem, Oregon</span></div>
+  <div class="muted" style="position:relative;font-size:28px;margin-top:20px">Loading · Unloading · Packing · Furniture assembly</div>
+  <div style="position:absolute;left:76px;right:76px;bottom:56px;display:flex;justify-content:space-between;align-items:center">
+    <span class="btn" style="font-size:26px;padding:14px 26px">Free quote — usually within 1 business day</span>
+    <span class="phone" style="font-size:30px">(971) 302-0120</span>
+  </div>
+</section>
+
+<!-- 6. SQUARE POST — 1080×1080 for Facebook / Nextdoor / Instagram feed and Angi project gallery -->
+<section class="frame navy" id="square" data-out="assets/social/square-post-1080.png" style="width:1080px;height:1080px;padding:84px">
+  <div class="grid-lines"></div>
+  <div class="eyebrow" style="position:relative;font-size:22px">Now booking · Salem &amp; Portland Metro</div>
+  <div class="serif" style="position:relative;font-size:96px;line-height:1.02;font-weight:700;margin-top:26px">You bring<br>the truck.<br><span class="accent">We bring<br>the crew.</span></div>
+  <div class="muted" style="position:relative;font-size:30px;line-height:1.45;margin-top:30px;max-width:820px">Loading, unloading, packing, unpacking &amp; furniture assembly. Flat hourly rate from $95/hr — no fuel or mileage fees.</div>
+  <div style="position:relative;display:flex;flex-wrap:wrap;gap:14px;margin-top:38px">
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Licensed</span>
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Locally owned</span>
+    <span class="pill" style="font-size:24px;padding:10px 22px">✓ Free quotes</span>
+  </div>
+  <div style="position:absolute;left:84px;right:84px;bottom:84px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:18px">
+      <svg style="width:72px;height:79px"><use href="#shield"/></svg>
+      <div class="serif" style="font-size:30px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div>
+    </div>
+    <span class="btn phone" style="font-size:36px;padding:18px 28px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<!-- 7. INSTAGRAM LAUNCH POSTS — 1080×1350 (4:5). The profile grid crops to the
+     centre 3:4, so keep text at least 90px from the left/right edges. -->
+
+<section class="frame navy" id="ig-01-intro" data-out="assets/social/instagram/ig-01-intro.png" style="width:1080px;height:1350px;padding:96px 90px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:90px;right:90px;top:90px;bottom:190px;display:flex;flex-direction:column;justify-content:center;zoom:1.12">
+  <div class="eyebrow" style="font-size:24px">Salem · Keizer · Portland Metro</div>
+  <div class="serif" style="font-size:104px;line-height:1.02;font-weight:700;margin-top:30px">You bring<br>the truck.<br><span class="accent">We bring<br>the crew.</span></div>
+  <div class="muted" style="font-size:32px;line-height:1.45;margin-top:34px">Licensed, local moving labor: loading, unloading, packing, unpacking, and furniture assembly.</div>
+  <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px">
+    <span class="pill" style="font-size:26px;padding:10px 22px">✓ From $95/hr</span>
+    <span class="pill" style="font-size:26px;padding:10px 22px">✓ No fuel fees</span>
+    <span class="pill" style="font-size:26px;padding:10px 22px">✓ Free quotes</span>
+  </div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<section class="frame navy" id="ig-02-prices" data-out="assets/social/instagram/ig-02-prices.png" style="width:1080px;height:1350px;padding:96px 90px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:90px;right:90px;top:90px;bottom:190px;display:flex;flex-direction:column;justify-content:center;zoom:1.12">
+  <div class="eyebrow" style="font-size:24px">Upfront pricing</div>
+  <div class="serif" style="font-size:76px;line-height:1.05;font-weight:700;margin-top:22px">What most moves<br><span class="accent">actually cost</span></div>
+  <div class="manifest" style="margin-top:40px;padding:22px 36px 14px">
+    <table style="width:100%;border-collapse:collapse">
+      <thead><tr><th style="text-align:left;font-family:var(--mono);font-size:20px;color:#718096;padding-bottom:12px;border-bottom:2px dashed var(--gray-200)">HOME</th><th style="text-align:left;font-family:var(--mono);font-size:20px;color:#718096;padding-bottom:12px;border-bottom:2px dashed var(--gray-200)">LOAD <i style="font-style:normal;color:var(--emerald-600)">OR</i> UNLOAD</th><th style="text-align:left;font-family:var(--mono);font-size:20px;color:#718096;padding-bottom:12px;border-bottom:2px dashed var(--gray-200)">BOTH</th></tr></thead>
+      <tbody><tr><th style="text-align:left;padding:20px 0;font-family:var(--serif);font-size:32px;color:var(--navy-900);border-bottom:1px dashed var(--gray-200)">Studio</th><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$190</td><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$238–$380</td></tr><tr><th style="text-align:left;padding:20px 0;font-family:var(--serif);font-size:32px;color:var(--navy-900);border-bottom:1px dashed var(--gray-200)">1 bedroom</th><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$190–$238</td><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$333–$475</td></tr><tr><th style="text-align:left;padding:20px 0;font-family:var(--serif);font-size:32px;color:var(--navy-900);border-bottom:1px dashed var(--gray-200)">2 bedrooms</th><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$285–$428</td><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$585–$845</td></tr><tr><th style="text-align:left;padding:20px 0;font-family:var(--serif);font-size:32px;color:var(--navy-900);border-bottom:1px dashed var(--gray-200)">3 bedrooms</th><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$390–$585</td><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$780–$1,170</td></tr><tr><th style="text-align:left;padding:20px 0;font-family:var(--serif);font-size:32px;color:var(--navy-900);border-bottom:1px dashed var(--gray-200)">4+ bedrooms</th><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$585–$845</td><td style="padding:20px 0;font-size:31px;font-weight:700;border-bottom:1px dashed var(--gray-200)">$1,105–$1,625</td></tr></tbody>
+    </table>
+  </div>
+  <div class="muted" style="font-size:25px;margin-top:22px">$95/hr for 2 movers · $130/hr for 3 · 2-hr minimum · blankets &amp; wrap included</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<section class="frame navy" id="ig-03-how-it-works" data-out="assets/social/instagram/ig-03-how-it-works.png" style="width:1080px;height:1350px;padding:96px 90px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:90px;right:90px;top:90px;bottom:190px;display:flex;flex-direction:column;justify-content:center;zoom:1.12">
+  <div class="eyebrow" style="font-size:24px">How booking works</div>
+  <div class="serif" style="font-size:84px;line-height:1.04;font-weight:700;margin-top:22px">Three steps to<br><span class="accent">a calmer move</span></div>
+  <div style="margin-top:16px"><div style="display:flex;gap:28px;align-items:flex-start;margin-top:40px"><span class="serif" style="flex:none;width:84px;height:84px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center;font-size:46px;font-weight:700">1</span><div><div class="serif" style="font-size:44px;font-weight:700">Text us your move</div><div class="muted" style="font-size:29px;line-height:1.4;margin-top:8px">Date, home size, and the truck or container you booked.</div></div></div><div style="display:flex;gap:28px;align-items:flex-start;margin-top:40px"><span class="serif" style="flex:none;width:84px;height:84px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center;font-size:46px;font-weight:700">2</span><div><div class="serif" style="font-size:44px;font-weight:700">Get your rate in writing</div><div class="muted" style="font-size:29px;line-height:1.4;margin-top:8px">Crew size and flat hourly rate, confirmed before moving day.</div></div></div><div style="display:flex;gap:28px;align-items:flex-start;margin-top:40px"><span class="serif" style="flex:none;width:84px;height:84px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center;font-size:46px;font-weight:700">3</span><div><div class="serif" style="font-size:44px;font-weight:700">We do the heavy lifting</div><div class="muted" style="font-size:29px;line-height:1.4;margin-top:8px">Load, unload, set up rooms, and walk through it with you.</div></div></div></div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<section class="frame navy" id="ig-04-labor-only" data-out="assets/social/instagram/ig-04-labor-only.png" style="width:1080px;height:1350px;padding:96px 90px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:90px;right:90px;top:90px;bottom:190px;display:flex;flex-direction:column;justify-content:center;zoom:1.12">
+  <div class="eyebrow" style="font-size:24px">Labor-only moving</div>
+  <div class="serif" style="font-size:84px;line-height:1.04;font-weight:700;margin-top:22px">We provide the crew,<br><span class="accent">not the truck.</span></div>
+  <div class="manifest" style="margin-top:44px;padding:20px 36px 10px">
+    <ul style="font-size:32px"><li style="gap:18px;padding:15px 0"><span class="box" style="width:38px;height:38px"><svg width="28" height="28"><use href="#tick"/></svg></span><span>Load your U-Haul, Penske, PODS, or <span style="white-space:nowrap">U-Box</span></span></li><li style="gap:18px;padding:15px 0"><span class="box" style="width:38px;height:38px"><svg width="28" height="28"><use href="#tick"/></svg></span>Unload &amp; place every room</li><li style="gap:18px;padding:15px 0"><span class="box" style="width:38px;height:38px"><svg width="28" height="28"><use href="#tick"/></svg></span>Pack, unpack &amp; wrap furniture</li><li style="gap:18px;padding:15px 0"><span class="box" style="width:38px;height:38px"><svg width="28" height="28"><use href="#tick"/></svg></span>Take apart &amp; rebuild beds and tables</li></ul>
+  </div>
+  <div class="muted" style="font-size:29px;line-height:1.45;margin-top:30px">You book the truck. We charge only for labor, so you skip full-service mover prices.</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<section class="frame navy" id="ig-05-service-area" data-out="assets/social/instagram/ig-05-service-area.png" style="width:1080px;height:1350px;padding:96px 90px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:90px;right:90px;top:90px;bottom:190px;display:flex;flex-direction:column;justify-content:center;zoom:1.12">
+  <div class="eyebrow" style="font-size:24px">Where we work</div>
+  <div class="serif" style="font-size:84px;line-height:1.04;font-weight:700;margin-top:22px">Serving the<br><span class="accent">Willamette Valley</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:50px"><span class="pill" style="font-size:36px;padding:14px 30px">Salem</span><span class="pill" style="font-size:36px;padding:14px 30px">Keizer</span><span class="pill" style="font-size:36px;padding:14px 30px">Woodburn</span><span class="pill" style="font-size:36px;padding:14px 30px">Albany</span><span class="pill" style="font-size:36px;padding:14px 30px">McMinnville</span><span class="pill" style="font-size:36px;padding:14px 30px">Beaverton</span><span class="pill" style="font-size:36px;padding:14px 30px">Hillsboro</span><span class="pill" style="font-size:36px;padding:14px 30px">Tigard</span><span class="pill" style="font-size:36px;padding:14px 30px">Portland Metro</span></div>
+  <div class="muted" style="font-size:29px;line-height:1.45;margin-top:44px">No fuel charges. No mileage fees inside our service area. Mon–Sat, 7am–7pm.</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<section class="frame navy" id="ig-06-text-for-quote" data-out="assets/social/instagram/ig-06-text-for-quote.png" style="width:1080px;height:1350px;padding:96px 90px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:90px;right:90px;top:90px;bottom:190px;display:flex;flex-direction:column;justify-content:center;zoom:1.12">
+  <div class="eyebrow" style="font-size:24px">Free quote · usually same day</div>
+  <div class="serif" style="font-size:96px;line-height:1.02;font-weight:700;margin-top:22px">Text us<br><span class="accent">3 things:</span></div>
+  <div style="margin-top:20px"><div style="display:flex;gap:28px;align-items:flex-start;margin-top:40px"><span class="serif" style="flex:none;width:84px;height:84px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center;font-size:46px;font-weight:700">1</span><div><div class="serif" style="font-size:44px;font-weight:700">Your move date</div><div class="muted" style="font-size:29px;line-height:1.4;margin-top:8px">Flexible dates are easier to fit in.</div></div></div><div style="display:flex;gap:28px;align-items:flex-start;margin-top:40px"><span class="serif" style="flex:none;width:84px;height:84px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center;font-size:46px;font-weight:700">2</span><div><div class="serif" style="font-size:44px;font-weight:700">Home size &amp; stairs</div><div class="muted" style="font-size:29px;line-height:1.4;margin-top:8px">Studio to 4+ bedrooms, any floor.</div></div></div><div style="display:flex;gap:28px;align-items:flex-start;margin-top:40px"><span class="serif" style="flex:none;width:84px;height:84px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center;font-size:46px;font-weight:700">3</span><div><div class="serif" style="font-size:44px;font-weight:700">Your truck or container</div><div class="muted" style="font-size:29px;line-height:1.4;margin-top:8px">U-Haul, Penske, PODS, U-Box, trailer.</div></div></div></div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+
+<!-- 8. INSTAGRAM STORY HIGHLIGHT COVERS — 1080×1920 (Instagram shows the centre circle). -->
+<section class="frame navy" id="hl-prices" data-out="assets/social/instagram/highlight-prices.png" style="width:1080px;height:1920px;display:grid;place-items:center">
+  <div style="width:520px;height:520px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center"><svg viewBox="0 0 100 100" style="width:300px;height:300px"><text x="50" y="68" text-anchor="middle" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#fff">$</text></svg></div>
+</section>
+<section class="frame navy" id="hl-services" data-out="assets/social/instagram/highlight-services.png" style="width:1080px;height:1920px;display:grid;place-items:center">
+  <div style="width:520px;height:520px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center"><svg viewBox="0 0 100 100" style="width:300px;height:300px"><path d="M28 52l14 14 30-32" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+</section>
+<section class="frame navy" id="hl-book" data-out="assets/social/instagram/highlight-book.png" style="width:1080px;height:1920px;display:grid;place-items:center">
+  <div style="width:520px;height:520px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center"><svg viewBox="0 0 100 100" style="width:300px;height:300px"><path d="M22 30h56a6 6 0 016 6v28a6 6 0 01-6 6H44l-14 12V70h-8a6 6 0 01-6-6V36a6 6 0 016-6z" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/></svg></div>
+</section>
+<section class="frame navy" id="hl-areas" data-out="assets/social/instagram/highlight-areas.png" style="width:1080px;height:1920px;display:grid;place-items:center">
+  <div style="width:520px;height:520px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center"><svg viewBox="0 0 100 100" style="width:300px;height:300px"><path d="M50 84s24-24 24-42a24 24 0 00-48 0c0 18 24 42 24 42z" fill="none" stroke="#fff" stroke-width="7"/><circle cx="50" cy="42" r="8" fill="#fff"/></svg></div>
+</section>
+<section class="frame navy" id="hl-reviews" data-out="assets/social/instagram/highlight-reviews.png" style="width:1080px;height:1920px;display:grid;place-items:center">
+  <div style="width:520px;height:520px;border-radius:50%;background:var(--emerald-600);display:grid;place-items:center"><svg viewBox="0 0 100 100" style="width:300px;height:300px"><path d="M50 18l9.4 19 21 3-15.2 14.8 3.6 20.9L50 65.8 31.2 75.7l3.6-20.9L19.6 40l21-3z" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round"/></svg></div>
+</section>
+
+<!-- 9. X / TWITTER HEADER — 1500×500. Profile photo covers the lower-left, so content sits right of centre. -->
+<section class="frame navy" id="x-header" data-out="assets/social/x-header-1500x500.png" style="width:1500px;height:500px">
+  <div class="grid-lines"></div>
+  <div style="position:absolute;left:470px;right:90px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">
+    <div class="eyebrow" style="font-size:20px">Moving labor · Salem &amp; Portland Metro</div>
+    <div class="serif" style="font-size:64px;line-height:1.05;font-weight:700;margin-top:16px">Rest assured, <span class="accent">it's handled.</span></div>
+    <div class="muted" style="font-size:26px;margin-top:16px">You bring the truck. We bring the crew. · From $95/hr · (971) 302-0120</div>
+  </div>
+</section>
+
+<!-- 9. REAL JOB PHOTOS (assets/photos/upload/). Photo-based alternates for
+     covers and Instagram posts; the logo stays the profile picture everywhere. -->
+<section class="frame navy" id="fb-cover-photo" data-out="assets/social/facebook-cover-photo-1640x624.png" style="width:1640px;height:624px">
+  <img class="photo-bg" src="../assets/photos/upload/job-full-wrap.jpg" alt="" style="width:62%;left:auto;right:0;object-position:50% 62%">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,37,71,1) 0%,rgba(15,37,71,1) 38%,rgba(15,37,71,.55) 52%,rgba(15,37,71,0) 75%)"></div>
+  <div style="position:absolute;left:250px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;max-width:720px">
+    <div class="eyebrow" style="font-size:22px;margin-bottom:22px">Moving labor · Salem &amp; Portland Metro</div>
+    <div class="serif" style="font-size:76px;line-height:1.04;font-weight:700">Rest assured,<br><span class="accent">it's handled.</span></div>
+    <div style="font-size:28px;line-height:1.4;margin-top:24px;color:rgba(255,255,255,.85)">You bring the truck. We bring the crew.</div>
+    <div class="phone" style="font-size:34px;margin-top:18px;white-space:nowrap">(971) 302-0120</div>
+  </div>
+</section>
+
+<section class="frame navy" id="x-header-photo" data-out="assets/social/x-header-photo-1500x500.png" style="width:1500px;height:500px">
+  <img class="photo-bg" src="../assets/photos/upload/job-full-wrap.jpg" alt="" style="width:46%;left:auto;right:0;object-position:50% 62%">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,37,71,1) 0%,rgba(15,37,71,1) 58%,rgba(15,37,71,.6) 66%,rgba(15,37,71,0) 82%)"></div>
+  <div style="position:absolute;left:400px;right:600px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">
+    <div class="eyebrow" style="font-size:18px">Moving labor · Salem &amp; Portland</div>
+    <div class="serif" style="font-size:56px;line-height:1.05;font-weight:700;margin-top:14px;white-space:nowrap">Rest assured,<br><span class="accent">it's handled.</span></div>
+    <div style="font-size:24px;margin-top:14px;color:rgba(255,255,255,.85);white-space:nowrap">From $95/hr · <span class="phone">(971) 302-0120</span></div>
+  </div>
+</section>
+
+<section class="frame navy" id="ig-07-full-wrap" data-out="assets/social/instagram/ig-07-full-wrap.png" style="width:1080px;height:1350px">
+  <img class="photo-bg" src="../assets/photos/upload/job-full-wrap.jpg" alt="" style="object-position:50% 35%">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,37,71,0) 30%,rgba(15,37,71,.82) 62%,rgba(15,37,71,.97) 100%)"></div>
+  <div style="position:absolute;left:90px;right:90px;bottom:200px">
+    <div class="eyebrow" style="font-size:24px">Full Wrap</div>
+    <div class="serif" style="font-size:84px;line-height:1.04;font-weight:700;margin-top:18px">Every piece padded<br><span class="accent">and sealed.</span></div>
+    <div class="muted" style="font-size:31px;line-height:1.4;margin-top:22px;color:rgba(255,255,255,.85)">Moving blankets plus stretch wrap on every piece of furniture. Ask for Full Wrap when you book.</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:70px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+<section class="frame navy" id="ig-08-packed-tight" data-out="assets/social/instagram/ig-08-packed-tight.png" style="width:1080px;height:1350px">
+  <img class="photo-bg" src="../assets/photos/upload/job-tight-load.jpg" alt="" style="object-position:50% 30%">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,37,71,0) 30%,rgba(15,37,71,.82) 62%,rgba(15,37,71,.97) 100%)"></div>
+  <div style="position:absolute;left:90px;right:90px;bottom:200px">
+    <div class="eyebrow" style="font-size:24px">Real load · Customer's rental truck</div>
+    <div class="serif" style="font-size:84px;line-height:1.04;font-weight:700;margin-top:18px">Packed tight.<br><span class="accent">Nothing shifts.</span></div>
+    <div class="muted" style="font-size:31px;line-height:1.4;margin-top:22px;color:rgba(255,255,255,.85)">Heavy items low, bins and bags floor to ceiling. That's how your things arrive in one piece.</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:70px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+<section class="frame navy" id="ig-09-your-truck" data-out="assets/social/instagram/ig-09-your-truck.png" style="width:1080px;height:1350px">
+  <img class="photo-bg" src="../assets/photos/upload/job-sofa-mattress.jpg" alt="" style="object-position:50% 28%">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,37,71,0) 30%,rgba(15,37,71,.82) 62%,rgba(15,37,71,.97) 100%)"></div>
+  <div style="position:absolute;left:90px;right:90px;bottom:200px">
+    <div class="eyebrow" style="font-size:24px">Labor only · From $95/hr</div>
+    <div class="serif" style="font-size:84px;line-height:1.04;font-weight:700;margin-top:18px">Your truck.<br><span class="accent">Our crew.</span></div>
+    <div class="muted" style="font-size:31px;line-height:1.4;margin-top:22px;color:rgba(255,255,255,.85)">Mattress bagged and strapped, sofa loaded last. Text us your move date for a free quote.</div>
+  </div>
+  <div style="position:absolute;left:90px;right:90px;bottom:70px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:16px"><svg style="width:62px;height:68px"><use href="#shield"/></svg><div class="serif" style="font-size:28px;font-weight:700;line-height:1.15">Rest Assured<br>Moving LLC</div></div>
+    <span class="btn phone" style="font-size:34px;padding:16px 26px">(971) 302-0120</span>
+  </div>
+</section>
+
+</body>
+</html>

@@ -7,9 +7,14 @@
 **Page Name:** Rest Assured Moving LLC
 **Username/Vanity URL:** @RestAssuredMovingLLC (or @RestAssuredMovingSalem if taken)
 **Category:** Moving Company → or "Local Service" if Moving Company implies transportation
-**Website:** [WEBSITE URL]
+**Website:** 503vincent24-spec.github.io/Rest-Assured
 **Phone:** (971) 302-0120
 **Email:** Shawn@restassuredmoving.net
+**Profile picture:** `assets/social/profile-1000.png`
+**Cover photo:** `assets/social/facebook-cover-1640x624.png`
+
+> Step-by-step Page creation (category, action button, auto-reply, backup
+> admin) is in `ONLINE_LISTINGS_LAUNCH_KIT.md` §3.
 
 ---
 
@@ -31,7 +36,7 @@ Serving Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tiga
 
 📞 (971) 302-0120
 📧 Shawn@restassuredmoving.net
-🌐 [WEBSITE URL]
+🌐 503vincent24-spec.github.io/Rest-Assured
 🕐 Mon–Sat, 7am–7pm
 
 ---
@@ -81,7 +86,7 @@ Your invoice → reflects actual hours at the agreed rate
 
 That's it. No fine print.
 
-Get a free quote at [WEBSITE URL] 🧾
+Get a free quote at 503vincent24-spec.github.io/Rest-Assured 🧾
 
 #MovingLabor #FlatRatePricing #SalemOR #TransparentPricing
 
@@ -143,7 +148,7 @@ Lock in your crew before your date books up. Summer moves fill fast — especial
 
 Free quote → flat hourly rate → no obligation.
 
-Message us or request a quote at [WEBSITE URL]. We respond within one business day.
+Message us or request a quote at 503vincent24-spec.github.io/Rest-Assured. We respond within one business day.
 
 #MovingLabor #SalemOregon #BookNow #MovingDay
 
@@ -218,7 +223,7 @@ You get:
 ✅ Specialist labor crew for the physical work
 ✅ Flat hourly pricing with no freight markups
 
-Many customers find this the smarter option. 💡
+For most moves, it costs less too. 💡
 
 #MovingLabor #FullServiceMovers #MovingTips #SalemOregon
 
@@ -236,7 +241,7 @@ Our service area includes:
 
 One flat hourly rate — no location fees anywhere on this list.
 
-Moving in this area? Get a free quote at [WEBSITE URL].
+Moving in this area? Get a free quote at 503vincent24-spec.github.io/Rest-Assured.
 
 #SalemOregon #PortlandMetro #WillametteValley #MovingLabor #ServiceArea
 
@@ -262,7 +267,7 @@ May through August is our busiest season — and the dates people want most book
 
 Free, no-obligation quote → usually within one business day.
 
-[WEBSITE URL] or call (971) 302-0120.
+503vincent24-spec.github.io/Rest-Assured or call (971) 302-0120.
 
 #SummerMove #MovingLabor #SalemOregon #BookEarly
 
@@ -300,7 +305,7 @@ Ready to hand off the heavy lifting?
 Whatever you need — loading, unloading, packing, unpacking, furniture assembly, or all of the above — we have a crew for it.
 
 Here's how to get started:
-1. Request a free quote at [WEBSITE URL]
+1. Request a free quote at 503vincent24-spec.github.io/Rest-Assured
 2. We respond with crew size + flat hourly rate
 3. Confirm and get on the schedule
 

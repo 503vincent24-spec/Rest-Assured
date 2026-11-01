@@ -34,7 +34,7 @@ Looking forward to making your move easier,
 
 [YOUR NAME]
 Rest Assured Moving LLC
-(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
+(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured
 Mon–Sat, 7am–7pm | Salem, Oregon
 
 ---
@@ -93,7 +93,7 @@ Just a quick heads-up before tomorrow's job (Job #RAM-[XXXX]).
 - ✓ Confirm your truck/POD/container will be on-site and accessible
 - ✓ Clear hallways, doorways, and any path from interior to truck
 - ✓ Set aside anything that should NOT be loaded (valuables, medications, first-night bag)
-- ✓ Have payment ready — we accept [LIST PAYMENT METHODS]
+- ✓ Have payment ready — we accept cash, credit/debit card, Venmo, Zelle, Cash App, and PayPal
 
 We'll call or text when the crew is about 30 minutes out.
 
@@ -119,7 +119,7 @@ Thanks again for trusting Rest Assured Moving LLC with your move on [JOB DATE]. 
 
 **If our crew took good care of you,** a quick review would mean a tremendous amount to a small, locally owned business:
 
-→ Leave a Google review: [GOOGLE REVIEW LINK]
+→ Leave a Google review: [REVIEW LINK]
 
 It takes about 60 seconds and helps other Salem-area families find us when they need the same kind of help you did.
 
@@ -127,9 +127,9 @@ Thank you again for the opportunity to be part of your move.
 
 [YOUR NAME]
 Rest Assured Moving LLC
-(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
+(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured
 
-P.S. Know someone else who's moving? We offer [REFERRAL DISCOUNT, e.g., $25 off] to both you and anyone you refer. Just have them mention your name when they book.
+P.S. Know someone else who's moving? We offer $25 off to both you and anyone you refer. Just have them mention your name when they book.
 
 ---
 
@@ -141,7 +141,7 @@ Hi [CUSTOMER FIRST NAME],
 
 Just checking in on the quote we sent for your move on [JOB DATE or "your upcoming move"]. Wanted to make sure it didn't get buried during a busy week.
 
-**Your quote:** [#] movers at $95/hour for [SERVICES] — flat rate, no hidden fees.
+**Your quote:** [#] movers at $[95 or 130]/hour for [SERVICES] — flat rate, no hidden fees.
 
 If you'd like to lock in that date, we can hold it with a quick confirmation — no payment required yet. Dates fill up faster than most people expect, especially around the 1st and last weekend of the month.
 
@@ -149,7 +149,7 @@ If your plans have changed or you have questions, reply here or call us at (971)
 
 [YOUR NAME]
 Rest Assured Moving LLC
-(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
+(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured
 
 ---
 

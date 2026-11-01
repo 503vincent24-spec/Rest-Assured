@@ -14,17 +14,13 @@ on the one before it.
 **Goal:** Replace placeholders, test the site, confirm all accounts are ready.
 
 ### Days 1–2: Placeholder replacement
-- [ ] Open the project folder in VS Code (or any text editor with global search)
-- [ ] Global find-and-replace every placeholder from the `README.md` list:
-  - `(971) 302-0120` → your business phone
-  - `Shawn@restassuredmoving.net` → your business email
-  - `[YOUR-DOMAIN]` → your domain (e.g., restassuredmovingllc.com)
-  - `95` → your hourly rate
-  - `2024` → year business was founded
-  - All others listed in README.md
-- [ ] Review `index.html` — swap the 3 placeholder testimonials with real reviews
-  (if you have any from early customers; if not, remove the testimonial section
-  for now and add it once real reviews exist)
+- [x] Phone (971) 302-0120, email, rates ($95 / $130, same-day $115 / $155),
+  founding year (2024), employees (2), and payment methods are filled in everywhere
+- [x] Invented testimonials removed; real reviews go in the marked spots as
+  they come in (`index.html`, `quote.html`)
+- [ ] Run `./tools/set-domain.sh <your-domain>` to fill `[YOUR-DOMAIN]` and
+  `[WEBSITE URL]` (README Step 2)
+- [x] Employees (2) filled in on the Angi profile
 
 ### Day 3: Domain and hosting
 - [ ] Purchase domain at Namecheap, GoDaddy, or similar ($10–15/year)
@@ -65,7 +61,7 @@ on the one before it.
 - [ ] Post the pinned introduction post (Post 1 from FACEBOOK_CONTENT.md)
 - [ ] Create Instagram account and complete profile using `INSTAGRAM_GUIDE.md`
 - [ ] Claim Nextdoor Business Page using `NEXTDOOR_GUIDE.md`
-- [ ] Take the first real crew/job photos (even phone-quality beats stock photos)
+- [x] First real job photos (8 truck loads, in `assets/photos/`); still take a crew photo
   - At minimum: one loading shot, one team photo
   - Upload immediately to Google Business Profile (logo + cover + 1 action photo)
 

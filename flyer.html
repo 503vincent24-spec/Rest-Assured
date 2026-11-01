@@ -30,12 +30,16 @@
   .panel { background: #EFF2F0; border-left: 5px solid #1F7A5C; padding: 0.2in 0.25in; font-size: 12pt; }
   .panel h4 { margin: 0 0 0.08in; font-family: 'Courier New', monospace; font-size: 10pt; letter-spacing: 0.06em; text-transform: uppercase; color: #11533D; }
 
-  .cta-band { background: #0F2547; color: #fff; border-radius: 6px; padding: 0.35in 0.4in; text-align: center; margin-bottom: 0.4in; }
+  .cta-band { background: #0F2547; color: #fff; border-radius: 6px; padding: 0.3in 0.4in; margin-bottom: 0.4in; display: flex; align-items: center; justify-content: space-between; gap: 0.3in; }
+  .cta-qr { flex: none; background: #fff; border-radius: 6px; padding: 0.08in; text-align: center; }
+  .cta-qr img { display: block; width: 1.25in; height: 1.25in; }
+  .cta-qr span { display: block; font-family: 'Courier New', monospace; font-size: 7.5pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #0F2547; margin-top: 0.03in; }
   .cta-band .stamp { display: inline-block; border: 1.5px solid #2E9874; color: #2E9874; border-radius: 999px; padding: 0.05in 0.2in; font-family: 'Courier New', monospace; font-size: 9pt; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.12in; }
   .cta-band h2 { font-family: Georgia, serif; font-size: 22pt; margin: 0 0 0.08in; color: #fff; }
   .cta-band p { margin: 0; font-size: 13pt; color: #C9D2DD; }
 
-  .contact-strip { display: flex; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 11pt; color: #0F2547; border-top: 1px dashed #D8DCD8; padding-top: 0.2in; margin-top: auto; }
+  .contact-strip { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.06in 0.25in; font-family: 'Courier New', monospace; font-size: 10pt; color: #0F2547; border-top: 1px dashed #D8DCD8; padding-top: 0.2in; margin-top: auto; }
+  .contact-strip span { white-space: nowrap; }
 
   .service-area { font-size: 10.5pt; color: #4B5563; text-align: center; margin-top: 0.15in; }
 
@@ -75,9 +79,12 @@
     </div>
 
     <div class="cta-band">
-      <span class="stamp">Free, No-Obligation Quotes</span>
-      <h2>Let's check moving day off your list.</h2>
-      <p>Call or scan to request your free quote today.</p>
+      <div class="cta-text">
+        <span class="stamp">Free, No-Obligation Quotes</span>
+        <h2>Let's check moving day off your list.</h2>
+        <p>Call, text, or scan the code to request your free quote today.</p>
+      </div>
+      <div class="cta-qr"><img src="assets/qr-text-us.svg" alt="QR code: text Rest Assured Moving at (971) 302-0120"><span>Scan to text</span></div>
     </div>
 
     <div class="service-area">
@@ -86,7 +93,7 @@
 
     <div class="contact-strip">
       <span>(971) 302-0120</span>
-      <span>[WEBSITE URL]</span>
+      <span>503vincent24-spec.github.io/Rest-Assured</span>
       <span>Shawn@restassuredmoving.net</span>
     </div>
 

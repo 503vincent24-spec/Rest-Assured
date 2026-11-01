@@ -130,8 +130,10 @@
 
   function validateFields(scope) {
     var firstBad = null;
-    $$('[required]', scope).forEach(function (f) {
+    // Optional email/phone fields are still checked for format when filled in.
+    $$('[required], input[type="email"], input[type="tel"]', scope).forEach(function (f) {
       var val = f.value.trim();
+      if (!val && !f.required) { setError(f, null, false); return; }
       var bad = !val;
       var msg = null;
       if (!bad && f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
@@ -143,6 +145,12 @@
       setError(f, msg, bad);
       if (bad && !firstBad) firstBad = f;
     });
+    // "Email me" needs an address to email.
+    var pref = $('[name="contact_pref"]', scope), mail = $('[name="email"]', scope);
+    if (pref && mail && pref.value === 'Email me' && !mail.value.trim()) {
+      setError(mail, 'Please add your email so we can send your quote.', true);
+      if (!firstBad) firstBad = mail;
+    }
     $$('[data-require-one]', scope).forEach(function (group) {
       var bad = !$$('input:checked', group).length;
       var err = group.parentElement.querySelector('.field-error');
@@ -246,6 +254,19 @@
     var preAccess = qs.get('access');
     var notes = $('[name="notes"]', quoteForm);
     if (preAccess && notes && !notes.value) notes.value = 'Access: ' + preAccess;
+    // Same-day jobs need a call or text, not a form that's answered within a business day
+    var dateField = $('[name="move_date"]', quoteForm), sameDayHint = $('#same-day-hint', quoteForm);
+    var todayISO = function () {
+      var t = new Date();
+      return t.getFullYear() + '-' + ('0' + (t.getMonth() + 1)).slice(-2) + '-' + ('0' + t.getDate()).slice(-2);
+    };
+    var checkSameDay = function () { if (sameDayHint) sameDayHint.hidden = !dateField || dateField.value !== todayISO(); };
+    if (dateField) {
+      if (qs.get('when') === 'today' && !dateField.value) dateField.value = todayISO();
+      on(dateField, 'change', checkSameDay);
+      on(dateField, 'input', checkSameDay);
+      checkSameDay();
+    }
     var preEstimate = qs.get('estimate');
     var estField = $('[name="online_estimate"]', quoteForm);
     if (preEstimate && estField) estField.value = preEstimate;
@@ -268,7 +289,8 @@
       var fields = [
         ['Name', name],
         ['Phone', g('phone')],
-        ['Email', g('email')],
+        ['Email', g('email') || '—'],
+        ['Preferred contact', g('contact_pref') || '—'],
         ['Best time to call', g('best_time') || 'No preference'],
         ['Services', d.getAll('services').join(', ')],
         ['Move date', g('move_date') || 'Not set'],

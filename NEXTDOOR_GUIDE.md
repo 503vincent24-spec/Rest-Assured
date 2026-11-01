@@ -24,9 +24,9 @@ who hires moving labor.
 - **Category:** Moving Company (or Home Services if that category implies transportation — verify)
 - **Service area:** Add all 9 cities individually
 - **Phone:** (971) 302-0120
-- **Website:** [WEBSITE URL]
+- **Website:** 503vincent24-spec.github.io/Rest-Assured
 - **Hours:** Monday–Saturday, 7:00 AM – 7:00 PM
-- **Profile photo:** logo-mark-300.png (300×300px minimum)
+- **Profile photo:** `assets/social/profile-1000.png` · **Cover:** `assets/social/facebook-cover-1640x624.png`
 
 ---
 
@@ -42,7 +42,7 @@ Flat hourly pricing. No fuel surcharges. No hidden fees.
 Serving Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton,
 Hillsboro, Tigard, and Portland Metro.
 
-Free quotes: (971) 302-0120 | [WEBSITE URL]
+Free quotes: (971) 302-0120 | 503vincent24-spec.github.io/Rest-Assured
 ```
 
 ---
@@ -85,7 +85,7 @@ Once every 10–14 days is safer for long-term standing.
 Rest Assured Moving LLC — moving labor in [NEIGHBORHOOD]
 Loading, unloading, packing, unpacking, and furniture assembly.
 Flat hourly rate, no fuel fees, free quotes.
-(971) 302-0120 | [WEBSITE URL]
+(971) 302-0120 | 503vincent24-spec.github.io/Rest-Assured
 ```
 
 *Helpful tip (performs better than pure ads):*
@@ -93,7 +93,7 @@ Flat hourly rate, no fuel fees, free quotes.
 Moving tip from the Rest Assured crew: measure your doorways AND your
 furniture before moving day. A couch that fits through one door won't
 always fit through another — 5 minutes now saves a lot of frustration.
-We're Salem's labor-only moving crew. [WEBSITE URL]
+We're Salem's labor-only moving crew. 503vincent24-spec.github.io/Rest-Assured
 ```
 
 *Seasonal:*

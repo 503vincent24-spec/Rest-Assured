@@ -13,6 +13,47 @@ generic stock when the subject is real.
 
 ---
 
+## 0. Real job photos (in use)
+
+| File (`assets/photos/`) | Shows | Used on |
+|---|---|---|
+| `job-full-wrap.jpg` | Dressers in blankets + green stretch wrap, chairs padded | Homepage gallery, services page, Instagram post 10, Facebook/X photo covers, Google cover |
+| `job-sofa-mattress.jpg` | Mattress bagged and strapped, sofa in front | Homepage gallery, Instagram post 12 |
+| `job-wrapped-furniture.jpg` | Wrapped furniture at the front, boxes stacked tight | Homepage gallery, About page |
+| `job-tight-load.jpg` | Bins and bags floor to ceiling | Homepage gallery, services page, Instagram post 11 |
+| `job-wall-of-bins.jpg` | Solid wall of drawers and bins | Homepage gallery |
+| `job-cabinet-ramp.jpg` | Tall wrapped cabinet, hand truck, ramp | Homepage gallery |
+| `job-mattress-tarp.jpg` | Mattress under a blue tarp, boxes, bags | About page, listings |
+| `job-boxes-furniture.jpg` | Boxes under a desk, dresser pieces | About page, listings |
+
+Each has a 900 px web version in `assets/photos/` and a 1,536 px version
+for listing sites in `assets/photos/upload/`.
+
+**Two photos weren't used:** the wardrobe boxes in an empty room and the
+plastic-wrapped box spring were too blurry. Retake similar shots holding
+the phone still, with the truck's back door open for light.
+
+**How the photos were prepared (do the same for new ones):**
+1. **Crop or blur anything personal.** Faces (including the models on
+   U-Haul's wall ads), license plates, house numbers, and readable
+   shipping labels with a customer's name or address.
+2. **Strip hidden data.** Phone photos can store the GPS location of
+   where they were taken, which here would be a customer's home. Saving
+   a copy without metadata removes it (these 8 had none, and were
+   re-saved without any).
+3. **Resize** to 900 px wide for the website (under 250 KB) and 1,536 px
+   for listings.
+4. **Ask the customer first** if anything in the shot is clearly theirs
+   and identifiable (a family photo, a name on a box, their house).
+5. **Never use another company's photos.** Only real Rest Assured jobs.
+
+**Still wanted:** a photo of Shawn or the crew at work (faces are fine
+with their OK), one of an unloaded room set up, and one of assembled
+furniture. People hire people; a crew photo is the single best image for
+Google and the About page.
+
+---
+
 ## 1. Logo & Brand Assets (already created as SVG)
 
 | File | Location | Use |
@@ -20,6 +61,14 @@ generic stock when the subject is real.
 | `logo-mark.svg` | `website/assets/` | Favicons, nav, social avatars |
 | `logo-lockup.svg` | `website/assets/` | Letterhead, email signature |
 | `favicon.svg` | `website/assets/` | Browser tab icon |
+
+> ✅ **Done:** `assets/og-image.png` (1200×630) and a full set of listing
+> images in `assets/social/` (1000×1000 profile/logo, which every platform
+> accepts and downsizes, plus the Facebook cover, Craigslist ads, and a square
+> post) are generated from `tools/social-images.html` by
+> `node tools/render-social-images.js`. See `ONLINE_LISTINGS_LAUNCH_KIT.md` §4
+> for which file goes where. The sizes below are still useful for any other
+> export.
 
 **PNG exports needed (SVG → PNG conversion):**
 

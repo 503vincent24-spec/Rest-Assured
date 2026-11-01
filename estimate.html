@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Moving Labor Cost Estimator | Rest Assured Moving LLC</title>
 <meta name="description" content="Estimate your moving labor cost in seconds. Loading, unloading, packing, and furniture assembly in Salem, Oregon — flat hourly pricing, no hidden fees.">
-<link rel="canonical" href="https://[YOUR-DOMAIN]/estimate.html">
+<link rel="canonical" href="https://503vincent24-spec.github.io/Rest-Assured/estimate.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -55,6 +55,9 @@
     border-color: var(--emerald-600);
     color: var(--white);
   }
+  .svc-toggle:has(input:focus-visible) { outline: 2px solid var(--emerald-600); outline-offset: 2px; }
+  .svc-toggle:has(input:disabled) { opacity: .45; cursor: not-allowed; }
+  .est-hint { font-size: var(--text-xs); color: var(--ink-muted); margin: .5rem 0 0; line-height: 1.5; }
   .est-result {
     background: var(--gray-100);
     border-radius: var(--radius-md);
@@ -105,6 +108,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
   <div class="container">
@@ -131,6 +135,7 @@
     </nav>
   </div>
 </header>
+<main id="main">
 
 <section class="page-hero" aria-labelledby="est-title">
   <div class="container">
@@ -181,6 +186,26 @@
             </div>
           </div>
 
+          <!-- Furniture protection -->
+          <div class="est-group">
+            <label id="wrap-label">Furniture protection</label>
+            <div class="checkbox-row" role="radiogroup" aria-labelledby="wrap-label">
+              <label class="svc-toggle"><input type="radio" name="wrap" value="standard" checked> Standard (included)</label>
+              <label class="svc-toggle"><input type="radio" name="wrap" value="full" id="wrap-full" disabled> Full Wrap</label>
+            </div>
+            <p class="est-hint" id="wrap-hint"><strong>Standard:</strong> furniture goes into moving blankets or shrink wrap, at no extra cost. <strong>Full Wrap:</strong> every piece is padded with moving blankets <em>and</em> sealed in stretch wrap. Available when we load and unload.</p>
+          </div>
+
+          <!-- Timing -->
+          <div class="est-group">
+            <label for="timing">When do you need us?</label>
+            <select id="timing">
+              <option value="standard">A future date (tomorrow or later)</option>
+              <option value="sameday">Today: same-day service</option>
+            </select>
+            <p class="est-hint" id="timing-hint" style="display:none;"><strong>Same-day:</strong> $115/hr for 2 movers, $155/hr for 3, when a crew is free. Call or text <a href="tel:+19713020120">(971) 302-0120</a> by 12 pm (Mon–Sat). The form isn't checked fast enough for same-day jobs.</p>
+          </div>
+
           <!-- Floors / access -->
           <div class="est-group">
             <label for="floors">Access difficulty</label>
@@ -224,6 +249,8 @@
             <li>Flat hourly rate — one number, confirmed before we start</li>
             <li>No fuel surcharges or mileage fees</li>
             <li>No travel time charges within our service area</li>
+            <li>Moving blankets and shrink wrap included</li>
+            <li>Full Wrap (blankets + stretch wrap on every piece): extra wrapping time plus a flat supply fee</li>
             <li>Materials (boxes, tape) billed only if we supply them</li>
             <li>2-hour minimum; 30-minute increments after that</li>
           </ul>
@@ -231,7 +258,8 @@
         <div class="card">
           <h4>Current rates</h4>
           <p style="font-size:var(--text-sm);">2-person crew: <strong>$95/hour</strong></p>
-          <p style="font-size:var(--text-sm);">3-person crew: <strong>$[RATE-3]/hour</strong></p>
+          <p style="font-size:var(--text-sm);">3-person crew: <strong>$130/hour</strong></p>
+          <p style="font-size:var(--text-sm);">Same-day service: <strong>$115/hour</strong> (2) · <strong>$155/hour</strong> (3)</p>
           <p style="font-size:var(--text-sm);color:var(--ink-muted);">
             Larger crews quoted per job. Rates confirmed before work begins.
           </p>
@@ -251,6 +279,8 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
@@ -262,16 +292,40 @@
     <div class="footer-bottom"><p>&copy; <span data-year>2024</span> Rest Assured Moving LLC. All rights reserved.</p><p class="footer-legal">Moving labor services only. We do not provide transportation, truck rental, or hauling.</p></div>
   </div>
 </footer>
-<div class="mobile-cta" role="region" aria-label="Quick contact"><a href="tel:+19713020120" class="btn btn-outline-light">📞 Call Now</a><a href="quote.html" class="btn btn-primary">Get a Quote</a></div>
+<div class="mobile-cta" role="region" aria-label="Quick contact"><a href="tel:+19713020120" class="btn btn-outline-light">📞 Call</a><a href="sms:+19713020120" class="btn btn-outline-light">💬 Text</a><a href="quote.html" class="btn btn-primary">Get a Quote</a></div>
 <script src="script.js"></script>
 <script>
 (function() {
   var RATE   = 95;   // ← replace 95 with your 2-person hourly rate (number only, e.g. 95)
   var RATE3  = 130;  // ← replace 130 with your 3-person rate
+  var SAME_DAY_RATE  = 115; // same-day service, 2 movers (PRICING_GUIDE.md §5b)
+  var SAME_DAY_RATE3 = 155; // same-day service, 3 movers
   var MIN_HRS = 2;
+  var CREW3_SPEED = 1.4; // a 3-person crew works ~1.4× faster than 2
+
+  // Full Wrap: every furniture piece padded with moving blankets AND sealed in
+  // stretch wrap. Priced as extra crew time (billed at the hourly rate, like any
+  // other work) plus a flat supply fee. Math and sources: PRICING_GUIDE.md §6.
+  var WRAP = {
+    PIECES: { '1.5': 10, '2': 14, '3.5': 22, '5': 30, '7': 40 }, // furniture pieces by home size
+    MIN_PER_PIECE: 4,          // extra 2-person crew minutes: 3 to pad + wrap, 1 to unwrap + bag the film
+    FILM_FT_PER_PIECE: 110,    // 20" stretch wrap, two layers, incl. 10% waste
+    FILM_COST_PER_FT: 0.022,   // $22 per 20" x 1,000 ft roll
+    BLANKETS_PER_PIECE: 1.6,
+    BLANKET_COST_PER_USE: 0.5, // $18 blanket over ~50 uses, plus laundering
+    MISC: 3,                   // tape, trash bags for used film
+    MARKUP: 1.3                // 30% on supplies (PRICING_GUIDE.md §6: 25–40%)
+  };
+  function wrapSupplyFee(pieces) {
+    var cost = pieces * WRAP.FILM_FT_PER_PIECE * WRAP.FILM_COST_PER_FT +
+               pieces * WRAP.BLANKETS_PER_PIECE * WRAP.BLANKET_COST_PER_USE + WRAP.MISC;
+    return Math.round(cost * WRAP.MARKUP / 5) * 5;
+  }
 
   function estimate() {
     var homeHrs  = parseFloat(document.getElementById('home-size').value) || 0;
+    var sameDay  = document.getElementById('timing').value === 'sameday';
+    document.getElementById('timing-hint').style.display = sameDay ? 'block' : 'none';
     var accessMult = parseFloat(document.getElementById('floors').value)  || 1;
     var svcInputs  = document.querySelectorAll('input[name="svc"]:checked');
 
@@ -290,25 +344,44 @@
       svcNames.push(inp.dataset.label);
     });
 
-    var rawHrs  = homeHrs * svcMult * accessMult;
-    var loHrs   = Math.max(MIN_HRS, Math.round((rawHrs * 0.85) * 2) / 2);
-    var hiHrs   = Math.round((rawHrs * 1.25) * 2) / 2;
-    var crew    = hiHrs >= 5 && homeHrs >= 3.5 ? 3 : 2;
-    var rate    = crew === 3 ? RATE3 : RATE;
-    var loTotal = loHrs * rate;
-    var hiTotal = hiHrs * rate;
+    // Full Wrap needs both ends: our blankets ride in your truck and come back with us at unloading
+    var fullWrapInput = document.getElementById('wrap-full');
+    var bothEnds = svcNames.indexOf('Loading') !== -1 && svcNames.indexOf('Unloading') !== -1;
+    fullWrapInput.disabled = !bothEnds;
+    if (!bothEnds && fullWrapInput.checked) document.querySelector('input[name="wrap"][value="standard"]').checked = true;
+    var fullWrap = bothEnds && fullWrapInput.checked;
+    var pieces   = WRAP.PIECES[document.getElementById('home-size').value] || 0;
+    var wrapHrs  = fullWrap ? pieces * WRAP.MIN_PER_PIECE / 60 : 0;
+    var wrapFee  = fullWrap ? wrapSupplyFee(pieces) : 0;
 
-    document.getElementById('result-price').textContent =
-      '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal);
+    // rawHrs is in 2-person crew hours. Bigger jobs get a third mover, who
+    // finishes the same work in less time (~1.4× a 2-person crew's pace).
+    var rawHrs  = homeHrs * svcMult * accessMult + wrapHrs;
+    var crew    = rawHrs * 1.25 >= 5 && homeHrs >= 3.5 ? 3 : 2;
+    if (crew === 3) rawHrs = rawHrs / CREW3_SPEED;
+    var loHrs   = Math.max(MIN_HRS, Math.round((rawHrs * 0.85) * 2) / 2);
+    var hiHrs   = Math.max(loHrs, Math.round((rawHrs * 1.25) * 2) / 2);
+    var rate    = sameDay ? (crew === 3 ? SAME_DAY_RATE3 : SAME_DAY_RATE) : (crew === 3 ? RATE3 : RATE);
+    var loTotal = loHrs * rate + wrapFee;
+    var hiTotal = hiHrs * rate + wrapFee;
+
+    var usd = function(n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+    var priceText = loTotal === hiTotal ? usd(loTotal) : usd(loTotal) + '–' + usd(hiTotal);
+    document.getElementById('result-price').textContent = priceText;
     document.getElementById('result-note').textContent =
-      'Crew of ' + crew + ' · approx. ' + loHrs + '–' + hiHrs + ' hrs · $' + rate + '/hr';
+      'Crew of ' + crew + ' · approx. ' + (loHrs === hiHrs ? loHrs : loHrs + '–' + hiHrs) + ' hrs · $' + rate + '/hr' + (sameDay ? ' (same-day)' : '');
 
     var bd = document.getElementById('result-breakdown');
     bd.style.display = 'block';
     bd.innerHTML =
       '<div><span>Services</span><span>' + svcNames.join(', ') + '</span></div>' +
-      '<div><span>Hourly rate</span><span>$' + rate + '/hr (' + crew + '-person crew)</span></div>' +
+      '<div><span>Hourly rate</span><span>$' + rate + '/hr (' + crew + '-person crew' + (sameDay ? ', same-day' : '') + ')</span></div>' +
+      (sameDay ? '<div><span>Same-day premium</span><span>+$' + (rate - (crew === 3 ? RATE3 : RATE)) + '/hr (in the rate above)</span></div>' : '') +
       '<div><span>Est. hours</span><span>' + loHrs + '–' + hiHrs + ' hrs</span></div>' +
+      (fullWrap
+        ? '<div><span>Full Wrap time</span><span>~' + (Math.round(wrapHrs / (crew === 3 ? CREW3_SPEED : 1) * 10) / 10) + ' hrs (in the hours above)</span></div>' +
+          '<div><span>Full Wrap supplies</span><span>$' + wrapFee + ' flat (stretch wrap + blankets)</span></div>'
+        : '<div><span>Blankets &amp; shrink wrap</span><span>Included</span></div>') +
       '<div><span>Fuel / mileage fees</span><span>$0.00</span></div>';
 
     // Carry the visitor's answers into the quote form so they don't retype them
@@ -316,10 +389,13 @@
     var sizeSel   = document.getElementById('home-size');
     var accessSel = document.getElementById('floors');
     var qp = new URLSearchParams({
-      services:  svcNames.map(function(n) { return QUOTE_NAMES[n] || n; }).join(','),
+      services:  svcNames.map(function(n) { return QUOTE_NAMES[n] || n; }).concat(fullWrap ? ['Full Wrap'] : []).join(','),
       home_size: sizeSel.options[sizeSel.selectedIndex].text,
       access:    accessSel.options[accessSel.selectedIndex].text,
-      estimate:  '$' + Math.round(loTotal) + '–$' + Math.round(hiTotal) + ' (' + crew + '-person crew, ' + loHrs + '–' + hiHrs + ' hrs)'
+      when:      sameDay ? 'today' : '',
+      estimate:  priceText + ' (' + crew + '-person crew, ' + loHrs + '–' + hiHrs + ' hrs' +
+                 (fullWrap ? ', Full Wrap incl. $' + wrapFee + ' supplies' : '') +
+                 (sameDay ? ', same-day rate' : '') + ')'
     });
     document.getElementById('est-quote-link').href = 'quote.html?' + qp.toString();
     document.getElementById('est-cta').style.display = 'block';
@@ -327,6 +403,10 @@
 
   document.getElementById('home-size').addEventListener('change', estimate);
   document.getElementById('floors').addEventListener('change', estimate);
+  document.getElementById('timing').addEventListener('change', estimate);
+  document.querySelectorAll('input[name="wrap"]').forEach(function(r) {
+    r.addEventListener('change', estimate);
+  });
   document.querySelectorAll('input[name="svc"]').forEach(function(cb) {
     cb.addEventListener('change', estimate);
   });

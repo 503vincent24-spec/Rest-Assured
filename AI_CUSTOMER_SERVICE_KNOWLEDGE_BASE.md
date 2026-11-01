@@ -44,7 +44,7 @@ Service area: Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton,
 Hours: Monday–Saturday, 7am–7pm
 Phone: (971) 302-0120
 Email: Shawn@restassuredmoving.net
-Website: [WEBSITE URL]
+Website: 503vincent24-spec.github.io/Rest-Assured
 
 One-sentence description: We provide the moving labor — loading, unloading,
 packing, unpacking, and furniture assembly/disassembly — while the customer
@@ -94,9 +94,19 @@ SECTION 4 — PRICING
 Pricing model: Flat hourly rate, based on crew size and job scope. No fuel
 surcharges, mileage fees, or hidden add-ons.
 
-Typical rate range: $[LOW RATE]–$[HIGH RATE] per hour, depending on crew
-size ([#]–[#] movers). Final quote depends on home size, services needed,
+Rates: $95 per hour for 2 movers, $130 per hour for 3 movers (2-hour
+minimum; same-day service $115 / $155; larger crews quoted per job). Final quote depends on home size, services needed,
 and access (stairs, distance from truck to door, etc.).
+
+Full Wrap (optional, only when we do both loading and unloading): every
+furniture piece padded with moving blankets AND sealed in stretch wrap.
+Price = the extra wrapping time at the hourly rate plus a flat supply fee:
+studio $45, 1 bedroom $65, 2 bedrooms $95, 3 bedrooms $130, 4+ bedrooms
+$170. Standard service (blankets or shrink wrap on furniture) stays included.
+
+Referral reward: a past customer and the new customer they refer each get
+$25 off after the new customer's job is done (new customers only, one reward
+per completed job). It is the only standing discount.
 
 What the AI assistant CAN say: the rate range, that pricing is hourly and
 transparent, and that materials (boxes, wrap, tape) may be billed separately
@@ -121,6 +131,11 @@ SECTION 5 — BOOKING PROCESS
 
 Lead time: Recommend booking 1–2 weeks ahead, especially around the 1st and
 last weekend of the month. Shorter notice accommodated when schedule allows.
+
+Same-day service: $115/hour for 2 movers, $155/hour for 3 (2-hour minimum),
+only when a crew is free. The customer must call or text (971) 302-0120 by
+12 pm, Mon–Sat. Never promise a same-day crew; hand the customer to a human
+right away. Booking for tomorrow or later is the regular rate.
 
 ================================================================================
 SECTION 6 — BRAND VOICE FOR THE AI ASSISTANT
@@ -152,7 +167,7 @@ A: We don't provide transportation, so we can't drive your belongings to
 
 Q: How much does it cost?
 A: We charge a flat hourly rate based on crew size and the scope of your
-   job — typically $[LOW RATE]–$[HIGH RATE] per hour, with no fuel or
+   job — $95/hour for 2 movers or $130/hour for 3, with no fuel or
    mileage fees. For an exact quote, share your move date, home size, and
    what you need done, and our team will follow up with specifics.
 
@@ -165,7 +180,7 @@ A: Yes — furniture assembly and disassembly are available as standalone
    services with no move required.
 
 Q: How many movers will I get?
-A: Crew size depends on your job — typically [#]–[#] movers. Our team will
+A: Crew size depends on your job — typically 2–3 movers (4 for very large homes). Our team will
    recommend the right size based on your home and what needs to be done.
 
 Q: What if something gets damaged?
@@ -179,6 +194,11 @@ A: Yes, we're open Monday through Saturday, 7am to 7pm.
 Q: How far in advance should I book?
 A: We recommend 1–2 weeks ahead, especially around the 1st and last weekend
    of the month, though we'll do our best to accommodate shorter notice.
+
+Q: Do you offer same-day service?
+A: Yes, when a crew is free: $115/hour for 2 movers or $155/hour for 3
+   (2-hour minimum). Call or text (971) 302-0120 by 12 pm, Mon–Sat, and
+   we'll tell you right away whether we can make it today.
 
 Q: Do you pack boxes for me, or just load them?
 A: Both — we offer full or partial packing services in addition to loading,

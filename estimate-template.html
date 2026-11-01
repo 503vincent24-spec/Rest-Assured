@@ -34,6 +34,8 @@
   .footer-contact { text-align: center; font-family: 'Courier New', monospace; font-size: 0.8rem; color: var(--ink-soft); margin-top: 2rem; }
   .stamp { display: inline-block; border: 1.5px solid var(--emerald); color: var(--emerald); border-radius: 999px; padding: 0.2rem 0.75rem; font-family: 'Courier New', monospace; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; }
   @media print { body { padding: 0; } }
+  .ratecard{font-size:11px;color:#4A5568;margin:10px 0 18px;line-height:1.5}
+  td small{display:block;font-size:10.5px;color:#5A6576;font-weight:400;margin-top:2px}
 </style>
 </head>
 <body>
@@ -74,45 +76,38 @@
         <th>Service</th>
         <th class="num">Est. Hours</th>
         <th class="num">Rate / Hour</th>
-        <th class="num">Est. Subtotal</th>
+        <th class="num">Est. Amount</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Loading &amp; Unloading</td>
-        <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
+        <td>Moving labor, [2 / 3]-mover crew: [loading, unloading, packing, unpacking, assembly]<br><small>[Same-day rate, if booked the same day]</small></td>
+        <td class="num">[#]&ndash;[#]</td>
+        <td class="num">$[RATE]</td>
+        <td class="num">$[LOW]&ndash;$[HIGH]</td>
       </tr>
       <tr>
-        <td>Packing &amp; Unpacking</td>
-        <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
+        <td>Full Wrap supplies, if chosen<br><small>Blankets + stretch wrap on every piece: $45 studio · $65 1 BR · $95 2 BR · $130 3 BR · $170 4+ BR</small></td>
+        <td class="num">&mdash;</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$[FEE]</td>
       </tr>
       <tr>
-        <td>Furniture Assembly / Disassembly</td>
-        <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
-      </tr>
-      <tr>
-        <td>[Additional line item]</td>
-        <td class="num">[#]</td>
-        <td class="num">$95</td>
-        <td class="num">$25</td>
+        <td>Boxes, packing paper, tape<br><small>Only if you'd like us to supply them</small></td>
+        <td class="num">&mdash;</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$[AMOUNT]</td>
       </tr>
     </tbody>
     <tfoot>
-      <tr><td colspan="3">Estimated Subtotal</td><td class="num">$[SUBTOTAL]</td></tr>
-      <tr><td colspan="3">Materials (boxes, wrap, tape — if applicable)</td><td class="num">$25</td></tr>
       <tr class="total"><td colspan="3">Estimated Total</td><td class="num">$[TOTAL LOW]&ndash;$[TOTAL HIGH]</td></tr>
     </tfoot>
   </table>
+  <p class="ratecard"><strong>Rates:</strong> $95/hr for 2 movers · $130/hr for 3 · same-day service $115/hr (2) or $155/hr (3) · 2-hour minimum, then 30-minute increments · moving blankets and shrink wrap included · no fuel, mileage, or travel fees in our service area.</p>
 
   <div class="notes">
     <strong>Note:</strong> This is an estimate based on the information provided, not a final
-    invoice. Final cost reflects actual hours worked at the rate above. <span class="stamp">No fuel or mileage fees</span>
+    invoice. Final cost reflects actual hours worked at the rate above, in 30-minute increments after the 2-hour minimum. Payment by cash, credit/debit card, Venmo, Zelle, Cash App, or PayPal. <span class="stamp">No fuel or mileage fees</span>
   </div>
 
   <p class="disclaimer">
@@ -124,7 +119,7 @@
   </p>
 
   <p class="footer-contact">
-    Rest Assured Moving LLC &middot; (971) 302-0120 &middot; Shawn@restassuredmoving.net &middot; [WEBSITE URL]
+    Rest Assured Moving LLC &middot; (971) 302-0120 &middot; Shawn@restassuredmoving.net &middot; 503vincent24-spec.github.io/Rest-Assured
   </p>
 
 </body>
