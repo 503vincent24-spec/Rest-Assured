@@ -154,7 +154,7 @@ honestly *can* say:
 | 5 | Visit 3–5 local U-Haul dealers, storage facilities, and apartment leasing offices with business cards and flyers (`REFERRAL_PARTNER_TOOLKIT.md`) | Steady referral partners |
 | 5 | Claim Yelp (`YELP_PROFILE.md`) | Page claimed |
 | 7 | Renew Craigslist ads. Ask every completed job for a **Google** review | First reviews |
-| 8–10 | Google verified → do the Part 1 §3 list, apply for Local Services Ads | Showing up in Google Maps |
+| 8–10 | Google verified → do the Part 1 §3 list (skip Local Services Ads until you have liability insurance) | Showing up in Google Maps |
 | 10 | Angi only if you can call leads within 5 minutes (`ANGI_PROFILE.md`) | Paid leads |
 | 14 | Fill in the tracking table (`ONLINE_LISTINGS_LAUNCH_KIT.md` §5); double down on the top 2 sources | Clear picture of what works |
 

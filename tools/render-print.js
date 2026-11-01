@@ -15,6 +15,9 @@ const DOCS = [
   { file: 'business-card.html',      w: 3.75, h: 2.25, dpi: 300 },
   { file: 'flyer-laundromat.html',   w: 8.5,  h: 11,   dpi: 150 },
   { file: 'flyer-apartments.html',   w: 8.5,  h: 11,   dpi: 150 },
+  // Flowing multi-page document: PDF only, page numbers in the footer
+  { file: 'launch-guide.html', flow: true, out: path.resolve(DIR, '..', 'LAUNCH_GUIDE.pdf'),
+    footer: 'Rest Assured Moving LLC · Launch Guide' },
 ];
 
 (async () => {
@@ -23,6 +26,19 @@ const DOCS = [
     const src = path.join(DIR, d.file);
     if (!fs.existsSync(src)) { console.warn('skip (missing):', d.file); continue; }
     const base = d.file.replace(/\.html$/, '');
+    if (d.flow) {
+      const page = await browser.newPage();
+      await page.goto('file://' + src);
+      await page.evaluate(() => document.fonts.ready);
+      await page.pdf({
+        path: d.out, format: 'Letter', printBackground: true, preferCSSPageSize: true,
+        displayHeaderFooter: true, headerTemplate: '<span></span>',
+        footerTemplate: `<div style="width:100%;font-family:'Courier New',monospace;font-size:7.5px;color:#5A6576;padding:0 0.7in;display:flex;justify-content:space-between"><span>${d.footer}</span><span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span></div>`,
+      });
+      console.log(path.relative(path.resolve(DIR, '..'), d.out));
+      await page.close();
+      continue;
+    }
     const page = await browser.newPage({ viewport: { width: Math.round(d.w * 96), height: Math.round(d.h * 96) } });
     await page.goto('file://' + src);
     await page.evaluate(() => document.fonts.ready);

@@ -3,6 +3,11 @@
 A one-page summary of everything built so far, what has been checked, and
 what only the owner can do. Start here.
 
+**To launch, follow [`LAUNCH_GUIDE.pdf`](LAUNCH_GUIDE.pdf)**: an 11-page,
+step-by-step guide (website online → leads → Google → listings → first
+jobs → running each job), with checkboxes and a one-page cheat sheet.
+Source: `print/launch-guide.html`, rendered by `node tools/render-print.js`.
+
 **Business:** Rest Assured Moving LLC, a labor-only moving company (loading,
 unloading, packing, unpacking, furniture assembly) in Salem, OR. Owner:
 Shawn · (971) 302-0120 · Shawn@restassuredmoving.net. Rates $95/hr

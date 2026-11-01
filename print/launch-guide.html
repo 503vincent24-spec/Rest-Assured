@@ -1,0 +1,456 @@
+<!doctype html>
+<!--
+  Launch guide for Rest Assured Moving LLC: every step to get the website,
+  lead delivery, Google, listings, and daily operations live.
+  Letter size, flowing pages. Rendered to LAUNCH_GUIDE.pdf (repo root) by:
+    node tools/render-print.js
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Launch Guide — Rest Assured Moving LLC</title>
+<style>
+  @page { size: letter; margin: 0.65in 0.7in 0.8in; }
+  :root{ --navy:#0F2547; --navy2:#16335E; --em:#1F7A5C; --em5:#2E9874; --paper:#FAFAF8; --ink:#1C2533; --muted:#4A5568; --line:#D4D8D4; --soft:#EFF2F0;
+         --serif:Georgia,'Iowan Old Style','Times New Roman',serif; --sans:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; --mono:'Courier New',Courier,monospace; }
+  *{ box-sizing:border-box; }
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ margin:0; font-family:var(--sans); color:var(--ink); font-size:10pt; line-height:1.45; }
+  h1,h2,h3{ font-family:var(--serif); color:var(--navy); line-height:1.15; margin:0; }
+  h2{ font-size:20pt; margin:0 0 4pt; }
+  h3{ font-size:12.5pt; margin:12pt 0 4pt; break-after:avoid; }
+  p{ margin:0 0 7pt; }
+  a{ color:var(--em); text-decoration:none; }
+  code{ font-family:var(--mono); font-size:9pt; background:var(--soft); padding:0 3pt; border-radius:3px; overflow-wrap:anywhere; }
+  td code{ font-size:8pt; }
+  .mono{ font-family:var(--mono); }
+  .muted{ color:var(--muted); }
+  .eyebrow{ font-family:var(--mono); font-size:8.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--em); font-weight:700; }
+  .phase{ break-before:page; }
+  .phase-head{ border-bottom:2px solid var(--navy); padding-bottom:8pt; margin-bottom:10pt; display:flex; justify-content:space-between; align-items:flex-end; gap:12pt; }
+  .meta{ font-family:var(--mono); font-size:8.5pt; color:var(--muted); text-align:right; white-space:nowrap; }
+  .meta b{ color:var(--navy); }
+  ol.steps{ margin:4pt 0 8pt; padding-left:18pt; }
+  ol.steps > li{ margin:0 0 5pt; padding-left:2pt; }
+  ul{ margin:3pt 0 8pt; padding-left:16pt; }
+  ul li{ margin:0 0 3pt; }
+  .check{ list-style:none; padding-left:0; }
+  .check li{ position:relative; padding-left:20pt; margin-bottom:5pt; }
+  .check li::before{ content:""; position:absolute; left:0; top:2.5pt; width:10pt; height:10pt; border:1.4px solid var(--navy); border-radius:2px; background:#fff; }
+  .box{ border:1px solid var(--line); border-left:4px solid var(--em); background:#fff; border-radius:4px; padding:7pt 10pt; margin:7pt 0; break-inside:avoid; }
+  .box.warn{ border-left-color:#B7791F; background:#FFFBF0; }
+  .box.claude{ border-left-color:var(--navy2); background:#F4F7FB; }
+  .box b.t{ display:block; font-family:var(--mono); font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; margin-bottom:3pt; color:var(--navy); }
+  .box p:last-child, .box ul:last-child, .box ol:last-child{ margin-bottom:0; }
+  table{ width:100%; border-collapse:collapse; margin:6pt 0 10pt; font-size:9.5pt; break-inside:avoid; }
+  th,td{ text-align:left; vertical-align:top; padding:4.5pt 6pt; border-bottom:1px solid var(--line); }
+  th{ font-family:var(--mono); font-size:8pt; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); border-bottom:1.5px solid var(--navy); }
+  td.num, th.num{ text-align:right; white-space:nowrap; }
+  .keep{ break-inside:avoid; }
+
+  /* Cover */
+  .cover{ height:9.5in; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover-top{ background:radial-gradient(130% 150% at 85% 0%, var(--navy2) 0%, var(--navy) 60%); color:#fff; border-radius:8px; padding:0.55in 0.5in; }
+  .cover-top .brand{ display:flex; align-items:center; gap:12pt; margin-bottom:34pt; }
+  .cover-top .brand img{ width:46pt; height:auto; }
+  .cover-top .brand b{ font-family:var(--serif); font-size:15pt; display:block; }
+  .cover-top .brand span{ font-family:var(--mono); font-size:8pt; letter-spacing:.14em; color:var(--em5); text-transform:uppercase; }
+  .cover h1{ color:#fff; font-size:38pt; line-height:1.04; }
+  .cover h1 em{ font-style:normal; color:var(--em5); }
+  .cover-top p{ color:rgba(255,255,255,.85); font-size:12.5pt; margin:14pt 0 0; max-width:5.3in; }
+  .cover-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12pt; }
+  .cover-grid .box{ margin:0; }
+  .glance td:first-child{ font-family:var(--mono); font-weight:700; color:var(--em); width:26pt; }
+  .glance td.t{ white-space:nowrap; color:var(--muted); font-family:var(--mono); font-size:8.5pt; }
+  .done li{ margin-bottom:2pt; }
+</style>
+</head>
+<body>
+
+<!-- ═════════ COVER ═════════ -->
+<section class="cover">
+  <div class="cover-top">
+    <div class="brand"><img src="../assets/logo-mark.svg" alt=""><div><b>Rest Assured Moving LLC</b><span>Moving labor · Salem, OR</span></div></div>
+    <h1>Launch guide:<br><em>from files to booked jobs.</em></h1>
+    <p>Every step to put the website online, start receiving leads, get verified on Google, set up your listings, and run each job, in order, in plain language.</p>
+  </div>
+
+  <div>
+    <table class="glance">
+      <thead><tr><th></th><th>Phase</th><th>What you get</th><th class="num">Time</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><b>Put the website online</b></td><td>Your site live at your own web address</td><td class="t">about 1 hour</td></tr>
+        <tr><td>2</td><td><b>Turn on lead delivery</b></td><td>Quote requests arrive in your email</td><td class="t">15 minutes</td></tr>
+        <tr><td>3</td><td><b>Get on Google</b></td><td>Verified profile on Google Maps and Search</td><td class="t">1 hour + 2–7 days</td></tr>
+        <tr><td>4</td><td><b>Listings and social</b></td><td>Facebook, Instagram, Nextdoor, Yelp, Bing, Apple</td><td class="t">one evening each</td></tr>
+        <tr><td>5</td><td><b>Start getting jobs</b></td><td>Marketplaces, Craigslist, cards and flyers</td><td class="t">days 2–7</td></tr>
+        <tr><td>6</td><td><b>Run every job</b></td><td>Lead → quote → job → paid → review</td><td class="t">every job</td></tr>
+        <tr><td>7</td><td><b>Decisions still open</b></td><td>Cancellation policy, insurance, third mover</td><td class="t">when ready</td></tr>
+      </tbody>
+    </table>
+    <div class="cover-grid">
+      <div class="box"><b class="t">Already done for you</b>
+        <ul class="done">
+          <li>19-page website, estimator, quote form</li>
+          <li>Listing copy for every platform</li>
+          <li>Social graphics, job photos, logo</li>
+          <li>Print-ready cards and flyers with QR codes</li>
+          <li>Pricing, scripts, templates, checklists</li>
+        </ul>
+      </div>
+      <div class="box claude"><b class="t">How to use this guide</b>
+        <p>Work top to bottom and tick each box. Steps marked <b>“Ask Claude”</b> can be done for you: open this project in Claude and type the request shown.</p>
+        <p class="muted" style="font-size:9pt">File names like <code>GBP_CONTENT.md</code> are in the project on GitHub. The last page is a one-page cheat sheet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PHASE 1 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 1</div><h2>Put the website online</h2></div><div class="meta">Time: <b>about 1 hour</b><br>Plus up to 1 hour waiting</div></div>
+  <p>Your website is finished and stored on GitHub, but it isn't public yet. This phase makes it public at your own web address. All the work is saved on a branch named <code>ccr-60a728e4-birtu0</code>. “Merging” copies it into <code>main</code>, the version the public site is built from.</p>
+
+  <h3>Step 1.1 · Choose your web address</h3>
+  <p>Your email is on <b>restassuredmoving.net</b>, so you likely already own that domain. Using it for the website is best: customers see one name everywhere.</p>
+  <ul class="check">
+    <li>Confirm you own <b>restassuredmoving.net</b> (look for it at the company that runs your email or where you bought it: GoDaddy, Namecheap, Google, Squarespace…).</li>
+    <li>If you don't have a domain yet, you can start on the free GitHub address <code>503vincent24-spec.github.io/Rest-Assured</code> and switch later.</li>
+  </ul>
+
+  <h3>Step 1.2 · Put your web address into the site</h3>
+  <p>Many files hold a placeholder (<code>[YOUR-DOMAIN]</code>, <code>[WEBSITE URL]</code>) where your address goes. One command fills all of them.</p>
+  <div class="box claude"><b class="t">Ask Claude</b><p>“Set the domain to <b>restassuredmoving.net</b>.” Claude runs <code>tools/set-domain.sh</code>, checks the result, and saves it to the branch.</p></div>
+  <p class="muted">Use the address you'll keep. Once filled in, the placeholders are gone. Switching later means a find-and-replace (Claude can do that too).</p>
+
+  <h3>Step 1.3 · Merge the work into main</h3>
+  <ol class="steps">
+    <li>Go to <b>github.com/503vincent24-spec/Rest-Assured</b> and sign in.</li>
+    <li>Click the <b>Pull requests</b> tab → <b>New pull request</b>.</li>
+    <li>Set <b>base: main</b> and <b>compare: ccr-60a728e4-birtu0</b>. GitHub should say <i>“Able to merge.”</i></li>
+    <li>Click <b>Create pull request</b>, give it a title like “Launch website”, and create it.</li>
+    <li>Click <b>Merge pull request</b> → <b>Confirm merge</b>.</li>
+  </ol>
+  <div class="box claude"><b class="t">Or ask Claude</b><p>“Open a pull request from the branch into main.” Then you only click <b>Merge</b>.</p></div>
+
+  <h3>Step 1.4 · Turn on GitHub Pages (free hosting)</h3>
+  <ol class="steps">
+    <li>In the repository, click <b>Settings</b> → <b>Pages</b> (left menu).</li>
+    <li>Under <b>Build and deployment</b>, set Source to <b>Deploy from a branch</b>, Branch to <b>main</b>, folder <b>/ (root)</b>. Click <b>Save</b>.</li>
+    <li>Wait 1–10 minutes, then open <code>https://503vincent24-spec.github.io/Rest-Assured/</code>. You should see your homepage.</li>
+  </ol>
+
+  <h3>Step 1.5 · Connect your domain</h3>
+  <ol class="steps">
+    <li>Still on <b>Settings → Pages</b>, type <b>restassuredmoving.net</b> under <b>Custom domain</b> → <b>Save</b>.</li>
+    <li>Sign in where your domain's DNS is managed and add these records:
+      <table style="margin-top:4pt">
+        <thead><tr><th>Type</th><th>Name / Host</th><th>Value / Points to</th></tr></thead>
+        <tbody>
+          <tr><td>A</td><td>@</td><td class="mono">185.199.108.153</td></tr>
+          <tr><td>A</td><td>@</td><td class="mono">185.199.109.153</td></tr>
+          <tr><td>A</td><td>@</td><td class="mono">185.199.110.153</td></tr>
+          <tr><td>A</td><td>@</td><td class="mono">185.199.111.153</td></tr>
+          <tr><td>CNAME</td><td>www</td><td class="mono">503vincent24-spec.github.io</td></tr>
+        </tbody>
+      </table>
+    </li>
+    <li>Wait 10–60 minutes. Back on <b>Settings → Pages</b>, when the DNS check turns green, tick <b>Enforce HTTPS</b>.</li>
+  </ol>
+  <div class="box warn"><b class="t">Don't break your email</b><p>Only add the records above. <b>Do not delete or change any MX or TXT records.</b> Those deliver your email to Shawn@restassuredmoving.net. If old A records for <code>@</code> already exist, replace only those.</p></div>
+
+  <h3>Step 1.6 · Check the live site</h3>
+  <ul class="check">
+    <li>Open <b>restassuredmoving.net</b> on your phone and on a computer. The padlock shows in the address bar.</li>
+    <li>Tap <b>Call</b> and <b>Text</b> at the bottom of the phone screen. Both open with (971) 302-0120.</li>
+    <li>Try the estimator: 1 bedroom, Loading + Unloading. It should say <b>$333–$475</b>.</li>
+    <li>Open the menu (☰), visit every page, and check the photos load.</li>
+  </ul>
+</section>
+
+<!-- ═════════ PHASE 2 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 2</div><h2>Turn on lead delivery</h2></div><div class="meta">Time: <b>15 minutes</b><br>Do it right after Phase 1</div></div>
+  <p>The quote and contact forms send leads to <b>Shawn@restassuredmoving.net</b> through a free service called FormSubmit. It needs a one-time “Activate” click. <b>Until you click it, no website leads reach you.</b></p>
+
+  <h3>Step 2.1 · Activate</h3>
+  <ol class="steps">
+    <li>On the live site, open <b>Get a Free Quote</b> and send a test request with your own name and phone. Write “TEST” in the notes.</li>
+    <li>Check Shawn@restassuredmoving.net for an email from FormSubmit (look in <b>Spam</b> and <b>Promotions</b> too). Click <b>Activate Form</b>.</li>
+    <li>Send a second test quote. It should arrive as a neat table, and the site should show the <b>thank-you page</b>.</li>
+    <li>Send one test from the <b>Contact</b> page as well.</li>
+  </ol>
+  <div class="box"><b class="t">What each lead email shows</b><p>Name, phone, email, best time to call, services, move date, home size, truck status, addresses, notes, the online estimate they saw, Full Wrap or same-day if chosen, “how did you hear about us”, and the <b>lead source</b> (which ad or site sent them).</p></div>
+  <div class="box claude"><b class="t">Recommended · Ask Claude</b><p>FormSubmit's activation email includes a random code. Forward it to Claude and say: “Use this FormSubmit code in the forms.” It hides your real email address from spam bots.</p></div>
+  <p class="muted">If you change the web address later, send another test. FormSubmit may ask you to activate again.</p>
+
+  <h3>Step 2.2 · Make sure you never miss a lead</h3>
+  <ul class="check">
+    <li>Turn on email notifications on your phone for Shawn@restassuredmoving.net.</li>
+    <li>Save (971) 302-0120 voicemail with your business greeting: “You've reached Rest Assured Moving. Text this number for the fastest reply.”</li>
+    <li>If sending ever fails, the site automatically offers visitors a pre-written email and your phone number, so a lead is never lost.</li>
+  </ul>
+
+  <h3>Step 2.3 · Tell Google about the site</h3>
+  <ol class="steps">
+    <li>Go to <b>search.google.com/search-console</b> → <b>Add property</b> → enter <b>restassuredmoving.net</b> (Domain) and follow the verify step. It adds one TXT record at your DNS. That record is safe; it doesn't affect email.</li>
+    <li>Open <b>Sitemaps</b>, enter <code>sitemap.xml</code>, click <b>Submit</b>.</li>
+    <li>Use <b>URL Inspection</b> on the homepage, Services, FAQ, and Service Area pages → <b>Request indexing</b>.</li>
+  </ol>
+</section>
+
+<!-- ═════════ PHASE 3 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 3</div><h2>Get verified on Google</h2></div><div class="meta">Time: <b>about 1 hour</b><br>Google reviews it in 2–7 business days</div></div>
+  <p>A verified Google Business Profile puts you on Google Maps and in local search. It's the biggest single source of local customers. Only Shawn can do it, from his own Google account. <b>The website must be live first</b> (Phase 1); Google checks that it shows the same name and phone.</p>
+
+  <h3>Step 3.1 · Create the profile at business.google.com</h3>
+  <table>
+    <tbody>
+      <tr><td style="width:1.6in"><b>Business name</b></td><td><b>Rest Assured Moving LLC</b>, exactly. Don't add words like “Salem Movers”; that's the top reason profiles get suspended.</td></tr>
+      <tr><td><b>Category</b></td><td><b>Mover</b>. Add <b>Furniture assembly service</b> as a second category.</td></tr>
+      <tr><td><b>Location customers visit?</b></td><td><b>No.</b> You work at customers' homes. Your own address stays private.</td></tr>
+      <tr><td><b>Service areas</b></td><td>Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, Portland</td></tr>
+      <tr><td><b>Phone / website</b></td><td>(971) 302-0120 · restassuredmoving.net</td></tr>
+      <tr><td><b>Description, services, hours</b></td><td>Copy from <code>GBP_CONTENT.md</code> (Mon–Sat 7 am–7 pm, Sunday closed)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Step 3.2 · Verify (usually a short video)</h3>
+  <p>Google picks the method. Today it's usually a <b>video recording</b>, sometimes a text code, email, or live video call.</p>
+  <p><b>Have ready:</b> a branded shirt or the printed business cards (<code>print/business-card.pdf</code>), your blankets, dollies and straps, and your <b>Oregon LLC registration</b> (on screen or printed).</p>
+  <p><b>Record one continuous 30–60 second clip, no edits, in this order:</b></p>
+  <ol class="steps">
+    <li>A Salem street sign or landmark, then the outside of where you keep your equipment.</li>
+    <li>Your equipment and branding: blankets, dollies, straps, shirt, business cards.</li>
+    <li>Unlock your garage or storage unit with your own key, and show the LLC registration with the business name visible.</li>
+  </ol>
+  <p>Upload it in the <b>Google Business Profile app</b>. Don't film customers' homes or faces, and don't show a rental truck as if it's yours.</p>
+  <div class="box warn"><b class="t">If it's rejected</b><p>Fix what Google names (usually extra words in the name, a website that isn't live, or a phone that doesn't match), wait 24 hours, and click <b>Get verified</b> again. <b>Never create a second profile</b>; duplicates get both suspended.</p></div>
+
+  <div class="keep">
+  <h3>Step 3.3 · The day you're approved</h3>
+  <ul class="check">
+    <li><b>Review link:</b> Profile → <b>Ask for reviews</b> → copy the link. <span class="muted">Ask Claude: “Here's my Google review link: … put it everywhere.”</span></li>
+    <li><b>Photos:</b> upload the logo <code>assets/social/profile-1000.png</code>, the cover <code>assets/photos/upload/job-full-wrap.jpg</code>, and all 8 photos in <code>assets/photos/upload/</code>.</li>
+    <li>Turn on <b>Messages</b> and the <b>quote</b> button (link to your quote page).</li>
+    <li>Publish the first post from <code>GBP_CONTENT.md</code>. Aim for one post a week.</li>
+    <li><b>Bing Places</b> (bingplaces.com): import your Google profile. <b>Bing Webmaster Tools</b>: import from Search Console. <span class="muted">ChatGPT and Copilot search use Bing.</span></li>
+    <li><b>Apple Business Connect</b> (businessconnect.apple.com): same name, phone, hours, area. <span class="muted">Puts you in Apple Maps and Siri.</span></li>
+  </ul>
+  <p class="muted">Skip Google Local Services Ads for now. They require proof of liability insurance.</p>
+  </div>
+</section>
+
+<!-- ═════════ PHASE 4 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 4</div><h2>Listings and social profiles</h2></div><div class="meta">Time: <b>one evening per platform</b><br>Week 1</div></div>
+  <p>Everything you need to paste and upload is already written and made. Use the <b>exact same name, phone, and hours everywhere</b>. Google compares them.</p>
+
+  <h3>Step 4.1 · Get the files onto your computer or phone</h3>
+  <ol class="steps">
+    <li>On <b>github.com/503vincent24-spec/Rest-Assured</b>, click the green <b>Code</b> button → <b>Download ZIP</b>.</li>
+    <li>Unzip it. Graphics are in <code>assets/social/</code>, photos in <code>assets/photos/upload/</code>, print files in <code>print/</code>.</li>
+  </ol>
+
+  <h3>Step 4.2 · Set up each platform</h3>
+  <table>
+    <thead><tr><th style="width:0.85in">Platform</th><th>Copy and steps</th><th style="width:2.3in">Profile pic · Cover</th></tr></thead>
+    <tbody>
+      <tr><td><b>Facebook</b></td><td><code>ONLINE_LISTINGS_LAUNCH_KIT.md</code> §3, posts in <code>FACEBOOK_CONTENT.md</code>. Pin Post 1 and share it to your profile and 3 local groups.</td><td><code>profile-1000.png</code> · <code>facebook-cover-photo-1640x624.png</code></td></tr>
+      <tr><td><b>Instagram</b></td><td><code>INSTAGRAM_GUIDE.md</code>: 13-post plan with captions, highlight covers. Pin posts 9, 2 and 1.</td><td><code>profile-1000.png</code> · posts in <code>instagram/</code></td></tr>
+      <tr><td><b>X (Twitter)</b></td><td>Launch kit §3b. Reserve the name; pin <code>ig-06</code>.</td><td><code>profile-1000.png</code> · <code>x-header-photo-1500x500.png</code></td></tr>
+      <tr><td><b>Nextdoor</b></td><td><code>NEXTDOOR_GUIDE.md</code>: business page + intro post.</td><td><code>profile-1000.png</code> · <code>facebook-cover-photo-1640x624.png</code></td></tr>
+      <tr><td><b>Yelp</b></td><td><code>YELP_PROFILE.md</code>: claim the page, fill every field. <b>Never ask customers for Yelp reviews</b> (Yelp's rule).</td><td><code>profile-1000.png</code> · upload all 8 job photos</td></tr>
+      <tr><td><b>Angi</b></td><td><code>ANGI_PROFILE.md</code>. Only once you can call leads back within 5 minutes; Angi charges per lead.</td><td><code>profile-1000.png</code> · job photos</td></tr>
+    </tbody>
+  </table>
+  <div class="box"><b class="t">Rules for every listing</b>
+    <ul>
+      <li><b>Labor only.</b> Never say or imply you provide trucks, driving, delivery, or transport.</li>
+      <li><b>Licensed, not insured.</b> Never tick an “insured” or “bonded” box.</li>
+      <li><b>Only real reviews of Rest Assured.</b> Never post reviews from another company (such as Cherry City Movers) or write reviews for anyone.</li>
+      <li><b>Profile picture is always the logo.</b> Real photos go in covers, galleries, and posts.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════ PHASE 5 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 5</div><h2>Start getting jobs</h2></div><div class="meta">Time: <b>days 2–7</b><br>Then ongoing</div></div>
+
+  <h3>Step 5.1 · Moving-labor marketplaces (fastest first jobs)</h3>
+  <p>These sites send customers who have <b>already rented a truck and need labor</b>, which is exactly what you sell. The platform asks every customer for a review, so your track record builds fast.</p>
+  <ul class="check">
+    <li><b>U-Haul Moving Help</b> (movinghelp.com → become a provider): background check, ID, bank account.</li>
+    <li><b>HireAHelper</b> (hireahelper.com → become a mover). Insurance isn't required for labor-only jobs.</li>
+    <li>Optional: <b>TaskRabbit</b> (furniture assembly) and <b>Thumbtack</b> (pay per lead).</li>
+    <li>List as <b>Rest Assured Moving LLC</b> with the same phone and logo. Price a little lower until you have about 10 reviews. Read each platform's fees before your first job.</li>
+  </ul>
+
+  <h3>Step 5.2 · Craigslist</h3>
+  <ul class="check">
+    <li>Post <b>Ad 1</b> (Salem) and <b>Ad 5</b> (Portland) from <code>CRAIGSLIST_ADS.md</code>, with <code>craigslist-ad-1-1200x900.png</code> first, then 2–3 job photos.</li>
+    <li>When an ad is about 48 hours old, press <b>Renew</b> in your account (don't delete and re-post). Keep at most 2 live ads per city. Reply scripts are in the same file.</li>
+  </ul>
+
+  <h3>Step 5.3 · Print and hand out</h3>
+  <ul class="check">
+    <li><b>Business cards:</b> upload <code>print/business-card.pdf</code> to Vistaprint, Moo, Staples or a local shop. Standard 3.5 × 2 in, double-sided, matte, 14–16 pt. Order <b>500</b>. Hand two to every customer.</li>
+    <li><b>Flyers:</b> print <code>print/flyer-laundromat.pdf</code> and <code>print/flyer-apartments.pdf</code> in color on plain paper, 50 of each. Each QR code tells you which flyer the text came from.</li>
+    <li><b>Where:</b> laundromats (ask the manager first), apartment leasing offices (around the 20th of the month), U-Haul dealers, storage facilities. Scripts: <code>REFERRAL_PARTNER_TOOLKIT.md</code>.</li>
+  </ul>
+
+  <h3>Step 5.4 · People you know</h3>
+  <ul class="check">
+    <li>Text 20 people: “I've launched Rest Assured Moving. If you or anyone you know is moving, I'd appreciate the referral.” Usually brings 1–3 leads.</li>
+    <li>Referral reward: <b>$25 off for both</b> the past customer and the new customer. Use the referral cards.</li>
+  </ul>
+
+  <div class="box warn"><b class="t">The rule that wins jobs</b><p><b>Answer every call, text, and message within 15 minutes</b> during business hours. In moving labor, the first one to respond usually gets the job.</p></div>
+</section>
+
+<!-- ═════════ PHASE 6 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 6</div><h2>Run every job</h2></div><div class="meta">Every lead, every job</div></div>
+
+  <h3>1 · A lead comes in</h3>
+  <ul>
+    <li>Reply within 15 minutes. Ask the 5 questions in <code>SALES_PLAYBOOK.md</code>: move date (flexible?), home size and stairs, which truck or container, which cities and which end(s), and anything to pack or take apart.</li>
+    <li>Note <b>how they found you</b> (the lead email shows it for web leads).</li>
+  </ul>
+
+  <h3>2 · Quote</h3>
+  <ul>
+    <li>Use the estimator or the cheat sheet on the last page. Say the crew size, hourly rate, and likely range.</li>
+    <li>Offer <b>Full Wrap</b> when they book both ends and have nice furniture, a long drive, a storage unit, or rain coming.</li>
+    <li><b>Same-day request?</b> Check a crew is truly free <i>before</i> saying yes. Quote $115/hr (2 movers) or $155/hr (3), text the rate and arrival window, and wait for a “yes” by text. If no crew is free, offer tomorrow at the regular rate.</li>
+  </ul>
+
+  <h3>3 · Confirm in writing</h3>
+  <ul>
+    <li>Send the confirmation email from <code>EMAIL_TEMPLATES.md</code> (rate, crew, date, arrival window).</li>
+    <li>For bigger jobs, send <code>SERVICE_AGREEMENT_TEMPLATE.md</code> and get “I agree” back. <span class="muted">Have an Oregon attorney review it once.</span></li>
+    <li>Day before: send the reminder template and confirm the truck is booked.</li>
+  </ul>
+
+  <h3>4 · Job day</h3>
+  <ul>
+    <li>Use <code>JOB_SITE_CHECKLIST.md</code>: arrival, walkthrough, wrap everything, load heavy and low, final walkthrough with the customer.</li>
+    <li>The clock runs from arrival to the end-of-job walkthrough. 2-hour minimum, then 30-minute steps.</li>
+    <li>Report any damage to the customer before you leave, and handle it directly.</li>
+  </ul>
+
+  <h3>5 · Get paid and get the review</h3>
+  <ul>
+    <li>Payment is due at the end: cash, card, Venmo, Zelle, Cash App, or PayPal. Use <code>invoice-template.html</code>.</li>
+    <li>Ask for a <b>Google</b> review in person, then send the review email within 24 hours (<code>REVIEW_MANAGEMENT_SYSTEM.md</code>). Never ask for Yelp reviews.</li>
+    <li>Hand over two business cards and a referral card.</li>
+  </ul>
+
+  <h3>6 · Once a month</h3>
+  <ul>
+    <li>Fill in the lead-tracking table (<code>ONLINE_LISTINGS_LAUNCH_KIT.md</code> §5). Put more time and money into the two sources that book the most jobs.</li>
+    <li>Add new job photos and real reviews (with permission). <span class="muted">Ask Claude to add them to the site.</span></li>
+  </ul>
+</section>
+
+<!-- ═════════ PHASE 7 ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Phase 7</div><h2>Decisions still open</h2></div><div class="meta">When you're ready</div></div>
+  <table>
+    <thead><tr><th style="width:1.7in">Decision</th><th>Why it matters</th><th style="width:1.6in">Then</th></tr></thead>
+    <tbody>
+      <tr><td><b>Cancellation policy</b></td><td>The FAQ and service agreement say rescheduling is free but don't set a cancellation rule. Pick a notice period (for example 48 hours) and a fee.</td><td>Ask Claude: “Our cancellation policy is …”</td></tr>
+      <tr><td><b>Liability insurance</b></td><td>Not required to operate or to list on HireAHelper. Some apartment buildings ask movers for an insurance certificate, and Google Local Services Ads requires it.</td><td>If you buy a policy, ask Claude to update every “not insured” answer.</td></tr>
+      <tr><td><b>Third mover</b></td><td>With 2 employees, 3-mover jobs (2-bedroom both ends and bigger) need an on-call helper or a marketplace mover.</td><td>Line one up, or ask Claude to offer 2-mover crews only.</td></tr>
+      <tr><td><b>Crew photo</b></td><td>A photo of Shawn or the crew at work is the best single image for Google and the About page.</td><td>Send it to Claude to add.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>If something isn't working</h3>
+  <table>
+    <thead><tr><th style="width:2in">Problem</th><th>Fix</th></tr></thead>
+    <tbody>
+      <tr><td>Site shows a 404 or old page</td><td>Wait 10 minutes after merging. Check <b>Settings → Pages</b> shows branch <b>main</b>, folder <b>/ (root)</b>.</td></tr>
+      <tr><td>Domain doesn't load</td><td>DNS can take up to an hour. Check the 4 A records and the www CNAME exactly match Step 1.5.</td></tr>
+      <tr><td>“Enforce HTTPS” is greyed out</td><td>GitHub is still issuing the certificate. Try again in 30–60 minutes.</td></tr>
+      <tr><td>Test quote didn't arrive</td><td>Check Spam. Make sure you clicked FormSubmit's <b>Activate</b> link. Send another test.</td></tr>
+      <tr><td>Email stopped working</td><td>An MX record was changed. Restore it from your email provider's setup page.</td></tr>
+      <tr><td>Google verification rejected</td><td>See Step 3.2. Fix the named issue, wait 24 hours, retry. Never make a second profile.</td></tr>
+      <tr><td>A price or detail needs changing</td><td>Ask Claude. Prices appear in many files; Claude updates them all and re-checks they match.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═════════ CHEAT SHEET ═════════ -->
+<section class="phase">
+  <div class="phase-head"><div><div class="eyebrow">Keep by the phone</div><h2>Cheat sheet</h2></div><div class="meta">(971) 302-0120<br>Shawn@restassuredmoving.net</div></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14pt">
+    <div>
+      <table>
+        <thead><tr><th>Rate</th><th class="num">Regular</th><th class="num">Same-day</th></tr></thead>
+        <tbody>
+          <tr><td>2 movers</td><td class="num"><b>$95/hr</b></td><td class="num">$115/hr</td></tr>
+          <tr><td>3 movers</td><td class="num"><b>$130/hr</b></td><td class="num">$155/hr</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:9.5pt">2-hour minimum, then 30-minute steps. Blankets and shrink wrap included. No fuel, mileage, or travel fees in the service area. Same-day: call or text by 12 pm, only when a crew is free.</p>
+      <table>
+        <thead><tr><th>Full Wrap supply fee</th><th class="num">Fee</th></tr></thead>
+        <tbody>
+          <tr><td>Studio</td><td class="num">$45</td></tr>
+          <tr><td>1 bedroom</td><td class="num">$65</td></tr>
+          <tr><td>2 bedrooms</td><td class="num">$95</td></tr>
+          <tr><td>3 bedrooms</td><td class="num">$130</td></tr>
+          <tr><td>4+ bedrooms</td><td class="num">$170</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:9.5pt">Plus the wrapping time at the hourly rate. Blankets and stretch wrap on every piece. Only when you load <i>and</i> unload.</p>
+    </div>
+    <div>
+      <table>
+        <thead><tr><th>Typical price</th><th class="num">One end</th><th class="num">Both ends</th></tr></thead>
+        <tbody>
+          <tr><td>Studio</td><td class="num">$190</td><td class="num">$238–$380</td></tr>
+          <tr><td>1 bedroom</td><td class="num">$190–$238</td><td class="num">$333–$475</td></tr>
+          <tr><td>2 bedrooms</td><td class="num">$285–$428</td><td class="num">$585–$845</td></tr>
+          <tr><td>3 bedrooms</td><td class="num">$390–$585</td><td class="num">$780–$1,170</td></tr>
+          <tr><td>4+ bedrooms</td><td class="num">$585–$845</td><td class="num">$1,105–$1,625</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:9.5pt">Ground floor. Stairs, long carries, packing and assembly add time. Assembly alone starts at $190.</p>
+      <table>
+        <tbody>
+          <tr><td><b>Payment</b></td><td>Cash, card, Venmo, Zelle, Cash App, PayPal. Due at the end of the job.</td></tr>
+          <tr><td><b>Hours</b></td><td>Mon–Sat 7 am–7 pm</td></tr>
+          <tr><td><b>Area</b></td><td>Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, Portland Metro</td></tr>
+          <tr><td><b>Referral</b></td><td>$25 off for both, after the new customer's job</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="box" style="margin-top:6pt"><b class="t">Always · Never</b>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12pt">
+      <ul>
+        <li>Reply within 15 minutes</li>
+        <li>Confirm rate and crew in writing</li>
+        <li>Wrap furniture, every time</li>
+        <li>Walk through every room before leaving</li>
+        <li>Ask for a <b>Google</b> review</li>
+      </ul>
+      <ul>
+        <li>Offer trucks, driving, or transport</li>
+        <li>Say “insured” or “bonded”</li>
+        <li>Use another company's reviews</li>
+        <li>Ask for Yelp reviews</li>
+        <li>Promise a same-day crew you don't have</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
