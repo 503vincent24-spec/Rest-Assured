@@ -73,10 +73,8 @@ or transport.**
 - **No invented reviews or stats on the site.** They were replaced with
   real prices and promises. Add genuine reviews, with permission, as they
   come in (marked spots in `index.html` and `quote.html`).
-- **Founding year: please confirm.** The About page says "Serving Salem
-  since 2024" and the AI knowledge base says founded 2024, but the 90-day
-  plan lists `2024` as a value to replace. If 2024 is right, use it for
-  `[YEAR]` in the Yelp and Angi files; if not, change all three.
+- **Founded 2024.** Confirmed by the owner; used on the About page, in the
+  hidden business data, and in the Yelp and Angi profiles.
 - **Never ask for Yelp reviews** (Yelp's rule). Do ask for Google and Angi
   reviews.
 - **Licensed, not insured.** Shawn is licensed but carries no liability
@@ -93,7 +91,7 @@ or transport.**
    Steps 2–3).
 3. Submit one test quote, then click FormSubmit's **Activate** email.
    Until then no website leads arrive (README Step 1).
-4. Fill in `[YEAR]` and `[#]` employees in the Yelp and Angi files. (The
+4. Fill in `[#]` employees in the Yelp and Angi files. (The
    domain script in step 2 now also fills `[WEBSITE URL]` in the listing
    files.)
 5. Verify Google Business Profile (`GET_CUSTOMERS_NOW.md` Part 1).

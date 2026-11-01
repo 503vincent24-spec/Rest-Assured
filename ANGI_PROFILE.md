@@ -52,7 +52,7 @@ by answering fast (Section 5), or only pick task types with cheaper leads.
 | **Email** | `Shawn@restassuredmoving.net` |
 | **Website** | `https://[WEBSITE URL]/?utm_source=angi&utm_medium=listing&utm_campaign=angi-profile` |
 | **Business address** | Your registered business address (Angi hides it for service businesses) |
-| **Year founded** | `[YEAR]` |
+| **Year founded** | `2024` |
 | **Employees** | `[#]` |
 | **Payment methods** | Cash, credit/debit card, Venmo, Zelle, Cash App, PayPal |
 

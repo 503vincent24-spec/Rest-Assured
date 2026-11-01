@@ -40,7 +40,7 @@ below matches a field in Yelp for Business, so you can copy and paste.
 | **Categories (up to 3)** | 1. `Movers` · 2. `Packing Services` · 3. `Furniture Assembly` |
 | **Service area** | Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, Portland |
 | **Hours** | Mon–Sat 7:00 AM – 7:00 PM · Sun closed |
-| **Year established** | `[YEAR]` |
+| **Year established** | `2024` |
 
 > If one of the category names above is missing from Yelp's menu, start
 > typing the name and pick the closest match. Don't choose anything that
@@ -82,7 +82,7 @@ rates stay lower than full-service movers.
 
 ### History
 ```
-Established in [YEAR].
+Established in 2024.
 
 Rest Assured Moving started with a simple observation: most people don't
 dread renting the truck — they dread the hours of lifting, wrapping, and
