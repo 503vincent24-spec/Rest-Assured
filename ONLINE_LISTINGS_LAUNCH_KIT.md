@@ -204,7 +204,7 @@ booked job stays above 40% of an average job's revenue.
 - [ ] Website deployed and `./tools/set-domain.sh <domain>` run (README Step 2–3)
 - [ ] `[WEBSITE URL]` filled in everywhere (done by `./tools/set-domain.sh` above)
 - [ ] FormSubmit activated: a test quote arrived in the inbox (README Step 1)
-- [ ] `[#]` employees filled into `YELP_PROFILE.md` / `ANGI_PROFILE.md` (founding year 2024 is already in)
+- [x] Founding year (2024) and employees (2) filled into `YELP_PROFILE.md` / `ANGI_PROFILE.md`
 - [ ] Oregon LLC registration (Secretary of State registry number) ready to upload
 
 **Accounts**

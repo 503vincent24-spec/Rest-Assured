@@ -53,7 +53,7 @@ by answering fast (Section 5), or only pick task types with cheaper leads.
 | **Website** | `https://[WEBSITE URL]/?utm_source=angi&utm_medium=listing&utm_campaign=angi-profile` |
 | **Business address** | Your registered business address (Angi hides it for service businesses) |
 | **Year founded** | `2024` |
-| **Employees** | `[#]` |
+| **Employees** | `2` |
 | **Payment methods** | Cash, credit/debit card, Venmo, Zelle, Cash App, PayPal |
 
 > **Licensing questions.** Oregon's household-goods *carrier* rules are for

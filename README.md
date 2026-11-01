@@ -162,7 +162,7 @@ find-and-replace of the old address across the repo.
 | Full Wrap supply fee | `$45`–`$170` by home size | `estimate.html` (`WRAP` block); full list in `PRICING_GUIDE.md` §6 |
 | Payment methods | Cash, Cash App, Zelle, Venmo, card and PayPal | FAQ, invoice, AI knowledge base |
 
-Still to replace by hand: `[REVIEW LINK]` (your Google review link, once the profile is verified: email templates, review system, Facebook content), and `[#]` employees in the Yelp and Angi files.
+Still to replace by hand: `[REVIEW LINK]` (your Google review link, once the profile is verified: email templates, review system, Facebook content).
 
 ---
 

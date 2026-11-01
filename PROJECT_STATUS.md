@@ -91,9 +91,8 @@ or transport.**
    Steps 2–3).
 3. Submit one test quote, then click FormSubmit's **Activate** email.
    Until then no website leads arrive (README Step 1).
-4. Fill in `[#]` employees in the Yelp and Angi files. (The
-   domain script in step 2 now also fills `[WEBSITE URL]` in the listing
-   files.)
+4. ✅ Done: founding year (2024) and employees (2) are filled in, and the
+   domain script in step 2 fills `[WEBSITE URL]` in the listing files.
 5. Verify Google Business Profile (`GET_CUSTOMERS_NOW.md` Part 1).
 6. Sign up on U-Haul Moving Help + HireAHelper. Post Craigslist Ads 1 and 5.
 7. Create the Facebook, Nextdoor, and Yelp pages using the launch kit.

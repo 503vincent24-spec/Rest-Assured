@@ -15,12 +15,12 @@ on the one before it.
 
 ### Days 1–2: Placeholder replacement
 - [x] Phone (971) 302-0120, email, rates ($95 / $130, same-day $115 / $155),
-  founding year (2024), and payment methods are filled in everywhere
+  founding year (2024), employees (2), and payment methods are filled in everywhere
 - [x] Invented testimonials removed; real reviews go in the marked spots as
   they come in (`index.html`, `quote.html`)
 - [ ] Run `./tools/set-domain.sh <your-domain>` to fill `[YOUR-DOMAIN]` and
   `[WEBSITE URL]` (README Step 2)
-- [ ] Fill in `[#]` employees in the Yelp and Angi files
+- [x] Employees (2) filled in on the Angi profile
 
 ### Day 3: Domain and hosting
 - [ ] Purchase domain at Namecheap, GoDaddy, or similar ($10–15/year)
