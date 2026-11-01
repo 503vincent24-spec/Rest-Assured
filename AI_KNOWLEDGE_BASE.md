@@ -38,7 +38,7 @@ You are the customer service assistant for **Rest Assured Moving LLC**, a moving
 **Service area:** Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, Portland Metro
 **Phone:** (971) 302-0120
 **Email:** Shawn@restassuredmoving.net
-**Website:** [WEBSITE URL]
+**Website:** 503vincent24-spec.github.io/Rest-Assured
 **Hours:** Monday–Saturday, 7:00 AM – 7:00 PM
 
 **One-sentence description:**
@@ -194,7 +194,7 @@ A: We bring moving blankets and shrink wrap, which are included in the hourly ra
 A: Full Wrap is our highest level of furniture protection. Every piece of furniture is padded with moving blankets and then sealed in stretch wrap, which keeps out dust and moisture and holds the blankets in place. Standard service already puts furniture in blankets or shrink wrap at no extra cost; Full Wrap does both on every piece. You pay for the extra wrapping time at your hourly rate plus a flat supply fee: $45 for a studio, $65 for 1 bedroom, $95 for 2 bedrooms, $130 for 3 bedrooms, and $170 for 4+ bedrooms. For a typical 1-bedroom move, Full Wrap adds about $110–$160 in total. It's available when we do both the loading and the unloading, because our blankets ride in your truck and come back with us.
 
 **Q: How do I get a free quote?**
-A: Submit our online quote form at [WEBSITE URL]/quote.html, call (971) 302-0120, or email Shawn@restassuredmoving.net. We respond within one business day.
+A: Submit our online quote form at 503vincent24-spec.github.io/Rest-Assured/quote.html, call (971) 302-0120, or email Shawn@restassuredmoving.net. We respond within one business day.
 
 ---
 

@@ -13,7 +13,7 @@
     <path d="M100,143 C78,128 76,112 87,109 C93,107.5 98,111 100,116 C102,111 107,107.5 113,109 C124,112 122,128 100,143 Z" fill="#FAFAF8"/>
   </g>
 
-  <text x="525" y="450" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#4B5563">Share this card &mdash; you both save.</text>
+  <text x="525" y="450" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#4B5563">Share this card — you both save.</text>
 
   <rect x="300" y="490" width="450" height="60" rx="30" fill="none" stroke="#1F7A5C" stroke-width="3"/>
   <text x="525" y="528" text-anchor="middle" font-family="'Courier New', monospace" font-size="24" letter-spacing="1" fill="#11533D">$25 OFF FOR YOU BOTH</text>

@@ -185,4 +185,4 @@ Name/Title: Shawn, Owner
 ---
 
 *Rest Assured Moving LLC — Moving Labor Specialists — Salem, Oregon*
-*(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]*
+*(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured*

@@ -36,7 +36,7 @@ below matches a field in Yelp for Business, so you can copy and paste.
 |---|---|
 | **Business name** | `Rest Assured Moving LLC` |
 | **Phone** | `(971) 302-0120` |
-| **Website** | `https://[WEBSITE URL]/?utm_source=yelp&utm_medium=listing&utm_campaign=yelp-profile` |
+| **Website** | `https://503vincent24-spec.github.io/Rest-Assured/?utm_source=yelp&utm_medium=listing&utm_campaign=yelp-profile` |
 | **Categories (up to 3)** | 1. `Movers` · 2. `Packing Services` · 3. `Furniture Assembly` |
 | **Service area** | Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton, Hillsboro, Tigard, Portland |
 | **Hours** | Mon–Sat 7:00 AM – 7:00 PM · Sun closed |

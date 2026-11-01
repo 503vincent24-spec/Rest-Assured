@@ -102,7 +102,7 @@ Serving Salem, Keizer, Woodburn, Albany & McMinnville.
 Mon–Sat, 7am–7pm.
 
 📞 Call or text: (971) 302-0120
-💻 Free quote in 30 seconds: [WEBSITE URL]/estimate.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad1-main
+💻 Free quote in 30 seconds: 503vincent24-spec.github.io/Rest-Assured/estimate.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad1-main
 ```
 
 ---
@@ -136,7 +136,7 @@ LABOR ONLY — you arrange the truck or container, we do the heavy lifting.
 Salem · Keizer · Woodburn · Albany
 
 📞 Call or text (971) 302-0120 — usually answered same day
-💻 Quick quote: [WEBSITE URL]/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad2-apartment
+💻 Quick quote: 503vincent24-spec.github.io/Rest-Assured/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad2-apartment
 ```
 
 ---
@@ -169,7 +169,7 @@ No fuel charges · No mileage fees · Blankets & wrap included
 Labor only — the container company handles transport.
 
 📞 Call or text (971) 302-0120
-💻 [WEBSITE URL]/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad3-container
+💻 503vincent24-spec.github.io/Rest-Assured/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad3-container
 ```
 
 ---
@@ -199,7 +199,7 @@ Flat rate quoted before we start. No surprise fees.
 Salem · Keizer · Woodburn · Albany · McMinnville
 
 📞 Call or text (971) 302-0120
-💻 [WEBSITE URL]/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad4-assembly
+💻 503vincent24-spec.github.io/Rest-Assured/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad4-assembly
 ```
 
 ---
@@ -235,7 +235,7 @@ Beaverton · Hillsboro · Tigard · Portland Metro
 Labor only — we don't provide trucks or driving.
 
 📞 Call or text (971) 302-0120
-💻 [WEBSITE URL]/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad5-portland
+💻 503vincent24-spec.github.io/Rest-Assured/quote.html?utm_source=craigslist&utm_medium=classified&utm_campaign=cl-ad5-portland
 ```
 
 ---

@@ -19,7 +19,7 @@ the full copy for each platform.
 Business name:  Rest Assured Moving LLC
 Phone:          (971) 302-0120
 Email:          Shawn@restassuredmoving.net
-Website:        https://[WEBSITE URL]
+Website:        https://503vincent24-spec.github.io/Rest-Assured
 City / ZIP:     Salem, OR 97301   (hide street address — service-area business)
 Hours:          Monday–Saturday 7:00 AM – 7:00 PM · Sunday closed
 Service area:   Salem, Keizer, Woodburn, Albany, McMinnville, Beaverton,
@@ -96,7 +96,7 @@ on it.
 7. **Profile picture:** `assets/social/profile-1000.png`
 8. **Cover photo:** `assets/social/facebook-cover-1640x624.png`
 9. **Action button:** *Edit button* → **Get Quote** (or *Call Now* →
-   (971) 302-0120). Point *Get Quote* to `https://[WEBSITE URL]/quote.html`.
+   (971) 302-0120). Point *Get Quote* to `https://503vincent24-spec.github.io/Rest-Assured/quote.html`.
 10. **Username:** Settings → Username → `@RestAssuredMovingLLC`
 11. **Turn on messaging auto-reply:** Meta Business Suite → Inbox →
     Automations → *Instant reply*:
@@ -140,7 +140,7 @@ leave it alone.
    ```
    Licensed, local moving labor in Salem, OR. Loading, unloading, packing & furniture assembly. You bring the truck, we bring the crew. 📲 (971) 302-0120
    ```
-6. **Location:** `Salem, Oregon` · **Website:** `https://[WEBSITE URL]/?utm_source=x&utm_medium=social&utm_campaign=x-profile`
+6. **Location:** `Salem, Oregon` · **Website:** `https://503vincent24-spec.github.io/Rest-Assured/?utm_source=x&utm_medium=social&utm_campaign=x-profile`
 7. Post `ig-06-text-for-quote.png` with "Moving in the Salem area? Text us your move date, home size, and truck. Free quotes, usually same day. 📲 (971) 302-0120" and **pin it**.
 8. Check notifications once a week for messages. No regular posting
    needed.

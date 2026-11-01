@@ -90,10 +90,12 @@ or transport.**
 
 ## Only the owner can do these (in order)
 
-1. **Merge branch `ccr-60a728e4-birtu0` into `main`.** The improvements
-   aren't on the public site until this happens.
-2. Turn on GitHub Pages and run `./tools/set-domain.sh <domain>` (README
-   Steps 2–3).
+1. ✅ Done by Claude: the web address
+   `https://503vincent24-spec.github.io/Rest-Assured/` is filled in
+   everywhere, and the work is merged into `main`.
+2. **Turn on GitHub Pages:** repository **Settings → Pages → Deploy from a
+   branch → `main` / (root) → Save**. The site goes live at the address
+   above within minutes. (Only the account owner can do this.)
 3. Submit one test quote, then click FormSubmit's **Activate** email.
    Until then no website leads arrive (README Step 1).
 4. ✅ Done: founding year (2024) and employees (2) are filled in, and the

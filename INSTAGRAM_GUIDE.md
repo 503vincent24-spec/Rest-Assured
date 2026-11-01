@@ -40,8 +40,8 @@ From $95/hr · Salem–Portland
 
 | Title | URL |
 |---|---|
-| Free quote | `https://[WEBSITE URL]/quote.html?utm_source=instagram&utm_medium=social&utm_campaign=ig-bio` |
-| See prices | `https://[WEBSITE URL]/estimate.html?utm_source=instagram&utm_medium=social&utm_campaign=ig-bio-estimate` |
+| Free quote | `https://503vincent24-spec.github.io/Rest-Assured/quote.html?utm_source=instagram&utm_medium=social&utm_campaign=ig-bio` |
+| See prices | `https://503vincent24-spec.github.io/Rest-Assured/estimate.html?utm_source=instagram&utm_medium=social&utm_campaign=ig-bio-estimate` |
 
 Link straight to the quote page. Link-in-bio tools like Linktree add an
 extra tap, and every extra tap loses some customers. The UTM tags mean

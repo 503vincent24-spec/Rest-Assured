@@ -22,10 +22,10 @@
 
 ## Services
 
-- [Loading](https://[YOUR-DOMAIN]/services.html#loading): loading rental trucks (U-Haul, Penske, Budget), PODS, U-Box and other containers, trailers
-- [Unloading](https://[YOUR-DOMAIN]/services.html#unloading): unloading with room-by-room placement
-- [Packing and unpacking](https://[YOUR-DOMAIN]/services.html#packing): packing with proper materials; unpacking and setup
-- [Furniture assembly and disassembly](https://[YOUR-DOMAIN]/services.html#assembly): beds, tables, shelving, desks, flat-pack (IKEA, Wayfair, Amazon)
+- [Loading](https://503vincent24-spec.github.io/Rest-Assured/services.html#loading): loading rental trucks (U-Haul, Penske, Budget), PODS, U-Box and other containers, trailers
+- [Unloading](https://503vincent24-spec.github.io/Rest-Assured/services.html#unloading): unloading with room-by-room placement
+- [Packing and unpacking](https://503vincent24-spec.github.io/Rest-Assured/services.html#packing): packing with proper materials; unpacking and setup
+- [Furniture assembly and disassembly](https://503vincent24-spec.github.io/Rest-Assured/services.html#assembly): beds, tables, shelving, desks, flat-pack (IKEA, Wayfair, Amazon)
 - In-home heavy lifting and storage-unit loading
 
 ## Typical costs (labor only, ground floor)
@@ -35,16 +35,16 @@
 - 2 bedrooms: $285–$428 one end; $585–$845 both ends (3 movers)
 - 3 bedrooms: $390–$585 one end; $780–$1,170 both ends
 - Both ends with Full Wrap: studio $330–$473; 1 bedroom $445–$635; 2 bedrooms $745–$1,070; 3 bedrooms $1,105–$1,495; 4+ bedrooms $1,470–$2,120
-- Instant estimate: https://[YOUR-DOMAIN]/estimate.html
+- Instant estimate: https://503vincent24-spec.github.io/Rest-Assured/estimate.html
 
 ## Pages
 
-- [Home](https://[YOUR-DOMAIN]/index.html): overview, typical prices, promises
-- [Services](https://[YOUR-DOMAIN]/services.html): each service and pricing details
-- [Service area](https://[YOUR-DOMAIN]/service-area.html): cities served
-- [FAQ](https://[YOUR-DOMAIN]/faq.html): 24 answers on pricing, booking, damage, tipping, specialty items
-- [Get a quote](https://[YOUR-DOMAIN]/quote.html)
-- [About](https://[YOUR-DOMAIN]/about.html)
+- [Home](https://503vincent24-spec.github.io/Rest-Assured/index.html): overview, typical prices, promises
+- [Services](https://503vincent24-spec.github.io/Rest-Assured/services.html): each service and pricing details
+- [Service area](https://503vincent24-spec.github.io/Rest-Assured/service-area.html): cities served
+- [FAQ](https://503vincent24-spec.github.io/Rest-Assured/faq.html): 24 answers on pricing, booking, damage, tipping, specialty items
+- [Get a quote](https://503vincent24-spec.github.io/Rest-Assured/quote.html)
+- [About](https://503vincent24-spec.github.io/Rest-Assured/about.html)
 
 ## Not offered
 

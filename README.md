@@ -1,5 +1,7 @@
 # Rest Assured Moving LLC — Complete Business System
 
+> **Web address:** `https://503vincent24-spec.github.io/Rest-Assured/` (already filled in everywhere; live once GitHub Pages is on).
+>
 > **Start with [`PROJECT_STATUS.md`](PROJECT_STATUS.md)**: what's built, what's been tested, and the owner's next steps. To launch, follow the printable step-by-step guide [`LAUNCH_GUIDE.pdf`](LAUNCH_GUIDE.pdf).
 Version 2.0 | 42 files | GitHub Pages ready | All tasks validated
 
@@ -59,7 +61,7 @@ rest-assured-moving/
 │   ├── script.js                          ← Lead delivery · attribution · quote form · nav · FAQ
 │   ├── robots.txt                         ← Crawl rules + sitemap pointer
 │   ├── sitemap.xml                        ← 12-page XML sitemap
-│   ├── tools/set-domain.sh                ← Fills [YOUR-DOMAIN] and [WEBSITE URL] everywhere in one command
+│   ├── tools/set-domain.sh                ← Fills [YOUR-DOMAIN] and 503vincent24-spec.github.io/Rest-Assured everywhere in one command
 │   ├── IMAGE_GUIDE.md                     ← Page-by-page image specs + photo brief
 │   └── assets/
 │       ├── logo-mark.svg                  ← Shield mark (favicon, nav, avatars)

@@ -34,7 +34,7 @@ Looking forward to making your move easier,
 
 [YOUR NAME]
 Rest Assured Moving LLC
-(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
+(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured
 Mon–Sat, 7am–7pm | Salem, Oregon
 
 ---
@@ -127,7 +127,7 @@ Thank you again for the opportunity to be part of your move.
 
 [YOUR NAME]
 Rest Assured Moving LLC
-(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
+(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured
 
 P.S. Know someone else who's moving? We offer $25 off to both you and anyone you refer. Just have them mention your name when they book.
 
@@ -149,7 +149,7 @@ If your plans have changed or you have questions, reply here or call us at (971)
 
 [YOUR NAME]
 Rest Assured Moving LLC
-(971) 302-0120 · Shawn@restassuredmoving.net · [WEBSITE URL]
+(971) 302-0120 · Shawn@restassuredmoving.net · 503vincent24-spec.github.io/Rest-Assured
 
 ---
 
